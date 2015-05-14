@@ -39,6 +39,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -68,90 +69,21 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_13_13_AccionesActor extends ActorScript
-{          	
+class Design_35_35_InicioEscena extends SceneScript
+{
 	
  
- 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
+ 	public function new(dummy:Int, dummy2:Engine)
 	{
-		super(actor);
-		nameMap.set("Actor", "actor");
-
+		super();
+		
 	}
 	
 	override public function init()
 	{
 		    
-/* =========================== Keyboard =========================== */
-addKeyStateListener("up", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
-{
-if(wrapper.enabled && pressed)
-{
-        playSound(getSound(21));
-}
-});
-    
-/* ======================== When Updating ========================= */
-addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-{
-if(wrapper.enabled)
-{
-        if((isKeyPressed("right") || isKeyPressed("left")))
-{
-            loopSoundOnChannel(getSound(23), Std.int(1));
-}
-
-        if((isKeyReleased("right") || isKeyReleased("left")))
-{
-            stopSoundOnChannel(Std.int(1));
-}
-
-}
-});
-    
-/* ======================== When Updating ========================= */
-addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-{
-if(wrapper.enabled)
-{
-        if((Engine.engine.getGameAttribute("disparo") == 1))
-{
-            if((isKeyPressed("espacio") && (Engine.engine.getGameAttribute("posicionjugador") == 0)))
-{
-                actor.setAnimation("" + "ti");
-                createRecycledActor(getActorType(37), actor.getX(), actor.getY(), Script.FRONT);
-                getLastCreatedActor().applyImpulse(-1, 0, 15);
-}
-
-            if((isKeyPressed("espacio") && (Engine.engine.getGameAttribute("posicionjugador") == 1)))
-{
-                actor.setAnimation("" + "td");
-                createRecycledActor(getActorType(37), actor.getX(), actor.getY(), Script.FRONT);
-                getLastCreatedActor().applyImpulse(1, 0, 15);
-}
-
-}
-
-}
-});
-    
-/* ======================== When Updating ========================= */
-addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-{
-if(wrapper.enabled)
-{
-        if(isKeyPressed("left"))
-{
-            Engine.engine.setGameAttribute("posicionjugador", 0);
-}
-
-        else if(isKeyPressed("right"))
-{
-            Engine.engine.setGameAttribute("posicionjugador", 1);
-}
-
-}
-});
+/* ======================== When Creating ========================= */
+        Engine.engine.setGameAttribute("disparo", 0);
 
 	}	      	
 	

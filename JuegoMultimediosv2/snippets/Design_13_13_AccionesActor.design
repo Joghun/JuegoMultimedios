@@ -62,77 +62,85 @@
             <group eventID="4" id="-1">
                 <if comment="false" x="45" y="53">
                     <group eventID="4" id="-1">
-                        <setanim comment="false" x="56" y="91">
-                            <ACTOR eid="this" id="0"/>
-                            <int id="1" val="ti"/>
-                        </setanim>
-                        <create-actor3 comment="false" x="56" y="118">
-                            <ACTORTYPE eid="37" id="0"/>
-                            <get-xy comment="false" id="1" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="0"/>
-                            </get-xy>
-                            <get-xy comment="false" id="2" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="1"/>
-                            </get-xy>
-                            <int id="3" val="0"/>
-                        </create-actor3>
-                        <push-shove comment="false" x="56" y="158">
-                            <ACTOR eid="lastcreated" id="0"/>
-                            <int id="1" val="1"/>
-                            <int id="2" val="-1"/>
-                            <int id="3" val="0"/>
-                            <int id="4" val="140"/>
-                        </push-shove>
+                        <if comment="false" x="56" y="83">
+                            <group eventID="4" id="-1">
+                                <setanim comment="false" x="67" y="121">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="ti"/>
+                                </setanim>
+                                <create-actor3 comment="false" x="67" y="148">
+                                    <ACTORTYPE eid="37" id="0"/>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="0"/>
+                                    </get-xy>
+                                    <get-xy comment="false" id="2" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="1"/>
+                                    </get-xy>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <push-shove comment="false" x="67" y="188">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="-1"/>
+                                    <int id="3" val="0"/>
+                                    <int id="4" val="15"/>
+                                </push-shove>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <keystate comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <CONTROL eid="7" id="1"/>
+                                </keystate>
+                                <eq comment="false" id="1" x="0" y="0">
+                                    <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="0"/>
+                                </eq>
+                            </and>
+                        </if>
+                        <if comment="false" x="56" y="227">
+                            <group eventID="4" id="-1">
+                                <setanim comment="false" x="67" y="265">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="td"/>
+                                </setanim>
+                                <create-actor3 comment="false" x="67" y="292">
+                                    <ACTORTYPE eid="37" id="0"/>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="0"/>
+                                    </get-xy>
+                                    <get-xy comment="false" id="2" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="1"/>
+                                    </get-xy>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <push-shove comment="false" x="67" y="332">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="1"/>
+                                    <int id="3" val="0"/>
+                                    <int id="4" val="15"/>
+                                </push-shove>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <keystate comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                    <CONTROL eid="7" id="1"/>
+                                </keystate>
+                                <eq comment="false" id="1" x="0" y="0">
+                                    <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="1"/>
+                                </eq>
+                            </and>
+                        </if>
                     </group>
-                    <and comment="false" id="0" x="0" y="0">
-                        <keystate comment="false" id="0" x="0" y="0">
-                            <int id="0" val="1"/>
-                            <CONTROL eid="7" id="1"/>
-                        </keystate>
-                        <eq comment="false" id="1" x="0" y="0">
-                            <get-game-val-1 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="0"/>
-                        </eq>
-                    </and>
-                </if>
-                <if comment="false" x="45" y="197">
-                    <group eventID="4" id="-1">
-                        <setanim comment="false" x="56" y="235">
-                            <ACTOR eid="this" id="0"/>
-                            <int id="1" val="td"/>
-                        </setanim>
-                        <create-actor3 comment="false" x="56" y="262">
-                            <ACTORTYPE eid="37" id="0"/>
-                            <get-xy comment="false" id="1" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="0"/>
-                            </get-xy>
-                            <get-xy comment="false" id="2" x="0" y="0">
-                                <ACTOR eid="this" id="0"/>
-                                <int id="1" val="1"/>
-                            </get-xy>
-                            <int id="3" val="0"/>
-                        </create-actor3>
-                        <push-shove comment="false" x="56" y="302">
-                            <ACTOR eid="lastcreated" id="0"/>
-                            <int id="1" val="1"/>
-                            <int id="2" val="1"/>
-                            <int id="3" val="0"/>
-                            <int id="4" val="140"/>
-                        </push-shove>
-                    </group>
-                    <and comment="false" id="0" x="0" y="0">
-                        <keystate comment="false" id="0" x="0" y="0">
-                            <int id="0" val="1"/>
-                            <CONTROL eid="7" id="1"/>
-                        </keystate>
-                        <eq comment="false" id="1" x="0" y="0">
-                            <get-game-val-1 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="1"/>
-                        </eq>
-                    </and>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
                 </if>
             </group>
         </step>

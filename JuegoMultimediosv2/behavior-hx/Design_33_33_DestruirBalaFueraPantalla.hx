@@ -68,7 +68,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_13_13_AccionesActor extends ActorScript
+class Design_33_33_DestruirBalaFueraPantalla extends ActorScript
 {          	
 	
  
@@ -82,74 +82,12 @@ class Design_13_13_AccionesActor extends ActorScript
 	override public function init()
 	{
 		    
-/* =========================== Keyboard =========================== */
-addKeyStateListener("up", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
+/* ======================== Specific Actor ======================== */
+addActorPositionListener(actor, function(enteredScreen:Bool, exitedScreen:Bool, enteredScene:Bool, exitedScene:Bool, list:Array<Dynamic>):Void
 {
-if(wrapper.enabled && pressed)
+if(wrapper.enabled && exitedScreen)
 {
-        playSound(getSound(21));
-}
-});
-    
-/* ======================== When Updating ========================= */
-addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-{
-if(wrapper.enabled)
-{
-        if((isKeyPressed("right") || isKeyPressed("left")))
-{
-            loopSoundOnChannel(getSound(23), Std.int(1));
-}
-
-        if((isKeyReleased("right") || isKeyReleased("left")))
-{
-            stopSoundOnChannel(Std.int(1));
-}
-
-}
-});
-    
-/* ======================== When Updating ========================= */
-addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-{
-if(wrapper.enabled)
-{
-        if((Engine.engine.getGameAttribute("disparo") == 1))
-{
-            if((isKeyPressed("espacio") && (Engine.engine.getGameAttribute("posicionjugador") == 0)))
-{
-                actor.setAnimation("" + "ti");
-                createRecycledActor(getActorType(37), actor.getX(), actor.getY(), Script.FRONT);
-                getLastCreatedActor().applyImpulse(-1, 0, 15);
-}
-
-            if((isKeyPressed("espacio") && (Engine.engine.getGameAttribute("posicionjugador") == 1)))
-{
-                actor.setAnimation("" + "td");
-                createRecycledActor(getActorType(37), actor.getX(), actor.getY(), Script.FRONT);
-                getLastCreatedActor().applyImpulse(1, 0, 15);
-}
-
-}
-
-}
-});
-    
-/* ======================== When Updating ========================= */
-addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
-{
-if(wrapper.enabled)
-{
-        if(isKeyPressed("left"))
-{
-            Engine.engine.setGameAttribute("posicionjugador", 0);
-}
-
-        else if(isKeyPressed("right"))
-{
-            Engine.engine.setGameAttribute("posicionjugador", 1);
-}
-
+        recycleActor(actor);
 }
 });
 

@@ -9,6 +9,7 @@
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="1" c="false" group="0" id="10" name="Nino 1" sx="1.0" sy="1.0" x="60" y="580" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="6" id="52" name="Poder 2" sx="1.0" sy="1.0" x="435" y="209" z="0"/>
     </actors>
     <snippets/>
     <terrain>

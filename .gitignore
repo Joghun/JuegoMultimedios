@@ -171,8 +171,8 @@
 ##############
 #
 ## Windows image file caches
-#Thumbs.db
-#ehthumbs.db
+Thumbs.db
+ehthumbs.db
 #
 ## Folder config file
 #Desktop.ini
@@ -215,3 +215,5 @@
 ##Mr Developer
 #.mr.developer.cfg
 #
+
+sh.exe.stackdump

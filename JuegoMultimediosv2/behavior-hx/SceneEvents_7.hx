@@ -69,7 +69,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_1 extends SceneScript
+class SceneEvents_7 extends SceneScript
 {
 	
  
@@ -81,10 +81,7 @@ class SceneEvents_1 extends SceneScript
 	
 	override public function init()
 	{
-		    
-/* ======================== When Creating ========================= */
-        playSound(getSound(22));
-
+		
 	}	      	
 	
 	override public function forwardMessage(msg:String)

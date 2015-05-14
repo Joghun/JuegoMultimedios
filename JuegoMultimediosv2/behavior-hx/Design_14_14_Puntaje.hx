@@ -72,15 +72,11 @@ import com.stencyl.graphics.shaders.BloomShader;
 class Design_14_14_Puntaje extends SceneScript
 {
 	
-public var _Puntaje:Float;
-
  
  	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
-		nameMap.set("Puntaje", "_Puntaje");
-_Puntaje = 0.0;
-
+		
 	}
 	
 	override public function init()
@@ -93,7 +89,7 @@ if(wrapper.enabled)
 {
         g.setFont(getFont(28));
         g.drawString("" + "Puntaje:", 500, 10);
-        g.drawString("" + _Puntaje, 600, 10);
+        g.drawString("" + Engine.engine.getGameAttribute("PuntajeEscena"), 600, 10);
 }
 });
 

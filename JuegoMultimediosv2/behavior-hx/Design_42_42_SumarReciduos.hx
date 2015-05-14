@@ -68,19 +68,30 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_37 extends ActorScript
+class Design_42_42_SumarReciduos extends ActorScript
 {          	
 	
  
  	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		
+		nameMap.set("Actor", "actor");
+
 	}
 	
 	override public function init()
 	{
-		
+		    
+/* ======================= Member of Group ======================== */
+addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled && sameAsAny(getActorGroup(0),event.otherActor.getType(),event.otherActor.getGroup()))
+{
+        Engine.engine.setGameAttribute("PuntajeEscena", (Engine.engine.getGameAttribute("PuntajeEscena") + 10));
+        recycleActor(actor);
+}
+});
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

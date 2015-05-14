@@ -80,7 +80,18 @@ class ActorEvents_41 extends ActorScript
 	
 	override public function init()
 	{
-		
+		    
+/* ======================= Member of Group ======================== */
+addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled && sameAsAny(getActorGroup(5),event.otherActor.getType(),event.otherActor.getGroup()))
+{
+        createRecycledActor(getActorType(58), actor.getX(), actor.getY(), Script.FRONT);
+        recycleActor(actor);
+        recycleActor(actor.getLastCollidedActor());
+}
+});
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

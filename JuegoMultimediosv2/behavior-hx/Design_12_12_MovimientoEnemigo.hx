@@ -98,13 +98,11 @@ if(wrapper.enabled)
 {
         if((actor.getX() < _PosicionInicial))
 {
-            actor.setAnimation("" + "derecha");
             actor.setXVelocity(10);
 }
 
-        else if((actor.getX() > (_PosicionInicial + 100)))
+        else if((actor.getX() > (_PosicionInicial + 50)))
 {
-            actor.setAnimation("" + "izquierda");
             actor.setXVelocity(-10);
 }
 

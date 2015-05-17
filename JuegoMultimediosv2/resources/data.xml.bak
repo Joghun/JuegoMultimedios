@@ -522,7 +522,8 @@
         </anim>
     </sprite>
     <music atlasID="0" desc="" id="23" loop="true" name="Caminando" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="1238" id="12" name="Fondo1" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1650" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="650" id="69" name="fondo1" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1040" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="700" id="65" name="fondobosque" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="51" name="FondoCiudad" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="29" name="FondoElegirPersonaje" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="32" name="FondoInstrucciones" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
@@ -552,11 +553,17 @@
     </actor>
     <sprite atlasID="0" default="2" defaultAnimation="2" desc="" height="51" id="42" name="Latoso" shared="false" width="50">
         <anim across="2" down="1" durations="100,100" height="51" id="2" loop="true" name="moviendose" numframes="2" originx="25" originy="25" sync="false" version="2" width="100">
-            <poly data="4,10,0,40,0,40,51,10,51" density="0.1" fric="0.2" gid="-1000" id="0" name="moviendose" rest="0.0" sensor="false"/>
+            <poly data="4,10,0,40,0,40,51,10,51" density="0.1" fric="0.2" gid="4" id="0" name="moviendose" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="29" fixedrot="false" fric="0.2" gid="4" id="41" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="LatosoEnemigo" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="42" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="29" fixedrot="true" fric="0.2" gid="4" id="41" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="LatosoEnemigo" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="42" static="false">
         <snippets>
+            <s enabled="false" id="43">
+                <prop id="1" list="0" val="moviendose"/>
+                <prop id="2" list="0" val="moviendose"/>
+                <prop id="3" list="0" val="5.0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="12">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>

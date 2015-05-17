@@ -260,6 +260,18 @@
         <blocks/>
         <events/>
     </snippet>
+    <snippet attachedevent="false" class="scripts.Design_43_43_EnemyWalkingAI" classname="scripts.Design_43_43_EnemyWalkingAI" desc="For platformers - an actor will have movement similar to the Goomba from Super Mario Bros - actor will walk back anf forth horizontally, and change direction when colliding with an object.  &#10;&#10;Just configure the walking animations &amp; speed." description="For platformers - an actor will have movement similar to the Goomba from Super Mario Bros - actor will walk back anf forth horizontally, and change direction when colliding with an object.  &#10;&#10;Just configure the walking animations &amp; speed." design="true" drawOrder="0" id="43" name="Enemy Walking AI" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Walk Left Animation" hidden="false" id="1" name="_WalkLeftAnimation" order="1"/>
+        <animation default="" defaultValue="" desc="" dropdown="" fullname="Walk Right Animation" hidden="false" id="2" name="_WalkRightAnimation" order="2"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Walking Speed" hidden="false" id="3" name="_WalkingSpeed" order="3"/>
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+            <event displayName="Actor - Any" enabled="true" id="3" name="collide" order="3" repeats="true"/>
+        </events>
+    </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_62" classname="scripts.ActorEvents_62" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="40" name="ActorEvents_62" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
         <events>

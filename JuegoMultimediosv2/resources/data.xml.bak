@@ -526,6 +526,7 @@
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="700" id="65" name="fondobosque" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="51" name="FondoCiudad" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="29" name="FondoElegirPersonaje" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="70" name="FondoIintroduccion" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="32" name="FondoInstrucciones" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <tileset across="5" atlasID="0" desc="" down="2" id="50" name="fondotitle" oid="-1" shared="false" th="32" tw="32">
         <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
@@ -539,6 +540,57 @@
         <tile collision="-1" data="" durations="100" frames="8" id="8" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="9" id="9" order="-1"/>
     </tileset>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="94" id="76" name="IntroBasurota" shared="false" width="100">
+        <anim across="1" down="1" durations="100" height="94" id="0" loop="true" name="Animation 0" numframes="1" originx="50" originy="47" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,94,0,94" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="46" fixedrot="true" fric="0.2" gid="3" id="75" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="IntroBasurota" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="76" static="false">
+        <snippets/>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="48" fixedrot="true" fric="0.2" gid="3" id="79" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="IntroBotellon" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="80" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="68" id="80" name="IntroBotellon" shared="false" width="50">
+        <anim across="1" down="1" durations="100" height="68" id="0" loop="true" name="Animation 0" numframes="1" originx="25" originy="34" sync="false" version="2" width="50">
+            <poly data="4,0,0,50,0,50,68,0,68" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="49" fixedrot="true" fric="0.2" gid="3" id="81" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="introCaja" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="82" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="150" id="82" name="introCaja" shared="false" width="100">
+        <anim across="1" down="1" durations="100" height="150" id="0" loop="true" name="Animation 0" numframes="1" originx="50" originy="75" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,150,0,150" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="47" fixedrot="true" fric="0.2" gid="3" id="77" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="IntroLatoso" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="78" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="51" id="78" name="IntroLatoso" shared="false" width="50">
+        <anim across="1" down="1" durations="100" height="51" id="0" loop="true" name="Animation 0" numframes="1" originx="25" originy="25" sync="false" version="2" width="50">
+            <poly data="4,0,0,50,0,50,51,0,51" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="45" fixedrot="true" fric="0.2" gid="3" id="73" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="IntroNina" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="74" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="150" id="74" name="IntroNina" shared="false" width="100">
+        <anim across="1" down="1" durations="100" height="150" id="0" loop="true" name="Animation 0" numframes="1" originx="50" originy="75" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,150,0,150" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="44" fixedrot="true" fric="0.2" gid="3" id="71" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="IntroNino" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="72" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="150" id="72" name="IntroNino" shared="false" width="100">
+        <anim across="1" down="1" durations="100" height="150" id="0" loop="true" name="Animation 0" numframes="1" originx="50" originy="75" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,150,0,150" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="30" fixedrot="false" fric="0.2" gid="3" id="43" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="IntroPlaneta" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="44" static="false">
+        <snippets/>
+    </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="50" id="59" name="Lata" shared="false" width="29">
         <anim across="1" down="1" durations="100" height="50" id="0" loop="true" name="Animation 0" numframes="1" originx="14" originy="25" sync="false" version="2" width="29">
             <poly data="4,0,0,29,0,29,50,0,50" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
@@ -811,22 +863,14 @@
             <poly data="4,20,0,50,0,50,150,20,150" density="0.1" fric="0.2" gid="-1000" id="0" name="ti" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="30" fixedrot="false" fric="0.2" gid="3" id="43" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="PlanetaFeliz" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="44" static="false">
-        <snippets/>
-    </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="156" id="44" name="PlanetaFeliz" shared="false" width="150">
         <anim across="1" down="1" durations="100" height="156" id="0" loop="true" name="feliz" numframes="1" originx="75" originy="78" sync="false" version="2" width="150">
             <poly data="4,0,0,150,0,150,156,0,156" density="0.1" fric="0.2" gid="-1000" id="0" name="feliz" rest="0.0" sensor="false"/>
         </anim>
-    </sprite>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="159" id="46" name="PlanetaTriste" shared="false" width="150">
-        <anim across="1" down="1" durations="100" height="159" id="0" loop="true" name="triste" numframes="1" originx="75" originy="79" sync="false" version="2" width="150">
-            <poly data="4,0,0,150,0,150,159,0,159" density="0.1" fric="0.2" gid="-1000" id="0" name="triste" rest="0.0" sensor="false"/>
+        <anim across="1" down="1" durations="100" height="159" id="1" loop="true" name="triste" numframes="1" originx="75" originy="79" sync="false" version="2" width="150">
+            <poly data="4,0,0,150,0,150,159,0,159" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="31" fixedrot="false" fric="0.2" gid="3" id="45" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="PlanetaTriste" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="46" static="false">
-        <snippets/>
-    </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="53" name="Poder" shared="false" width="100">
         <anim across="2" down="2" durations="200,200,200,200" height="200" id="0" loop="true" name="Animation 0" numframes="4" originx="50" originy="50" sync="false" version="2" width="200">
             <poly data="4,20,30,80,30,80,90,20,90" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>

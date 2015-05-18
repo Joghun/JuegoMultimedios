@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="28" fixedrot="true" fric="0.2" gid="4" id="39" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="BasurotaEnemigo" oid="148287" pausable="true" physicsMode="0" rest="0.0" shared="true" sprite="40" static="false">
-        <snippets/>
+        <snippets>
+            <s enabled="true" id="12">
+                <prop id="1" list="0" val="0.0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
     <sprite atlasID="0" default="1" defaultAnimation="1" desc="" height="94" id="40" name="BasurotaEnemigo" shared="false" width="100">
         <anim across="1" down="1" durations="100" height="94" id="0" loop="true" name="sinMoverse" numframes="1" originx="50" originy="47" sync="false" version="2" width="100">
@@ -405,7 +410,7 @@
             </s>
         </snippets>
     </actor>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="10" fixedrot="true" fric="0.2" gid="4" id="17" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="BotellonEnemigo" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="18" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="10" fixedrot="true" fric="0.2" gid="4" id="17" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="BotellonEnemigo" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="18" static="false">
         <snippets>
             <s enabled="true" id="12">
                 <prop id="1" list="0" val="0"/>
@@ -505,7 +510,7 @@
             </s>
         </snippets>
     </actor>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="11" fixedrot="true" fric="0.2" gid="4" id="19" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="CajaSexiEnemigo" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="20" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="11" fixedrot="true" fric="0.2" gid="4" id="19" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="CajaSexiEnemigo" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="20" static="false">
         <snippets>
             <s enabled="true" id="12">
                 <prop id="1" list="0" val="0.0"/>
@@ -608,7 +613,7 @@
             <poly data="4,10,0,40,0,40,51,10,51" density="0.1" fric="0.2" gid="4" id="0" name="moviendose" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="29" fixedrot="true" fric="0.2" gid="4" id="41" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="LatosoEnemigo" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="42" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="29" fixedrot="true" fric="0.2" gid="4" id="41" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="LatosoEnemigo" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="42" static="false">
         <snippets>
             <s enabled="false" id="43">
                 <prop id="1" list="0" val="moviendose"/>

@@ -195,7 +195,12 @@
                         <create-actor3 comment="false" x="37" y="72">
                             <ACTORTYPE eid="10" id="0"/>
                             <int id="1" val="100"/>
-                            <int id="2" val="350"/>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </screen-wh>
+                                <int id="1" val="70"/>
+                            </minus>
                             <int id="3" val="0"/>
                         </create-actor3>
                     </group>
@@ -204,12 +209,17 @@
                         <int id="1" val="0"/>
                     </eq>
                 </if>
-                <else-if comment="false" x="26" y="111">
+                <else-if comment="false" x="26" y="129">
                     <group eventID="6" id="-1">
-                        <create-actor3 comment="false" x="37" y="141">
+                        <create-actor3 comment="false" x="37" y="159">
                             <ACTORTYPE eid="35" id="0"/>
                             <int id="1" val="100"/>
-                            <int id="2" val="350"/>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </screen-wh>
+                                <int id="1" val="70"/>
+                            </minus>
                             <int id="3" val="0"/>
                         </create-actor3>
                     </group>
@@ -236,7 +246,12 @@
                 <set-xy comment="false" x="26" y="74">
                     <ACTOR eid="this" id="0"/>
                     <int id="1" val="1"/>
-                    <int id="2" val="350"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <screen-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </screen-wh>
+                        <int id="1" val="70"/>
+                    </minus>
                 </set-xy>
             </group>
             <ACTOR eid="this" id="0"/>

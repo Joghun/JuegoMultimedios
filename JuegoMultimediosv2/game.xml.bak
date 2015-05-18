@@ -3,8 +3,8 @@
     <exts>
         <e enabled="false" id="test-native"/>
         <e enabled="false" id="test"/>
-        <e enabled="false" id="test-flash"/>
         <e enabled="false" id="label"/>
+        <e enabled="false" id="test-flash"/>
         <e enabled="false" id="tileapi"/>
     </exts>
     <scales>
@@ -95,8 +95,8 @@
     <attributes>
         <number cid="-1" id="1" name="posicionjugador" save="true" value="0.0"/>
         <number cid="-1" id="2" name="disparo" save="true" value="0.0"/>
-        <number cid="-1" id="4" name="PuntajeEscena" save="true" value="0.0"/>
         <number cid="-1" id="3" name="PuntageGlobal" save="true" value="0.0"/>
+        <number cid="-1" id="4" name="PuntajeEscena" save="true" value="0.0"/>
         <number cid="-1" id="0" name="Personaje" save="true" value="0.0"/>
     </attributes>
     <collisions>

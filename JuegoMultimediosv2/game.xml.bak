@@ -3,8 +3,8 @@
     <exts>
         <e enabled="false" id="test-native"/>
         <e enabled="false" id="test"/>
-        <e enabled="false" id="test-flash"/>
         <e enabled="false" id="label"/>
+        <e enabled="false" id="test-flash"/>
         <e enabled="false" id="tileapi"/>
     </exts>
     <scales>
@@ -95,8 +95,8 @@
     <attributes>
         <number cid="-1" id="1" name="posicionjugador" save="true" value="0.0"/>
         <number cid="-1" id="2" name="disparo" save="true" value="0.0"/>
-        <number cid="-1" id="4" name="PuntajeEscena" save="true" value="0.0"/>
         <number cid="-1" id="3" name="PuntageGlobal" save="true" value="0.0"/>
+        <number cid="-1" id="4" name="PuntajeEscena" save="true" value="0.0"/>
         <number cid="-1" id="0" name="Personaje" save="true" value="0.0"/>
     </attributes>
     <collisions>
@@ -127,7 +127,7 @@
         <poly id="24" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,3,5,7,9,10,17,16,19,21,23,22,24,26,29,28,31,35,32,33,39,37,43,41,51,50,49,48,54,52,58,56,62,60,69,70,71,65,77,79,73,75,84,81,83," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,3,5,7,9,10,17,16,19,21,23,22,24,26,29,28,31,35,32,33,39,37,43,41,51,50,49,48,54,52,58,56,62,60,69,70,71,65,77,79,73,75,85,84,87,81,83," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

@@ -80,7 +80,16 @@ class ActorEvents_43 extends ActorScript
 	
 	override public function init()
 	{
-		
+		    
+/* ======================= After N seconds ======================== */
+runLater(1000 * 12, function(timeTask:TimedTask):Void
+{
+if(wrapper.enabled)
+{
+        actor.setAnimation("" + "triste");
+}
+}, actor);
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

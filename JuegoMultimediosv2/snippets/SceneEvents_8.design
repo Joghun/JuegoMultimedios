@@ -3,70 +3,64 @@
     <group eventID="1" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <create-actor3 comment="false" x="26" y="40">
+                <play-sound4 comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                    <SOUND eid="87" id="1"/>
+                </play-sound4>
+                <create-actor3 comment="false" x="26" y="67">
                     <ACTORTYPE eid="43" id="0"/>
                     <int id="1" val="115"/>
                     <int id="2" val="10"/>
                     <int id="3" val="0"/>
                 </create-actor3>
-                <periodic comment="false" x="26" y="67">
+                <dolater comment="false" x="26" y="94">
                     <group eventID="1" id="-1">
-                        <setanim comment="false" x="37" y="94">
-                            <ACTOR eid="lastcreated" id="0"/>
-                            <int id="1" val="triste"/>
-                        </setanim>
-                    </group>
-                    <int id="0" val="15"/>
-                    <ACTOR eid="lastcreated" id="2"/>
-                </periodic>
-                <periodic comment="false" x="26" y="133">
-                    <group eventID="1" id="-1">
-                        <create-actor3 comment="false" x="37" y="160">
+                        <create-actor3 comment="false" x="37" y="121">
                             <ACTORTYPE eid="77" id="0"/>
-                            <int id="1" val="750"/>
+                            <int id="1" val="680"/>
                             <int id="2" val="10"/>
                             <int id="3" val="0"/>
                         </create-actor3>
-                        <create-actor3 comment="false" x="37" y="187">
+                        <create-actor3 comment="false" x="37" y="148">
                             <ACTORTYPE eid="75" id="0"/>
-                            <int id="1" val="800"/>
+                            <int id="1" val="775"/>
                             <int id="2" val="10"/>
                             <int id="3" val="0"/>
                         </create-actor3>
-                        <create-actor3 comment="false" x="37" y="214">
+                        <create-actor3 comment="false" x="37" y="175">
                             <ACTORTYPE eid="79" id="0"/>
-                            <int id="1" val="850"/>
+                            <int id="1" val="825"/>
                             <int id="2" val="10"/>
                             <int id="3" val="0"/>
                         </create-actor3>
-                        <create-actor3 comment="false" x="37" y="241">
+                        <create-actor3 comment="false" x="37" y="202">
                             <ACTORTYPE eid="81" id="0"/>
-                            <int id="1" val="900"/>
+                            <int id="1" val="925"/>
                             <int id="2" val="10"/>
                             <int id="3" val="0"/>
                         </create-actor3>
                     </group>
-                    <int id="0" val="10"/>
+                    <int id="0" val="3.5"/>
                     <ACTOR eid="lastcreated" id="2"/>
-                </periodic>
-                <periodic comment="false" x="26" y="280">
+                </dolater>
+                <dolater comment="false" x="26" y="241">
                     <group eventID="1" id="-1">
-                        <create-actor3 comment="false" x="37" y="307">
-                            <ACTORTYPE eid="73" id="0"/>
-                            <int id="1" val="400"/>
-                            <int id="2" val="10"/>
-                            <int id="3" val="0"/>
-                        </create-actor3>
-                        <create-actor3 comment="false" x="37" y="334">
+                        <create-actor3 comment="false" x="37" y="268">
                             <ACTORTYPE eid="71" id="0"/>
                             <int id="1" val="500"/>
                             <int id="2" val="10"/>
                             <int id="3" val="0"/>
                         </create-actor3>
+                        <create-actor3 comment="false" x="37" y="295">
+                            <ACTORTYPE eid="73" id="0"/>
+                            <int id="1" val="400"/>
+                            <int id="2" val="10"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
                     </group>
-                    <int id="0" val="20"/>
+                    <int id="0" val="15"/>
                     <ACTOR eid="lastcreated" id="2"/>
-                </periodic>
+                </dolater>
             </group>
         </init>
     </group>
@@ -74,56 +68,97 @@
     <group eventID="2" id="0">
         <draw comment="false" x="15" y="15">
             <group eventID="2" id="-1">
-                <periodic comment="false" x="26" y="40">
-                    <group eventID="2" id="-1">
-                        <create-actor3 comment="false" x="37" y="67">
-                            <ACTORTYPE eid="77" id="0"/>
-                            <int id="1" val="750"/>
-                            <int id="2" val="10"/>
-                            <int id="3" val="0"/>
-                        </create-actor3>
-                        <create-actor3 comment="false" x="37" y="94">
-                            <ACTORTYPE eid="75" id="0"/>
-                            <int id="1" val="800"/>
-                            <int id="2" val="10"/>
-                            <int id="3" val="0"/>
-                        </create-actor3>
-                        <create-actor3 comment="false" x="37" y="121">
-                            <ACTORTYPE eid="79" id="0"/>
-                            <int id="1" val="850"/>
-                            <int id="2" val="10"/>
-                            <int id="3" val="0"/>
-                        </create-actor3>
-                        <create-actor3 comment="false" x="37" y="148">
-                            <ACTORTYPE eid="81" id="0"/>
-                            <int id="1" val="900"/>
-                            <int id="2" val="10"/>
-                            <int id="3" val="0"/>
-                        </create-actor3>
-                        <periodic comment="false" x="37" y="175">
-                            <group eventID="2" id="-1">
-                                <create-actor3 comment="false" x="48" y="202">
-                                    <ACTORTYPE eid="73" id="0"/>
-                                    <int id="1" val="400"/>
-                                    <int id="2" val="10"/>
-                                    <int id="3" val="0"/>
-                                </create-actor3>
-                                <create-actor3 comment="false" x="48" y="229">
-                                    <ACTORTYPE eid="71" id="0"/>
-                                    <int id="1" val="500"/>
-                                    <int id="2" val="10"/>
-                                    <int id="3" val="0"/>
-                                </create-actor3>
-                            </group>
-                            <int id="0" val="20"/>
-                            <ACTOR eid="lastcreated" id="2"/>
-                        </periodic>
-                    </group>
-                    <int id="0" val="10"/>
-                    <ACTOR eid="lastcreated" id="2"/>
-                </periodic>
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="85" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <get-val-50-1 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="50"/>
+                    <int id="2" val="450"/>
+                </draw-text>
             </group>
         </draw>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-delay comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-val-50-1 comment="false" x="26" y="42">
+                    <int id="0" val="Se dice que una vez el planeta estuvo limpio y resplandeciente"/>
+                </set-val-50-1>
+                <dolater comment="false" x="26" y="62">
+                    <group eventID="3" id="-1">
+                        <set-val-50-1 comment="false" x="37" y="89">
+                            <int id="0" val="Pero llegaron basurota y sus secuaces a contaminarlo"/>
+                        </set-val-50-1>
+                    </group>
+                    <int id="0" val="3"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+                <dolater comment="false" x="26" y="121">
+                    <group eventID="3" id="-1">
+                        <set-val-50-1 comment="false" x="37" y="148">
+                            <int id="0" val="Por medio de bolsas plasticas, botellas y otros desechos"/>
+                        </set-val-50-1>
+                    </group>
+                    <int id="0" val="6"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+                <dolater comment="false" x="26" y="180">
+                    <group eventID="3" id="-1">
+                        <set-val-50-1 comment="false" x="37" y="207">
+                            <int id="0" val="Lo que provocho que el planeta estuviera triste"/>
+                        </set-val-50-1>
+                    </group>
+                    <int id="0" val="12"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+                <dolater comment="false" x="26" y="239">
+                    <group eventID="3" id="-1">
+                        <set-val-50-1 comment="false" x="37" y="266">
+                            <int id="0" val="Pero es ahi donde llega Nino y Nina al rescate"/>
+                        </set-val-50-1>
+                    </group>
+                    <int id="0" val="15"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+                <dolater comment="false" x="26" y="298">
+                    <group eventID="3" id="-1">
+                        <set-val-50-1 comment="false" x="37" y="325">
+                            <int id="0" val="Por medio de las siguientes actividades que con su ayuda"/>
+                        </set-val-50-1>
+                    </group>
+                    <int id="0" val="18"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+                <dolater comment="false" x="26" y="357">
+                    <group eventID="3" id="-1">
+                        <set-val-50-1 comment="false" x="37" y="384">
+                            <int id="0" val="Haremos para evitar que el planeta siga contaminandose"/>
+                        </set-val-50-1>
+                    </group>
+                    <int id="0" val="23"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+                <dolater comment="false" x="26" y="416">
+                    <group eventID="3" id="-1">
+                        <scene-change-color comment="false" x="37" y="443">
+                            <SCENE eid="0" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0.5"/>
+                            <color b="0" g="0" id="3" r="0"/>
+                            <int id="4" val="0"/>
+                            <int id="5" val="0.5"/>
+                            <color b="0" g="0" id="6" r="0"/>
+                        </scene-change-color>
+                    </group>
+                    <int id="0" val="27"/>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="0"/>
+            <ACTOR eid="lastcreated" id="2"/>
+        </event-delay>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>

@@ -69,7 +69,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_8 extends SceneScript
+class Design_20_20_CrearPersonaje extends SceneScript
 {
 	
  
@@ -83,38 +83,18 @@ class SceneEvents_8 extends SceneScript
 	{
 		    
 /* ======================== When Creating ========================= */
-        createRecycledActor(getActorType(43), 115, 10, Script.FRONT);
-        runPeriodically(1000 * 15, function(timeTask:TimedTask):Void {
-                    getLastCreatedActor().setAnimation("" + "triste");
-}, null);
-        runPeriodically(1000 * 10, function(timeTask:TimedTask):Void {
-                    createRecycledActor(getActorType(77), 750, 10, Script.FRONT);
-                    createRecycledActor(getActorType(75), 800, 10, Script.FRONT);
-                    createRecycledActor(getActorType(79), 850, 10, Script.FRONT);
-                    createRecycledActor(getActorType(81), 900, 10, Script.FRONT);
-}, null);
-        runPeriodically(1000 * 20, function(timeTask:TimedTask):Void {
-                    createRecycledActor(getActorType(73), 400, 10, Script.FRONT);
-                    createRecycledActor(getActorType(71), 500, 10, Script.FRONT);
-}, null);
-    
-/* ========================= When Drawing ========================= */
-addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+        if((Engine.engine.getGameAttribute("Personaje") == 0))
 {
-if(wrapper.enabled)
-{
-        runPeriodically(1000 * 10, function(timeTask:TimedTask):Void {
-                    createRecycledActor(getActorType(77), 750, 10, Script.FRONT);
-                    createRecycledActor(getActorType(75), 800, 10, Script.FRONT);
-                    createRecycledActor(getActorType(79), 850, 10, Script.FRONT);
-                    createRecycledActor(getActorType(81), 900, 10, Script.FRONT);
-                    runPeriodically(1000 * 20, function(timeTask:TimedTask):Void {
-                                createRecycledActor(getActorType(73), 400, 10, Script.FRONT);
-                                createRecycledActor(getActorType(71), 500, 10, Script.FRONT);
-}, null);
-}, null);
+            createRecycledActor(getActorType(10), 100, 350, Script.FRONT);
+            Engine.engine.setGameAttribute("posicionjugador", 1);
 }
-});
+
+        else if((Engine.engine.getGameAttribute("Personaje") == 1))
+{
+            createRecycledActor(getActorType(35), 100, 350, Script.FRONT);
+            Engine.engine.setGameAttribute("posicionjugador", 1);
+}
+
 
 	}	      	
 	

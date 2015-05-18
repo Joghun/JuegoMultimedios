@@ -88,6 +88,7 @@ if(wrapper.enabled)
 {
         if(actor.isMousePressed())
 {
+            stopSoundOnChannel(Std.int(0));
             switchScene(GameModel.get().scenes.get(0).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
 }
 

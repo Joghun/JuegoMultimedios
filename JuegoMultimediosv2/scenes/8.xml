@@ -8,7 +8,9 @@
     <joints/>
     <regions/>
     <terrainRegions/>
-    <actors/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="33" name="BotonVolver 1" sx="0.56" sy="0.57894737" x="884" y="497" z="0"/>
+    </actors>
     <snippets/>
     <terrain>
         <p pts="4,0.0,32.0,0.0,0.0,192.0,0.0,192.0,32.0" x="352.0" y="320.0"/>

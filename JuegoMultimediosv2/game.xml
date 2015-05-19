@@ -58,23 +58,25 @@
         <group desc="Los que los niños van a recojer" id="7" name="Reciduos"/>
         <group desc="" id="8" name="BalaEnemigo"/>
         <group desc="Tiene que ser un title astracto para el actor pero que coche con el enemigo" id="9" name="TitleColicion"/>
+        <group desc="Plataformas que se muevan" id="10" name="Plataforma"/>
     </groups>
     <cgroups>
-        <cgroup g1="0" g2="1"/>
         <cgroup g1="1" g2="6"/>
         <cgroup g1="1" g2="5"/>
         <cgroup g1="1" g2="4"/>
         <cgroup g1="1" g2="3"/>
         <cgroup g1="1" g2="7"/>
+        <cgroup g1="0" g2="1"/>
         <cgroup g1="0" g2="6"/>
         <cgroup g1="0" g2="4"/>
+        <cgroup g1="0" g2="10"/>
         <cgroup g1="0" g2="8"/>
         <cgroup g1="0" g2="7"/>
-        <cgroup g1="4" g2="5"/>
         <cgroup g1="5" g2="8"/>
-        <cgroup g1="3" g2="4"/>
+        <cgroup g1="4" g2="5"/>
         <cgroup g1="4" g2="9"/>
         <cgroup g1="4" g2="7"/>
+        <cgroup g1="3" g2="4"/>
         <cgroup g1="3" g2="3"/>
         <cgroup g1="9" g2="9"/>
     </cgroups>
@@ -87,6 +89,7 @@
         <key id="5" keyname="X" name="action2" vk="88" vks="88"/>
         <key id="6" keyname="ENTER" name="enter" vk="10" vks="10"/>
         <key id="7" keyname="SPACE" name="espacio" vk="32" vks="32"/>
+        <key id="8" keyname="P" name="Pausa" vk="80" vks="80"/>
     </input>
     <attcats>
         <cat id="-1" name="Default"/>
@@ -127,7 +130,7 @@
         <poly id="24" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,3,5,7,9,10,17,16,19,21,23,22,24,26,29,28,31,35,32,33,39,37,43,41,51,50,49,48,54,52,58,56,62,60,69,70,71,65,77,79,73,75,85,84,87,81,83," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,3,5,7,9,10,17,16,19,21,23,22,24,26,29,28,31,35,32,33,39,37,43,41,51,50,49,48,54,52,58,56,62,60,69,70,71,65,77,79,73,75,85,84,87,81,83,90," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

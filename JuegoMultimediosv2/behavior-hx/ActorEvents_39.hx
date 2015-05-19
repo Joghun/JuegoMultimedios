@@ -92,7 +92,11 @@ if(wrapper.enabled && sameAsAny(getActorGroup(5),event.otherActor.getType(),even
 {
         _Vida = asNumber((_Vida - 1));
 propertyChanged("_Vida", _Vida);
+        actor.setAnimation("" + "rojo");
         recycleActor(actor.getLastCollidedActor());
+        runLater(1000 * 0.5, function(timeTask:TimedTask):Void {
+                    actor.setAnimation("" + "moviendose");
+}, actor);
 }
 });
     

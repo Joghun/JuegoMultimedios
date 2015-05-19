@@ -9,9 +9,23 @@
                         <int id="1" val="1"/>
                     </minus>
                 </set-val-28-1>
-                <die comment="false" x="26" y="77">
+                <setanim comment="false" x="26" y="77">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="rojo"/>
+                </setanim>
+                <die comment="false" x="26" y="104">
                     <ACTOR eid="lastcollided" id="0"/>
                 </die>
+                <dolater comment="false" x="26" y="131">
+                    <group eventID="1" id="-1">
+                        <setanim comment="false" x="37" y="158">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="moviendose"/>
+                        </setanim>
+                    </group>
+                    <int id="0" val="0.5"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
             </group>
             <ACTOR eid="this" id="0"/>
             <GROUP eid="5" id="1"/>

@@ -1044,6 +1044,7 @@
                 <prop id="2" list="0" val="0"/>
                 <prop id="4" list="0" val="0"/>
                 <prop id="5" list="0" val="0"/>
+                <prop id="6" list="0" val="200"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>

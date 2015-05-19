@@ -39,7 +39,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -69,44 +68,119 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_52_52_PausarJuego extends SceneScript
-{
+class Design_55_55_MovimientoNube extends ActorScript
+{          	
 	
-public var _Pusado:Float;
+public var _orientacion:Float;
+
+public var _direccion:Float;
+
+public var _xInicial:Float;
+
+public var _yInicial:Float;
+
+public var _distancia:Float;
 
  
- 	public function new(dummy:Int, dummy2:Engine)
+ 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
-		nameMap.set("Pusado", "_Pusado");
-_Pusado = 0.0;
+		super(actor);
+		nameMap.set("orientacion", "_orientacion");
+_orientacion = 0.0;
+nameMap.set("direccion", "_direccion");
+_direccion = 0.0;
+nameMap.set("xInicial", "_xInicial");
+_xInicial = 0.0;
+nameMap.set("yInicial", "_yInicial");
+_yInicial = 0.0;
+nameMap.set("distancia", "_distancia");
+_distancia = 200.0;
+nameMap.set("Actor", "actor");
 
 	}
 	
 	override public function init()
 	{
 		    
+/* ======================== When Creating ========================= */
+        _xInicial = asNumber(actor.getX());
+propertyChanged("_xInicial", _xInicial);
+        _yInicial = asNumber(actor.getY());
+propertyChanged("_yInicial", _yInicial);
+    
 /* ======================== When Updating ========================= */
 addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 {
 if(wrapper.enabled)
 {
-        if(isKeyPressed("Pausa"))
+        if((_orientacion == 0))
 {
-            if((_Pusado == 0))
+            /* "orientacion horizontal = 0" */
+            if((_direccion == 0))
 {
-                _Pusado = asNumber(1);
-propertyChanged("_Pusado", _Pusado);
-                stopSoundOnChannel(Std.int(0));
-                engine.pause();
+                /* "direccion inicio final = 0" */
+                actor.setXVelocity(10);
 }
 
-            else if((_Pusado == 1))
+            else if((_direccion == 1))
 {
-                _Pusado = asNumber(0);
-propertyChanged("_Pusado", _Pusado);
-                engine.unpause();
-                loopSoundOnChannel(getSound(22), Std.int(0));
+                /* "direccion final inicio = 1" */
+                actor.setXVelocity(-10);
+}
+
+}
+
+        else if((_orientacion == 1))
+{
+            /* "orientacion vertical  = 1" */
+            if((_direccion == 0))
+{
+                actor.setYVelocity(10);
+}
+
+            else if((_direccion == 1))
+{
+                actor.setYVelocity(-10);
+}
+
+}
+
+}
+});
+    
+/* ======================== When Updating ========================= */
+addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled)
+{
+        if((_orientacion == 0))
+{
+            if((actor.getX() < _xInicial))
+{
+                _direccion = asNumber(0);
+propertyChanged("_direccion", _direccion);
+}
+
+            else if((actor.getX() > (_xInicial + _distancia)))
+{
+                _direccion = asNumber(1);
+propertyChanged("_direccion", _direccion);
+}
+
+}
+
+        else if((_orientacion == 1))
+{
+            if((actor.getY() < (_yInicial - _distancia)))
+{
+                _direccion = asNumber(0);
+propertyChanged("_direccion", _direccion);
+}
+
+            else if((actor.getY() > _yInicial))
+{
+                _direccion = asNumber(1);
+propertyChanged("_direccion", _direccion);
 }
 
 }

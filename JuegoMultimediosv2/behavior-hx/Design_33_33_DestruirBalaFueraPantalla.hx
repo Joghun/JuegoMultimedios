@@ -82,14 +82,13 @@ class Design_33_33_DestruirBalaFueraPantalla extends ActorScript
 	override public function init()
 	{
 		    
-/* ======================== Specific Actor ======================== */
-addActorPositionListener(actor, function(enteredScreen:Bool, exitedScreen:Bool, enteredScene:Bool, exitedScene:Bool, list:Array<Dynamic>):Void
-{
-if(wrapper.enabled && exitedScreen)
-{
-        recycleActor(actor);
-}
-});
+/* ======================== When Creating ========================= */
+        runLater(1000 * 1.5, function(timeTask:TimedTask):Void {
+                    actor.fadeTo(0 / 100, 0.5, Quad.easeOut);
+}, actor);
+        runLater(1000 * 2, function(timeTask:TimedTask):Void {
+                    recycleActor(actor);
+}, actor);
 
 	}	      	
 	

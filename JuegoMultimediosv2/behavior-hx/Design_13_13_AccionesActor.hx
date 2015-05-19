@@ -140,14 +140,19 @@ addActorPositionListener(actor, function(enteredScreen:Bool, exitedScreen:Bool, 
 {
 if(wrapper.enabled && exitedScreen)
 {
+        if(actor.isAlive())
+{
+            actor.killSelfAfterLeavingScreen();
+}
+
         if((Engine.engine.getGameAttribute("Personaje") == 0))
 {
-            createRecycledActor(getActorType(10), 100, (getScreenHeight() - 70), Script.FRONT);
+            createRecycledActor(getActorType(10), 100, ((getSceneHeight()) - 300), Script.FRONT);
 }
 
         else if((Engine.engine.getGameAttribute("Personaje") == 1))
 {
-            createRecycledActor(getActorType(35), 100, (getScreenHeight() - 70), Script.FRONT);
+            createRecycledActor(getActorType(35), 100, ((getSceneHeight()) - 300), Script.FRONT);
 }
 
 }
@@ -177,7 +182,7 @@ addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
 if(wrapper.enabled && sameAsAny(getActorGroup(4),event.otherActor.getType(),event.otherActor.getGroup()))
 {
         actor.setX(100);
-        actor.setY((getScreenHeight() - 70));
+        actor.setY(((getSceneHeight()) - 300));
 }
 });
 

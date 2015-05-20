@@ -241,7 +241,7 @@
             </group>
             <ACTOR eid="this" id="0"/>
             <int id="1" val="1"/>
-            <int id="2" val="1"/>
+            <int id="2" val="0"/>
         </event-actor-screen>
     </group>
     <group eventID="6" id="-1"/>

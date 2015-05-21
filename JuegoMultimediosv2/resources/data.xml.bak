@@ -1174,6 +1174,9 @@
                 <prop id="62" list="0" val="0.2"/>
                 <prop id="60" list="0" val="true"/>
             </s>
+            <s enabled="true" id="58">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="9">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="4" list="0" val="0.0"/>
@@ -1206,11 +1209,11 @@
         <anim across="1" down="1" durations="100" height="150" id="5" loop="true" name="dizquierda" numframes="1" originx="50" originy="75" sync="false" version="2" width="100">
             <poly data="4,20,0,55,0,55,150,20,150" density="0.1" fric="0.2" gid="-1000" id="0" name="dizquierda" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="2" down="2" durations="100,100,100" height="300" id="6" loop="true" name="td" numframes="3" originx="39" originy="75" sync="false" version="2" width="156">
-            <poly data="4,30,0,60,0,60,150,30,150" density="0.1" fric="0.2" gid="-1000" id="0" name="td1" rest="0.0" sensor="false"/>
+        <anim across="2" down="2" durations="100,100,100" height="300" id="6" loop="false" name="td" numframes="3" originx="50" originy="75" sync="false" version="2" width="200">
+            <poly data="4,0,0,100,0,100,150,0,150" density="0.1" fric="0.2" gid="-1000" id="0" name="td" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="2" down="2" durations="100,100,100" height="300" id="7" loop="true" name="ti" numframes="3" originx="39" originy="75" sync="false" version="2" width="156">
-            <poly data="4,20,0,50,0,50,150,20,150" density="0.1" fric="0.2" gid="-1000" id="0" name="ti" rest="0.0" sensor="false"/>
+        <anim across="2" down="2" durations="100,100,100" height="300" id="7" loop="false" name="ti" numframes="3" originx="50" originy="75" sync="false" version="2" width="200">
+            <poly data="4,0,0,100,0,100,150,0,150" density="0.1" fric="0.2" gid="-1000" id="0" name="ti" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="6" fixedrot="true" fric="0.2" gid="0" id="10" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Nino" oid="148291" pausable="true" physicsMode="0" rest="0.0" shared="true" sprite="11" static="false">
@@ -1241,6 +1244,9 @@
                 <prop id="62" list="0" val="0.2"/>
                 <prop id="60" list="0" val="true"/>
             </s>
+            <s enabled="true" id="58">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="9">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="4" list="0" val="0.0"/>
@@ -1254,7 +1260,7 @@
             </s>
         </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="150" id="11" name="Nino" shared="false" width="100">
+    <sprite atlasID="0" default="4" defaultAnimation="4" desc="" height="150" id="11" name="Nino" shared="false" width="100">
         <anim across="3" down="2" durations="100,100,100,100,100,100" height="300" id="0" loop="true" name="derecha" numframes="6" originx="50" originy="75" sync="false" version="2" width="300">
             <poly data="4,40,0,70,0,70,150,40,150" density="0.1" fric="0.2" gid="-1000" id="0" name="caminandoderecha" rest="0.0" sensor="false"/>
         </anim>
@@ -1273,11 +1279,11 @@
         <anim across="1" down="1" durations="100" height="150" id="5" loop="true" name="dizquierda" numframes="1" originx="50" originy="75" sync="false" version="2" width="100">
             <poly data="4,30,0,60,0,60,150,30,150" density="0.1" fric="0.2" gid="-1000" id="0" name="dizquierda" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="2" down="2" durations="100,100,100" height="300" id="6" loop="true" name="td" numframes="3" originx="46" originy="75" sync="false" version="2" width="186">
-            <poly data="4,40,0,70,0,70,150,40,150" density="0.1" fric="0.2" gid="-1000" id="0" name="td" rest="0.0" sensor="false"/>
+        <anim across="2" down="2" durations="100,100,100" height="300" id="6" loop="false" name="td" numframes="3" originx="50" originy="75" sync="false" version="2" width="200">
+            <poly data="4,0,0,100,0,100,150,0,150" density="0.1" fric="0.2" gid="-1000" id="0" name="td" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="2" down="2" durations="100,100,100" height="300" id="7" loop="true" name="ti" numframes="3" originx="46" originy="75" sync="false" version="2" width="186">
-            <poly data="4,20,0,50,0,50,150,20,150" density="0.1" fric="0.2" gid="-1000" id="0" name="ti" rest="0.0" sensor="false"/>
+        <anim across="2" down="2" durations="100,100,100" height="300" id="7" loop="false" name="ti" numframes="3" originx="50" originy="75" sync="false" version="2" width="200">
+            <poly data="4,0,0,100,0,100,150,0,150" density="0.1" fric="0.2" gid="-1000" id="0" name="ti" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="54" fixedrot="true" fric="1.0" gid="10" id="90" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Nube" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="91" static="false">

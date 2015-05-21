@@ -3,10 +3,19 @@
     <group eventID="2" id="0">
         <event-key-press-release comment="false" x="15" y="15">
             <group eventID="2" id="-1">
-                <play-sound4 comment="false" x="26" y="42">
-                    <int id="0" val="0"/>
-                    <SOUND eid="21" id="1"/>
-                </play-sound4>
+                <if comment="false" x="26" y="42">
+                    <group eventID="2" id="-1">
+                        <play-sound-channel comment="false" x="37" y="72">
+                            <int id="0" val="0"/>
+                            <SOUND eid="21" id="1"/>
+                            <int id="2" val="1"/>
+                        </play-sound-channel>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-5 comment="false" id="0" x="0" y="0"/>
+                        <false comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
             </group>
             <CONTROL eid="0" id="0"/>
             <int id="1" val="0"/>
@@ -21,7 +30,7 @@
                         <play-sound-channel comment="false" x="37" y="78">
                             <int id="0" val="1"/>
                             <SOUND eid="23" id="1"/>
-                            <int id="2" val="1"/>
+                            <int id="2" val="2"/>
                         </play-sound-channel>
                     </group>
                     <or comment="false" id="0" x="0" y="0">
@@ -39,7 +48,7 @@
                     <group eventID="3" id="-1">
                         <control-sound-channel comment="false" x="37" y="155">
                             <int id="0" val="0"/>
-                            <int id="1" val="1"/>
+                            <int id="1" val="2"/>
                         </control-sound-channel>
                     </group>
                     <or comment="false" id="0" x="0" y="0">
@@ -133,7 +142,7 @@
                                     <ACTOR eid="lastcreated" id="0"/>
                                     <int id="1" val="1"/>
                                     <int id="2" val="1"/>
-                                    <int id="3" val="0"/>
+                                    <int id="3" val="0.2"/>
                                     <int id="4" val="15"/>
                                 </push-shove>
                             </group>

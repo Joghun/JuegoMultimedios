@@ -93,20 +93,27 @@ if(wrapper.enabled)
 {
         if(isKeyPressed("Pausa"))
 {
-            if((_Pusado == 0))
+            if((Engine.engine.getGameAttribute("Pausado") == false))
 {
-                _Pusado = asNumber(1);
-propertyChanged("_Pusado", _Pusado);
+                Engine.engine.setGameAttribute("Pausado", true);
                 stopSoundOnChannel(Std.int(0));
                 engine.pause();
 }
 
-            else if((_Pusado == 1))
+            else if((Engine.engine.getGameAttribute("Pausado") == true))
 {
-                _Pusado = asNumber(0);
-propertyChanged("_Pusado", _Pusado);
+                Engine.engine.setGameAttribute("Pausado", false);
                 engine.unpause();
-                loopSoundOnChannel(getSound(22), Std.int(0));
+                if((getCurrentSceneName() == "PantallaDesierto"))
+{
+                    loopSoundOnChannel(getSound(31), Std.int(0));
+}
+
+                if((getCurrentSceneName() == "PantallaEscuela"))
+{
+                    loopSoundOnChannel(getSound(22), Std.int(0));
+}
+
 }
 
 }

@@ -7,39 +7,60 @@
                     <group eventID="2" id="-1">
                         <if comment="false" x="37" y="73">
                             <group eventID="2" id="-1">
-                                <set-val-52-1 comment="false" x="48" y="103">
-                                    <int id="0" val="1"/>
-                                </set-val-52-1>
-                                <control-sound-channel comment="false" x="48" y="123">
+                                <set-game-val-5 comment="false" x="48" y="103">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-game-val-5>
+                                <control-sound-channel comment="false" x="48" y="128">
                                     <int id="0" val="0"/>
                                     <int id="1" val="0"/>
                                 </control-sound-channel>
-                                <pause-unpause comment="false" x="48" y="150">
+                                <pause-unpause comment="false" x="48" y="155">
                                     <int id="0" val="0"/>
                                 </pause-unpause>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
-                                <get-val-52-1 comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="0"/>
+                                <get-game-val-5 comment="false" id="0" x="0" y="0"/>
+                                <false comment="false" id="1" x="0" y="0"/>
                             </eq>
                         </if>
-                        <else-if comment="false" x="37" y="189">
+                        <else-if comment="false" x="37" y="194">
                             <group eventID="2" id="-1">
-                                <set-val-52-1 comment="false" x="48" y="219">
-                                    <int id="0" val="0"/>
-                                </set-val-52-1>
-                                <pause-unpause comment="false" x="48" y="239">
+                                <set-game-val-5 comment="false" x="48" y="224">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-game-val-5>
+                                <pause-unpause comment="false" x="48" y="249">
                                     <int id="0" val="1"/>
                                 </pause-unpause>
-                                <play-sound-channel comment="false" x="48" y="266">
-                                    <int id="0" val="1"/>
-                                    <SOUND eid="22" id="1"/>
-                                    <int id="2" val="0"/>
-                                </play-sound-channel>
+                                <if comment="false" x="48" y="276">
+                                    <group eventID="2" id="-1">
+                                        <play-sound-channel comment="false" x="59" y="306">
+                                            <int id="0" val="1"/>
+                                            <SOUND eid="31" id="1"/>
+                                            <int id="2" val="0"/>
+                                        </play-sound-channel>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <scenename comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="PantallaDesierto"/>
+                                    </eq>
+                                </if>
+                                <if comment="false" x="48" y="345">
+                                    <group eventID="2" id="-1">
+                                        <play-sound-channel comment="false" x="59" y="375">
+                                            <int id="0" val="1"/>
+                                            <SOUND eid="22" id="1"/>
+                                            <int id="2" val="0"/>
+                                        </play-sound-channel>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <scenename comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="PantallaEscuela"/>
+                                    </eq>
+                                </if>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
-                                <get-val-52-1 comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="1"/>
+                                <get-game-val-5 comment="false" id="0" x="0" y="0"/>
+                                <true comment="false" id="1" x="0" y="0"/>
                             </eq>
                         </else-if>
                     </group>

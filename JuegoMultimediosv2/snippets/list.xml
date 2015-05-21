@@ -106,11 +106,12 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_12_12_MovimientoEnemigo" classname="scripts.Design_12_12_MovimientoEnemigo" desc="" description="" design="true" drawOrder="0" id="12" name="AccionesEnemigo" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <number default="0.0" defaultValue="0.0" desc="Guarda el x inicial de actor" dropdown="" fullname="PosicionInicial" hidden="true" id="1" name="_PosicionInicial" order="1"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="direccion" hidden="false" id="2" name="_direccion" order="2"/>
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
         <events>
             <event displayName="Movimiento" enabled="true" id="1" name="step" order="1" repeats="true"/>
-            <event displayName="PisicionInicial" enabled="true" id="2" name="init" order="3" repeats="true"/>
+            <event displayName="PisicionInicial" enabled="true" id="2" name="init" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_13_13_AccionesActor" classname="scripts.Design_13_13_AccionesActor" desc="" description="" design="true" drawOrder="0" id="13" name="EfectosJugador" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
@@ -120,9 +121,9 @@
             <event displayName="SonidoSalto" enabled="true" id="2" name="event-key-press-release" order="2" repeats="true"/>
             <event displayName="SonidoCaminar" enabled="true" id="3" name="step" order="5" repeats="true"/>
             <event displayName="Lanzar" enabled="true" id="4" name="step" order="7" repeats="true"/>
-            <event displayName="AlmacenarPosicion" enabled="true" id="5" name="step" order="10" repeats="true"/>
-            <event displayName="Enters Screen" enabled="true" id="6" name="event-actor-screen" order="8" repeats="true"/>
-            <event displayName=" Actor - Group" enabled="true" id="7" name="event-collide-actortogroup" order="11" repeats="true"/>
+            <event displayName="AlmacenarPosicion" enabled="true" id="5" name="step" order="12" repeats="true"/>
+            <event displayName="Enters Screen" enabled="false" id="6" name="event-actor-screen" order="9" repeats="true"/>
+            <event displayName="ChoqueEnemigo" enabled="true" id="7" name="event-collide-actortogroup" order="13" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_14_14_Puntaje" classname="scripts.Design_14_14_Puntaje" desc="" description="" design="true" drawOrder="0" id="14" name="Puntaje" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
@@ -313,7 +314,7 @@
         <number default="0" defaultValue="0" desc="Horizontal = 0&#10;Vertical = 1" dropdown="" fullname="orientacion" hidden="false" id="1" name="_orientacion" order="1"/>
         <number default="0" defaultValue="0" desc="Inicio final = 0&#10;Final inicio = 1" dropdown="" fullname="direccion" hidden="false" id="2" name="_direccion" order="2"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="xInicial" hidden="true" id="4" name="_xInicial" order="4"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="yInicial" hidden="true" id="5" name="_yInicial" order="5"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="yInicial" hidden="true" id="5" name="_yInicial" order="5"/>
         <number default="200" defaultValue="200" desc="distancia que va a recorrer el objeto" dropdown="" fullname="distancia" hidden="false" id="6" name="_distancia" order="3"/>
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
@@ -328,9 +329,9 @@
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="yInicial" hidden="false" id="3" name="_yInicial" order="1"/>
         <blocks/>
         <events>
-            <event displayName="Movimiento" enabled="false" id="1" name="step" order="1" repeats="true"/>
-            <event displayName="CambiarPosicion" enabled="false" id="2" name="step" order="3" repeats="true"/>
-            <event displayName="PosicionInicial" enabled="false" id="3" name="init" order="2" repeats="true"/>
+            <event displayName="Movimiento" enabled="false" id="1" name="step" order="2" repeats="true"/>
+            <event displayName="CambiarPosicion" enabled="false" id="2" name="step" order="1" repeats="true"/>
+            <event displayName="PosicionInicial" enabled="false" id="3" name="init" order="3" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_52_52_PausarJuego" classname="scripts.Design_52_52_PausarJuego" desc="" description="" design="true" drawOrder="0" id="52" name="PausarJuego" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
@@ -338,6 +339,19 @@
         <blocks/>
         <events>
             <event displayName="EstadoJuego" enabled="true" id="2" name="step" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_58_58_CannotExitScreen" classname="scripts.Design_58_58_CannotExitScreen" desc="Prevents the actor from going beyond the screen's bounds." description="Prevents the actor from going beyond the screen's bounds." design="true" drawOrder="0" id="58" name="Cannot Exit Screen" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_11" classname="scripts.SceneEvents_11" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="57" name="SceneEvents_11" oid="-1" package="scripts." sceneid="11" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events>
+            <event displayName="Enters Region" enabled="true" id="1" name="event-actor-region" order="1" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_10" classname="scripts.SceneEvents_10" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="56" name="SceneEvents_10" oid="-1" package="scripts." sceneid="10" scenespecific="true" shared="false" type="scene">

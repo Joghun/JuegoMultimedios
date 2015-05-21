@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <scenes>
     <scene desc="" format="3.3.0" id="0" name="MenuPrincipal"/>
-    <scene desc="" format="3.3.0" id="1" name="Pantalla1Esena1"/>
+    <scene desc="" format="3.3.0" id="1" name="PantallaEscuela"/>
     <scene desc="" format="3.3.0" id="2" name="ElegirPersonaje"/>
     <scene desc="" format="3.3.0" id="4" name="Controles"/>
     <scene desc="" format="3.3.0" id="5" name="Pantalla2Esena2"/>
@@ -9,4 +9,5 @@
     <scene desc="" format="3.3.0" id="8" name="Introduccion"/>
     <scene desc="" format="3.3.0" id="9" name="pantallaAire"/>
     <scene desc="" format="3.3.0" id="10" name="PantallaDesierto"/>
+    <scene desc="" format="3.3.0" id="11" name="Preguntas"/>
 </scenes>

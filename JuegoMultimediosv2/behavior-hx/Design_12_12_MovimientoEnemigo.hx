@@ -68,14 +68,26 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_58_58_CannotExitScreen extends ActorScript
+class Design_12_12_MovimientoEnemigo extends ActorScript
 {          	
 	
+public var _PosicionInicial:Float;
+
+public var _direccion:Bool;
+
+public var _distancia:Float;
+
  
  	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Actor", "actor");
+		nameMap.set("PosicionInicial", "_PosicionInicial");
+_PosicionInicial = 0.0;
+nameMap.set("direccion", "_direccion");
+_direccion = false;
+nameMap.set("distancia", "_distancia");
+_distancia = 60;
+nameMap.set("Actor", "actor");
 
 	}
 	
@@ -84,32 +96,32 @@ class Design_58_58_CannotExitScreen extends ActorScript
 		    
 /* ======================== When Creating ========================= */
         actor.makeAlwaysSimulate();
+        _PosicionInicial = asNumber(actor.getX());
+propertyChanged("_PosicionInicial", _PosicionInicial);
+        if((randomFloat() < 0.50))
+{
+            actor.setXVelocity(-10);
+}
+
+        else
+{
+            actor.setXVelocity(10);
+}
+
     
 /* ======================== When Updating ========================= */
 addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 {
 if(wrapper.enabled)
 {
-        if((actor.getX() < 0))
+        if((actor.getX() < (_PosicionInicial - _distancia)))
 {
-            actor.setX(0);
+            actor.setXVelocity(10);
 }
 
-        if((actor.getY() < 0))
+        else if((actor.getX() > (_PosicionInicial + _distancia)))
 {
-            actor.setY(0);
-}
-
-        /* "Use scene, not screen" */
-        if(((actor.getX() + (actor.getWidth())) > (getSceneWidth())))
-{
-            actor.setX(((getSceneWidth()) - (actor.getWidth())));
-}
-
-        if(((actor.getY() + (actor.getHeight())) > (getSceneHeight())))
-{
-            actor.setX(100);
-            actor.setY(((getSceneHeight()) - 300));
+            actor.setXVelocity(-10);
 }
 
 }

@@ -9,12 +9,12 @@
                 <draw-text comment="false" x="26" y="67">
                     <int id="0" val="Puntaje:"/>
                     <int id="1" val="500"/>
-                    <int id="2" val="10"/>
+                    <int id="2" val="15"/>
                 </draw-text>
                 <draw-text comment="false" x="26" y="87">
                     <get-game-val-4 comment="false" id="0" x="0" y="0"/>
                     <int id="1" val="600"/>
-                    <int id="2" val="10"/>
+                    <int id="2" val="15"/>
                 </draw-text>
             </group>
         </draw>

@@ -68,7 +68,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_58_58_CannotExitScreen extends ActorScript
+class Design_13_13_AccionesActor extends ActorScript
 {          	
 	
  
@@ -82,36 +82,88 @@ class Design_58_58_CannotExitScreen extends ActorScript
 	override public function init()
 	{
 		    
-/* ======================== When Creating ========================= */
-        actor.makeAlwaysSimulate();
+/* =========================== Keyboard =========================== */
+addKeyStateListener("up", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled && pressed)
+{
+        if((Engine.engine.getGameAttribute("Pausado") == false))
+{
+            playSoundOnChannel(getSound(21), Std.int(1));
+}
+
+}
+});
     
 /* ======================== When Updating ========================= */
 addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 {
 if(wrapper.enabled)
 {
-        if((actor.getX() < 0))
+        if((isKeyPressed("right") || isKeyPressed("left")))
 {
-            actor.setX(0);
+            loopSoundOnChannel(getSound(23), Std.int(2));
 }
 
-        if((actor.getY() < 0))
+        if((isKeyReleased("right") || isKeyReleased("left")))
 {
-            actor.setY(0);
+            stopSoundOnChannel(Std.int(2));
 }
 
-        /* "Use scene, not screen" */
-        if(((actor.getX() + (actor.getWidth())) > (getSceneWidth())))
+}
+});
+    
+/* ======================== When Updating ========================= */
+addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 {
-            actor.setX(((getSceneWidth()) - (actor.getWidth())));
+if(wrapper.enabled)
+{
+        if((Engine.engine.getGameAttribute("disparo") == 1))
+{
+            if((isKeyPressed("espacio") && (Engine.engine.getGameAttribute("posicionjugador") == 0)))
+{
+                actor.setAnimation("" + "ti");
+                createRecycledActor(getActorType(37), (actor.getX() + 0), (actor.getY() + 50), Script.FRONT);
+                getLastCreatedActor().applyImpulse(-1, 0, 15);
 }
 
-        if(((actor.getY() + (actor.getHeight())) > (getSceneHeight())))
+            if((isKeyPressed("espacio") && (Engine.engine.getGameAttribute("posicionjugador") == 1)))
 {
-            actor.setX(100);
-            actor.setY(((getSceneHeight()) - 300));
+                actor.setAnimation("" + "td");
+                createRecycledActor(getActorType(37), (actor.getX() + 100), (actor.getY() + 50), Script.FRONT);
+                getLastCreatedActor().applyImpulse(1, 0.2, 15);
 }
 
+}
+
+}
+});
+    
+/* ======================== When Updating ========================= */
+addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled)
+{
+        if(isKeyPressed("left"))
+{
+            Engine.engine.setGameAttribute("posicionjugador", 0);
+}
+
+        else if(isKeyPressed("right"))
+{
+            Engine.engine.setGameAttribute("posicionjugador", 1);
+}
+
+}
+});
+    
+/* ======================= Member of Group ======================== */
+addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled && sameAsAny(getActorGroup(4),event.otherActor.getType(),event.otherActor.getGroup()))
+{
+        actor.setX(100);
+        actor.setY(((getSceneHeight()) - 300));
 }
 });
 

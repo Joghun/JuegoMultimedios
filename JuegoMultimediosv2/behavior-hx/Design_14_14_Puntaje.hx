@@ -88,8 +88,8 @@ addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>
 if(wrapper.enabled)
 {
         g.setFont(getFont(28));
-        g.drawString("" + "Puntaje:", 500, 10);
-        g.drawString("" + Engine.engine.getGameAttribute("PuntajeEscena"), 600, 10);
+        g.drawString("" + "Puntaje:", 500, 15);
+        g.drawString("" + Engine.engine.getGameAttribute("PuntajeEscena"), 600, 15);
 }
 });
 

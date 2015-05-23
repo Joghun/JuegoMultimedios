@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <set-game-val-6 comment="false" x="37" y="73">
+                            <get-val-59-1 comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-6>
+                        <if comment="false" x="37" y="98">
+                            <group eventID="1" id="-1">
+                                <set-game-val-9 comment="false" x="48" y="128">
+                                    <int id="0" val="50"/>
+                                </set-game-val-9>
+                                <set-game-val-3 comment="false" x="48" y="148">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                        <plus comment="false" id="1" x="0" y="0">
+                                            <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                                            <get-game-val-9 comment="false" id="1" x="0" y="0"/>
+                                        </plus>
+                                    </plus>
+                                </set-game-val-3>
+                                <set-game-val-8 comment="false" x="48" y="183">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-game-val-8>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-game-val-7 comment="false" id="0" x="0" y="0"/>
+                                <get-game-val-6 comment="false" id="1" x="0" y="0"/>
+                            </eq>
+                        </if>
+                        <else comment="false" x="37" y="220">
+                            <group eventID="1" id="-1">
+                                <set-game-val-9 comment="false" x="48" y="240">
+                                    <int id="0" val="0"/>
+                                </set-game-val-9>
+                                <set-game-val-3 comment="false" x="48" y="260">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                        <plus comment="false" id="1" x="0" y="0">
+                                            <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                                            <get-game-val-9 comment="false" id="1" x="0" y="0"/>
+                                        </plus>
+                                    </plus>
+                                </set-game-val-3>
+                                <set-game-val-8 comment="false" x="48" y="295">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-game-val-8>
+                            </group>
+                        </else>
+                        <showhide-layer2 comment="false" x="37" y="332">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="Layer 0"/>
+                        </showhide-layer2>
+                        <showhide-layer2 comment="false" x="37" y="359">
+                            <int id="0" val="1"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="Layer 2"/>
+                        </showhide-layer2>
+                    </group>
+                    <amousestate comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </amousestate>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

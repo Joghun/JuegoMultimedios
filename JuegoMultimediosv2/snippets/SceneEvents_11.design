@@ -1,12 +1,91 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <event-actor-region comment="false" x="15" y="15">
-            <group eventID="1" id="-1"/>
-            <int id="0" val="0"/>
-            <REGION eid="lastcreated" id="1"/>
-            <ACTOR eid="lastcreated" id="2"/>
-        </event-actor-region>
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="85" id="0"/>
+                </set-font-new>
+                <set-val-57-1 comment="false" x="26" y="67">
+                    <randint comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <int id="1" val="4"/>
+                    </randint>
+                </set-val-57-1>
+                <if comment="false" x="26" y="92">
+                    <group eventID="1" id="-1">
+                        <draw-text comment="false" x="37" y="122">
+                            <int id="0" val="Pregunta"/>
+                            <int id="1" val="30"/>
+                            <int id="2" val="30"/>
+                        </draw-text>
+                        <set-game-val-7 comment="false" x="37" y="142">
+                            <int id="0" val="1"/>
+                        </set-game-val-7>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-57-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="174">
+                    <group eventID="1" id="-1">
+                        <draw-text comment="false" x="37" y="204">
+                            <int id="0" val="Pregunta2"/>
+                            <int id="1" val="30"/>
+                            <int id="2" val="30"/>
+                        </draw-text>
+                        <set-game-val-7 comment="false" x="37" y="224">
+                            <int id="0" val="3"/>
+                        </set-game-val-7>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-57-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="2"/>
+                    </eq>
+                </if>
+            </group>
+        </draw>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <draw-text comment="false" x="26" y="40">
+                    <int id="0" val="Puntos de escena: "/>
+                    <int id="1" val="300"/>
+                    <int id="2" val="150"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="60">
+                    <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="400"/>
+                    <int id="2" val="150"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="85">
+                    <int id="0" val="Puntos extra:"/>
+                    <int id="1" val="300"/>
+                    <int id="2" val="200"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="105">
+                    <get-game-val-9 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="400"/>
+                    <int id="2" val="200"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="130">
+                    <int id="0" val="Puntaje total:"/>
+                    <int id="1" val="300"/>
+                    <int id="2" val="250"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="150">
+                    <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="400"/>
+                    <int id="2" val="250"/>
+                </draw-text>
+                <set-game-val-4 comment="false" x="26" y="175">
+                    <int id="0" val="0"/>
+                </set-game-val-4>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
 </groups>

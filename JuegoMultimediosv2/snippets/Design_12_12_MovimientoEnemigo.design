@@ -18,7 +18,7 @@
                         </get-xy>
                         <minus comment="false" id="1" x="0" y="0">
                             <get-val-12-1 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="60"/>
+                            <get-val-12-3 comment="false" id="1" x="0" y="0"/>
                         </minus>
                     </less>
                 </if>
@@ -37,7 +37,7 @@
                         </get-xy>
                         <plus comment="false" id="1" x="0" y="0">
                             <get-val-12-1 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="60"/>
+                            <get-val-12-3 comment="false" id="1" x="0" y="0"/>
                         </plus>
                     </more>
                 </else-if>

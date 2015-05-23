@@ -39,7 +39,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -69,23 +68,27 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_10 extends SceneScript
-{
+class ActorEvents_90 extends ActorScript
+{          	
 	
+public var _direccion:Float;
+
+public var _yInicial:Float;
+
  
- 	public function new(dummy:Int, dummy2:Engine)
+ 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
-		
+		super(actor);
+		nameMap.set("direccion", "_direccion");
+_direccion = 1.0;
+nameMap.set("yInicial", "_yInicial");
+_yInicial = 0.0;
+
 	}
 	
 	override public function init()
 	{
-		    
-/* ======================== When Creating ========================= */
-        engine.moveCamera(0, (getSceneHeight()));
-        loopSoundOnChannel(getSound(31), Std.int(0));
-
+		
 	}	      	
 	
 	override public function forwardMessage(msg:String)

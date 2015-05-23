@@ -68,14 +68,34 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_58_58_CannotExitScreen extends ActorScript
+class Design_55_55_MovimientoNube extends ActorScript
 {          	
 	
+public var _orientacion:Float;
+
+public var _direccion:Float;
+
+public var _xInicial:Float;
+
+public var _yInicial:Float;
+
+public var _distancia:Float;
+
  
  	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Actor", "actor");
+		nameMap.set("orientacion", "_orientacion");
+_orientacion = 0.0;
+nameMap.set("direccion", "_direccion");
+_direccion = 0.0;
+nameMap.set("xInicial", "_xInicial");
+_xInicial = 0.0;
+nameMap.set("yInicial", "_yInicial");
+_yInicial = 0.0;
+nameMap.set("distancia", "_distancia");
+_distancia = 200.0;
+nameMap.set("Actor", "actor");
 
 	}
 	
@@ -83,33 +103,86 @@ class Design_58_58_CannotExitScreen extends ActorScript
 	{
 		    
 /* ======================== When Creating ========================= */
-        actor.makeAlwaysSimulate();
+        _xInicial = asNumber(actor.getX());
+propertyChanged("_xInicial", _xInicial);
+        _yInicial = asNumber(actor.getY());
+propertyChanged("_yInicial", _yInicial);
     
 /* ======================== When Updating ========================= */
 addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 {
 if(wrapper.enabled)
 {
-        if((actor.getX() < 0))
+        if((_orientacion == 0))
 {
-            actor.setX(0);
+            /* "orientacion horizontal = 0" */
+            if((_direccion == 0))
+{
+                /* "direccion inicio final = 0" */
+                actor.setXVelocity(10);
 }
 
-        if((actor.getY() < 0))
+            else if((_direccion == 1))
 {
-            actor.setY(0);
+                /* "direccion final inicio = 1" */
+                actor.setXVelocity(-10);
 }
 
-        /* "Use scene, not screen" */
-        if(((actor.getX() + (actor.getWidth())) > (getSceneWidth())))
-{
-            actor.setX(((getSceneWidth()) - (actor.getWidth())));
 }
 
-        if(((actor.getY() + (actor.getHeight())) > (getSceneHeight())))
+        else if((_orientacion == 1))
 {
-            actor.setX(100);
-            actor.setY(((getSceneHeight()) - 300));
+            /* "orientacion vertical  = 1" */
+            if((_direccion == 0))
+{
+                actor.setYVelocity(10);
+}
+
+            else if((_direccion == 1))
+{
+                actor.setYVelocity(-10);
+}
+
+}
+
+}
+});
+    
+/* ======================== When Updating ========================= */
+addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled)
+{
+        if((_orientacion == 0))
+{
+            if((actor.getX() < _xInicial))
+{
+                _direccion = asNumber(0);
+propertyChanged("_direccion", _direccion);
+}
+
+            else if((actor.getX() > (_xInicial + _distancia)))
+{
+                _direccion = asNumber(1);
+propertyChanged("_direccion", _direccion);
+}
+
+}
+
+        else if((_orientacion == 1))
+{
+            if((actor.getY() < (_yInicial - _distancia)))
+{
+                _direccion = asNumber(0);
+propertyChanged("_direccion", _direccion);
+}
+
+            else if((actor.getY() > _yInicial))
+{
+                _direccion = asNumber(1);
+propertyChanged("_direccion", _direccion);
+}
+
 }
 
 }

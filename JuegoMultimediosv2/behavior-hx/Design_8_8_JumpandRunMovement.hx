@@ -278,34 +278,12 @@ propertyChanged("_FacingLeft", _FacingLeft);
 {
             if(_FacingLeft)
 {
-                if((actor.getAnimation() == "ti"))
-{
-                    runLater(1000 * 0.5, function(timeTask:TimedTask):Void {
-                                actor.setAnimation("" + _RunLeftAnimation);
-}, actor);
-}
-
-                else
-{
-                    actor.setAnimation("" + _RunLeftAnimation);
-}
-
+                actor.setAnimation("" + _RunLeftAnimation);
 }
 
             else
 {
-                if((actor.getAnimation() == "td"))
-{
-                    runLater(1000 * 0.5, function(timeTask:TimedTask):Void {
-                                actor.setAnimation("" + _RunRightAnimation);
-}, actor);
-}
-
-                else
-{
-                    actor.setAnimation("" + _RunRightAnimation);
-}
-
+                actor.setAnimation("" + _RunRightAnimation);
 }
 
 }
@@ -314,34 +292,12 @@ propertyChanged("_FacingLeft", _FacingLeft);
 {
             if(_FacingLeft)
 {
-                if((actor.getAnimation() == "dizquierda"))
-{
-                    runLater(1000 * 0.5, function(timeTask:TimedTask):Void {
-                                actor.setAnimation("" + _IdleLeftAnimation);
-}, actor);
-}
-
-                else
-{
-                    actor.setAnimation("" + _IdleLeftAnimation);
-}
-
+                actor.setAnimation("" + _IdleLeftAnimation);
 }
 
             else
 {
-                if((actor.getAnimation() == "dderecha"))
-{
-                    runLater(1000 * 0.5, function(timeTask:TimedTask):Void {
-                                actor.setAnimation("" + _IdleRightAnimation);
-}, actor);
-}
-
-                else
-{
-                    actor.setAnimation("" + _IdleRightAnimation);
-}
-
+                actor.setAnimation("" + _IdleRightAnimation);
 }
 
 }

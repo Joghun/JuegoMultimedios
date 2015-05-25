@@ -9,5 +9,6 @@
     <scene desc="" format="3.3.0" id="8" name="Introduccion"/>
     <scene desc="" format="3.3.0" id="9" name="pantallaAire"/>
     <scene desc="" format="3.3.0" id="10" name="PantallaDesierto"/>
-    <scene desc="" format="3.3.0" id="11" name="Preguntas"/>
+    <scene desc="" format="3.3.0" id="11" name="Clasificar"/>
+    <scene desc="" format="3.3.0" id="12" name="PuntajePorEscena"/>
 </scenes>

@@ -5,15 +5,12 @@
             <group eventID="1" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="1" id="-1">
-                        <set-game-val-6 comment="false" x="37" y="73">
-                            <get-val-59-1 comment="false" id="0" x="0" y="0"/>
-                        </set-game-val-6>
-                        <if comment="false" x="37" y="98">
+                        <if comment="false" x="37" y="73">
                             <group eventID="1" id="-1">
-                                <set-game-val-9 comment="false" x="48" y="128">
+                                <set-game-val-9 comment="false" x="48" y="98">
                                     <int id="0" val="50"/>
                                 </set-game-val-9>
-                                <set-game-val-3 comment="false" x="48" y="148">
+                                <set-game-val-3 comment="false" x="48" y="118">
                                     <plus comment="false" id="0" x="0" y="0">
                                         <get-game-val-3 comment="false" id="0" x="0" y="0"/>
                                         <plus comment="false" id="1" x="0" y="0">
@@ -22,21 +19,21 @@
                                         </plus>
                                     </plus>
                                 </set-game-val-3>
-                                <set-game-val-8 comment="false" x="48" y="183">
+                                <set-game-val-8 comment="false" x="48" y="153">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-game-val-8>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
-                                <get-game-val-7 comment="false" id="0" x="0" y="0"/>
-                                <get-game-val-6 comment="false" id="1" x="0" y="0"/>
+                                <int id="0" val=""/>
+                                <int id="1" val=""/>
                             </eq>
                         </if>
-                        <else comment="false" x="37" y="220">
+                        <else comment="false" x="37" y="190">
                             <group eventID="1" id="-1">
-                                <set-game-val-9 comment="false" x="48" y="240">
+                                <set-game-val-9 comment="false" x="48" y="210">
                                     <int id="0" val="0"/>
                                 </set-game-val-9>
-                                <set-game-val-3 comment="false" x="48" y="260">
+                                <set-game-val-3 comment="false" x="48" y="230">
                                     <plus comment="false" id="0" x="0" y="0">
                                         <get-game-val-3 comment="false" id="0" x="0" y="0"/>
                                         <plus comment="false" id="1" x="0" y="0">
@@ -45,17 +42,17 @@
                                         </plus>
                                     </plus>
                                 </set-game-val-3>
-                                <set-game-val-8 comment="false" x="48" y="295">
+                                <set-game-val-8 comment="false" x="48" y="265">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-game-val-8>
                             </group>
                         </else>
-                        <showhide-layer2 comment="false" x="37" y="332">
+                        <showhide-layer2 comment="false" x="37" y="302">
                             <int id="0" val="0"/>
                             <int id="1" val="1"/>
                             <int id="2" val="Layer 0"/>
                         </showhide-layer2>
-                        <showhide-layer2 comment="false" x="37" y="359">
+                        <showhide-layer2 comment="false" x="37" y="329">
                             <int id="0" val="1"/>
                             <int id="1" val="1"/>
                             <int id="2" val="Layer 2"/>

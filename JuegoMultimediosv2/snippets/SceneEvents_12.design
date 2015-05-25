@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <draw-text comment="false" x="26" y="40">
+                    <int id="0" val="Puntos de escena: "/>
+                    <int id="1" val="500"/>
+                    <int id="2" val="180"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="60">
+                    <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="700"/>
+                    <int id="2" val="180"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="85">
+                    <int id="0" val="Puntos extra:"/>
+                    <int id="1" val="500"/>
+                    <int id="2" val="230"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="105">
+                    <get-game-val-9 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="700"/>
+                    <int id="2" val="230"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="130">
+                    <int id="0" val="Puntaje total:"/>
+                    <int id="1" val="500"/>
+                    <int id="2" val="280"/>
+                </draw-text>
+                <draw-text comment="false" x="26" y="150">
+                    <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="700"/>
+                    <int id="2" val="280"/>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-game-val-3 comment="false" x="26" y="40">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-9 comment="false" id="1" x="0" y="0"/>
+                        </plus>
+                    </plus>
+                </set-game-val-3>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

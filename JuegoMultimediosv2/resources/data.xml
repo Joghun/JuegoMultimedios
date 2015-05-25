@@ -10,6 +10,7 @@
             <s enabled="true" id="12">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="2" list="0" val="false"/>
+                <prop id="3" list="0" val="60"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -414,6 +415,15 @@
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="37" fixedrot="true" fric="0.2" gid="7" id="56" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Botella" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="57" static="false">
         <snippets>
+            <s enabled="true" id="65">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="0"/>
+                <prop id="5" list="0" val="0"/>
+                <prop id="6" list="0" val="true"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="41">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
@@ -424,6 +434,7 @@
             <s enabled="true" id="12">
                 <prop id="1" list="0" val="0"/>
                 <prop id="2" list="0" val="false"/>
+                <prop id="3" list="0" val="60"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -433,35 +444,35 @@
             <poly data="4,15,0,45,0,45,68,15,68" density="0.1" fric="0.2" gid="-1000" id="0" name="moviendose" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="106" name="BotonAzul" shared="false" width="64">
-        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
-            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="149" id="106" name="BotonAzul" shared="false" width="100">
+        <anim across="1" down="1" durations="100" height="149" id="0" loop="true" name="Animation 0" numframes="1" originx="50" originy="74" sync="false" version="2" width="100">
+            <poly data="4,10,0,90,0,90,149,10,149" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="62" fixedrot="false" fric="0.2" gid="3" id="105" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="BotonAzul" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="106" static="false">
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="149" id="104" name="BotonBlanco" shared="false" width="100">
+        <anim across="1" down="1" durations="100" height="149" id="0" loop="true" name="Animation 0" numframes="1" originx="50" originy="74" sync="false" version="2" width="100">
+            <poly data="4,10,0,90,0,90,149,10,149" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="500" id="102" name="BotonCambiarEscena" shared="false" width="880">
+        <anim across="1" down="1" durations="100" height="500" id="0" loop="true" name="Animation 0" numframes="1" originx="440" originy="250" sync="false" version="2" width="880">
+            <poly data="4,308,291,408,291,408,441,308,441" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="115" id="119" name="BotonContinuar" shared="false" width="150">
+        <anim across="1" down="1" durations="100" height="115" id="0" loop="true" name="normal" numframes="1" originx="75" originy="57" sync="false" version="2" width="150">
+            <poly data="4,0,0,150,0,150,115,0,115" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="153" id="1" loop="true" name="grande" numframes="1" originx="100" originy="76" sync="false" version="2" width="200">
+            <poly data="4,0,0,200,0,200,153,0,153" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="70" fixedrot="false" fric="0.2" gid="3" id="118" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="BotonContinuar" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="119" static="false">
         <snippets>
-            <s enabled="true" id="59">
-                <prop id="1" list="0" val="2"/>
+            <s enabled="true" id="0">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
-    </actor>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="61" fixedrot="false" fric="0.2" gid="3" id="103" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="BotonBlanco" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="104" static="false">
-        <snippets>
-            <s enabled="true" id="59">
-                <prop id="1" list="0" val="1"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
-    </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="104" name="BotonBlanco" shared="false" width="64">
-        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
-            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="16" id="102" name="BotonCambiarEscena" shared="false" width="16"/>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="60" fixedrot="false" fric="0.2" gid="3" id="101" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="BotonCambiarEscena" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="102" static="false">
-        <snippets/>
     </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="3" fixedrot="false" fric="0.2" gid="3" id="5" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="BotonControles" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
         <snippets>
@@ -485,19 +496,11 @@
             <poly data="4,0,0,200,0,200,153,0,153" density="0.1" fric="0.2" gid="-1000" id="0" name="grande" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="108" name="BotonGris" shared="false" width="64">
-        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
-            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="149" id="108" name="BotonGris" shared="false" width="100">
+        <anim across="1" down="1" durations="100" height="149" id="0" loop="true" name="Animation 0" numframes="1" originx="50" originy="74" sync="false" version="2" width="100">
+            <poly data="4,10,0,90,0,90,149,10,149" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="63" fixedrot="false" fric="0.2" gid="3" id="107" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="BotonGris" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="108" static="false">
-        <snippets>
-            <s enabled="true" id="59">
-                <prop id="1" list="0" val="3"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
-    </actor>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="1" fixedrot="false" fric="0.2" gid="3" id="1" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="BotonHistoria" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="2" static="false">
         <snippets>
             <s enabled="true" id="0">
@@ -568,6 +571,7 @@
             <s enabled="true" id="12">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="2" list="0" val="false"/>
+                <prop id="3" list="0" val="60"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -580,6 +584,9 @@
             <poly data="4,5,0,45,0,45,52,5,52" density="0.1" fric="0.2" gid="-1000" id="0" name="derecha" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="Actor que cambia a la escena a la de clasificar " eventsnippetid="60" fixedrot="true" fric="0.2" gid="11" id="101" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="CambiarAClasificar" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="102" static="true">
+        <snippets/>
+    </actor>
     <music atlasID="0" desc="" id="23" loop="true" name="Caminando" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <tileset across="6" atlasID="0" desc="Here is the accompanying Sky's tileset that goes with the others Ceric Uploaded." down="27" id="83" name="Clouds" oid="-1" shared="false" th="32" tw="32">
         <tile collision="1" data="" durations="100" frames="0" id="0" order="-1"/>
@@ -753,6 +760,7 @@
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="70" name="FondoIintroduccion" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="32" name="FondoInstrucciones" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="640" id="84" name="fondonubes" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="111" name="FondoPuntaje" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <tileset across="5" atlasID="0" desc="" down="2" id="50" name="fondotitle" oid="-1" shared="false" th="32" tw="32">
         <tile collision="-1" data="" durations="100" frames="0" id="0" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="1" id="1" order="-1"/>
@@ -839,6 +847,7 @@
             <s enabled="true" id="12">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="2" list="0" val="false"/>
+                <prop id="3" list="0" val="60"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -1190,14 +1199,6 @@
         <tile collision="1" data="" durations="100" frames="239" id="239" order="-1"/>
     </tileset>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="0" name="MenuFondo" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="64" id="110" name="Meta" shared="false" width="64">
-        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
-            <poly data="4,0,0,16,0,16,16,0,16" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
-        </anim>
-    </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="64" fixedrot="true" fric="0.2" gid="11" id="109" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Meta" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="110" static="true">
-        <snippets/>
-    </actor>
     <music atlasID="0" desc="" id="22" loop="true" name="Musica1" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="31" loop="true" name="Musica2" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="Musica de naturaleza para el menu de inicio" id="9" loop="true" name="MusicaMenu" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
@@ -1367,6 +1368,96 @@
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="34" fixedrot="false" fric="0.2" gid="6" id="52" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Poder" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="53" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="113" name="ReciduoPapel" shared="false" width="100">
+        <anim across="1" down="1" durations="100" height="100" id="0" loop="true" name="1" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,100,0,100" density="0.1" fric="0.2" gid="-1000" id="0" name="1" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="100" id="1" loop="true" name="2" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,100,0,100" density="0.1" fric="0.2" gid="-1000" id="0" name="1" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="100" id="2" loop="true" name="3" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,100,0,100" density="0.1" fric="0.2" gid="-1000" id="0" name="3" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="66" fixedrot="true" fric="0.2" gid="16" id="112" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="ReciduoPapel" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="113" static="false">
+        <snippets>
+            <s enabled="true" id="65">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="0"/>
+                <prop id="5" list="0" val="0"/>
+                <prop id="6" list="0" val="true"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="117" name="ReciduoPlastico" shared="false" width="100">
+        <anim across="1" down="1" durations="100" height="100" id="0" loop="true" name="1" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,100,0,100" density="0.1" fric="0.2" gid="-1000" id="0" name="1" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="100" id="1" loop="true" name="2" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,100,0,100" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="100" id="2" loop="true" name="3" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,100,0,100" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="68" fixedrot="true" fric="0.2" gid="16" id="116" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="ReciduoPlastico" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="117" static="false">
+        <snippets>
+            <s enabled="true" id="65">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="0"/>
+                <prop id="5" list="0" val="0"/>
+                <prop id="6" list="0" val="true"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="100" id="115" name="ReciduoVidrio" shared="false" width="100">
+        <anim across="1" down="1" durations="100" height="100" id="0" loop="true" name="1" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,100,0,100" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="100" id="1" loop="true" name="2" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,100,0,100" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="100" id="2" loop="true" name="3" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,100,0,100" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="100" id="3" loop="true" name="4" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,100,0,100" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="100" id="4" loop="true" name="5" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,100,0,100" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 4" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="100" id="5" loop="true" name="6" numframes="1" originx="50" originy="50" sync="false" version="2" width="100">
+            <poly data="4,0,0,100,0,100,100,0,100" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 5" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="67" fixedrot="true" fric="0.2" gid="16" id="114" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="ReciduoVidrio" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="115" static="false">
+        <snippets>
+            <s enabled="true" id="65">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="0"/>
+                <prop id="5" list="0" val="0"/>
+                <prop id="6" list="0" val="true"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="Recolector para plastico" eventsnippetid="62" fixedrot="true" fric="0.2" gid="12" id="105" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="RecolectorAzul" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="106" static="false">
+        <snippets/>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="Recolector para vidrio" eventsnippetid="61" fixedrot="true" fric="0.2" gid="14" id="103" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="RecolectorBlanco" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="104" static="false">
+        <snippets/>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="Recolector para papel" eventsnippetid="63" fixedrot="true" fric="0.2" gid="13" id="107" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="RecolectorGris" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="108" static="false">
         <snippets/>
     </actor>
     <music atlasID="0" desc="" id="21" loop="true" name="Salto" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>

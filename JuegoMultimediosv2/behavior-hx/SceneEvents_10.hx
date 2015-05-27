@@ -84,7 +84,7 @@ class SceneEvents_10 extends SceneScript
 		    
 /* ======================== When Creating ========================= */
         engine.moveCamera(0, (getSceneHeight()));
-        loopSoundOnChannel(getSound(31), Std.int(0));
+        loopSoundOnChannel(getSound(127), Std.int(0));
 
 	}	      	
 	

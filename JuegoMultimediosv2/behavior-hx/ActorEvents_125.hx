@@ -39,7 +39,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -69,32 +68,29 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_20_20_CrearPersonaje extends SceneScript
-{
+class ActorEvents_125 extends ActorScript
+{          	
 	
  
- 	public function new(dummy:Int, dummy2:Engine)
+ 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
+		super(actor);
 		
 	}
 	
 	override public function init()
 	{
 		    
-/* ======================== When Creating ========================= */
-        if((Engine.engine.getGameAttribute("Personaje") == 0))
+/* ======================= Member of Group ======================== */
+addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
 {
-            createRecycledActor(getActorType(10), 100, 350, Script.FRONT);
-            Engine.engine.setGameAttribute("posicionjugador", 1);
-}
-
-        else if((Engine.engine.getGameAttribute("Personaje") == 1))
+if(wrapper.enabled && sameAsAny(getActorGroup(0),event.otherActor.getType(),event.otherActor.getGroup()))
 {
-            createRecycledActor(getActorType(35), 100, 350, Script.FRONT);
-            Engine.engine.setGameAttribute("posicionjugador", 1);
+        Engine.engine.setGameAttribute("xDevolver", actor.getX());
+        Engine.engine.setGameAttribute("yDevolver", actor.getY());
+        recycleActor(actor);
 }
-
+});
 
 	}	      	
 	

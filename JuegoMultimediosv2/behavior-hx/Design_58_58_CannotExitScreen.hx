@@ -108,8 +108,8 @@ if(wrapper.enabled)
 
         if(((actor.getY() + (actor.getHeight())) > (getSceneHeight())))
 {
-            actor.setX(100);
-            actor.setY(((getSceneHeight()) - 300));
+            actor.setX(Engine.engine.getGameAttribute("xDevolver"));
+            actor.setY(Engine.engine.getGameAttribute("yDevolver"));
 }
 
 }

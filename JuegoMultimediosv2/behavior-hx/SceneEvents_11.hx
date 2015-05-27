@@ -74,12 +74,16 @@ class SceneEvents_11 extends SceneScript
 	
 public var _posicionBasura:Float;
 
+public var _Random:Float;
+
  
  	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
 		nameMap.set("posicionXBasura", "_posicionBasura");
 _posicionBasura = 300.0;
+nameMap.set("Random", "_Random");
+_Random = 0;
 
 	}
 	
@@ -89,22 +93,24 @@ _posicionBasura = 300.0;
 /* ======================== When Creating ========================= */
         for(index0 in 0...Std.int(3))
 {
+            _Random = asNumber(randomInt(Math.floor(1), Math.floor(3)));
+propertyChanged("_Random", _Random);
             /* "1 = papel" */
             /* "2 = plastico" */
             /* "3 = vidrio" */
-            if((randomInt(Math.floor(1), Math.floor(3)) == 1))
+            if((_Random == 1))
 {
                 createRecycledActor(getActorType(112), _posicionBasura, 400, Script.FRONT);
                 Engine.engine.setGameAttribute("xClasificar", (Engine.engine.getGameAttribute("xClasificar") + 1));
 }
 
-            else if((randomInt(Math.floor(1), Math.floor(3)) == 2))
+            else if((_Random == 2))
 {
                 createRecycledActor(getActorType(116), _posicionBasura, 400, Script.FRONT);
                 Engine.engine.setGameAttribute("xClasificar", (Engine.engine.getGameAttribute("xClasificar") + 1));
 }
 
-            else if((randomInt(Math.floor(1), Math.floor(3)) == 3))
+            else if((_Random == 3))
 {
                 createRecycledActor(getActorType(114), _posicionBasura, 400, Script.FRONT);
                 Engine.engine.setGameAttribute("xClasificar", (Engine.engine.getGameAttribute("xClasificar") + 1));

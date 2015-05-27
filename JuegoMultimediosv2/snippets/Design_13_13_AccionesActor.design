@@ -260,17 +260,12 @@
                 <set-xy comment="false" x="26" y="47">
                     <ACTOR eid="this" id="0"/>
                     <int id="1" val="0"/>
-                    <int id="2" val="100"/>
+                    <get-game-val-12 comment="false" id="2" x="0" y="0"/>
                 </set-xy>
-                <set-xy comment="false" x="26" y="74">
+                <set-xy comment="false" x="26" y="79">
                     <ACTOR eid="this" id="0"/>
                     <int id="1" val="1"/>
-                    <minus comment="false" id="2" x="0" y="0">
-                        <scene-wh comment="false" id="0" x="0" y="0">
-                            <int id="0" val="1"/>
-                        </scene-wh>
-                        <int id="1" val="300"/>
-                    </minus>
+                    <get-game-val-13 comment="false" id="2" x="0" y="0"/>
                 </set-xy>
             </group>
             <ACTOR eid="this" id="0"/>

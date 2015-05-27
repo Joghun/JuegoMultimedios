@@ -162,8 +162,8 @@ addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
 {
 if(wrapper.enabled && sameAsAny(getActorGroup(4),event.otherActor.getType(),event.otherActor.getGroup()))
 {
-        actor.setX(100);
-        actor.setY(((getSceneHeight()) - 300));
+        actor.setX(Engine.engine.getGameAttribute("xDevolver"));
+        actor.setY(Engine.engine.getGameAttribute("yDevolver"));
 }
 });
 

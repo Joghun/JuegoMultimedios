@@ -3,34 +3,37 @@
     <group eventID="1" id="0">
         <draw comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <draw-text comment="false" x="26" y="40">
+                <set-font-new comment="false" x="26" y="40">
+                    <FONT eid="120" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
                     <int id="0" val="Puntos de escena: "/>
                     <int id="1" val="500"/>
                     <int id="2" val="180"/>
                 </draw-text>
-                <draw-text comment="false" x="26" y="60">
+                <draw-text comment="false" x="26" y="87">
                     <get-game-val-4 comment="false" id="0" x="0" y="0"/>
-                    <int id="1" val="700"/>
+                    <int id="1" val="830"/>
                     <int id="2" val="180"/>
                 </draw-text>
-                <draw-text comment="false" x="26" y="85">
+                <draw-text comment="false" x="26" y="112">
                     <int id="0" val="Puntos extra:"/>
                     <int id="1" val="500"/>
                     <int id="2" val="230"/>
                 </draw-text>
-                <draw-text comment="false" x="26" y="105">
+                <draw-text comment="false" x="26" y="132">
                     <get-game-val-9 comment="false" id="0" x="0" y="0"/>
-                    <int id="1" val="700"/>
+                    <int id="1" val="750"/>
                     <int id="2" val="230"/>
                 </draw-text>
-                <draw-text comment="false" x="26" y="130">
+                <draw-text comment="false" x="26" y="157">
                     <int id="0" val="Puntaje total:"/>
                     <int id="1" val="500"/>
                     <int id="2" val="280"/>
                 </draw-text>
-                <draw-text comment="false" x="26" y="150">
+                <draw-text comment="false" x="26" y="177">
                     <get-game-val-3 comment="false" id="0" x="0" y="0"/>
-                    <int id="1" val="700"/>
+                    <int id="1" val="750"/>
                     <int id="2" val="280"/>
                 </draw-text>
             </group>

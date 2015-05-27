@@ -70,24 +70,30 @@
             <group eventID="3" id="-1">
                 <repeat comment="false" x="26" y="40">
                     <group eventID="3" id="-1">
-                        <comment-short comment="false" x="37" y="65">
+                        <set-val-57-2 comment="false" x="37" y="65">
+                            <randint comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                                <int id="1" val="3"/>
+                            </randint>
+                        </set-val-57-2>
+                        <comment-short comment="false" x="37" y="90">
                             <int id="0" val="1 = papel"/>
                         </comment-short>
-                        <comment-short comment="false" x="37" y="85">
+                        <comment-short comment="false" x="37" y="110">
                             <int id="0" val="2 = plastico"/>
                         </comment-short>
-                        <comment-short comment="false" x="37" y="105">
+                        <comment-short comment="false" x="37" y="130">
                             <int id="0" val="3 = vidrio"/>
                         </comment-short>
-                        <if comment="false" x="37" y="125">
+                        <if comment="false" x="37" y="150">
                             <group eventID="3" id="-1">
-                                <create-actor3 comment="false" x="48" y="155">
+                                <create-actor3 comment="false" x="48" y="180">
                                     <ACTORTYPE eid="112" id="0"/>
                                     <get-val-57-1 comment="false" id="1" x="0" y="0"/>
                                     <int id="2" val="400"/>
                                     <int id="3" val="0"/>
                                 </create-actor3>
-                                <set-game-val-11 comment="false" x="48" y="187">
+                                <set-game-val-11 comment="false" x="48" y="212">
                                     <plus comment="false" id="0" x="0" y="0">
                                         <get-game-val-11 comment="false" id="0" x="0" y="0"/>
                                         <int id="1" val="1"/>
@@ -95,22 +101,19 @@
                                 </set-game-val-11>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
-                                <randint comment="false" id="0" x="0" y="0">
-                                    <int id="0" val="1"/>
-                                    <int id="1" val="3"/>
-                                </randint>
+                                <get-val-57-2 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="1"/>
                             </eq>
                         </if>
-                        <else-if comment="false" x="37" y="229">
+                        <else-if comment="false" x="37" y="254">
                             <group eventID="3" id="-1">
-                                <create-actor3 comment="false" x="48" y="259">
+                                <create-actor3 comment="false" x="48" y="284">
                                     <ACTORTYPE eid="116" id="0"/>
                                     <get-val-57-1 comment="false" id="1" x="0" y="0"/>
                                     <int id="2" val="400"/>
                                     <int id="3" val="0"/>
                                 </create-actor3>
-                                <set-game-val-11 comment="false" x="48" y="291">
+                                <set-game-val-11 comment="false" x="48" y="316">
                                     <plus comment="false" id="0" x="0" y="0">
                                         <get-game-val-11 comment="false" id="0" x="0" y="0"/>
                                         <int id="1" val="1"/>
@@ -118,22 +121,19 @@
                                 </set-game-val-11>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
-                                <randint comment="false" id="0" x="0" y="0">
-                                    <int id="0" val="1"/>
-                                    <int id="1" val="3"/>
-                                </randint>
+                                <get-val-57-2 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="2"/>
                             </eq>
                         </else-if>
-                        <else-if comment="false" x="37" y="333">
+                        <else-if comment="false" x="37" y="358">
                             <group eventID="3" id="-1">
-                                <create-actor3 comment="false" x="48" y="363">
+                                <create-actor3 comment="false" x="48" y="388">
                                     <ACTORTYPE eid="114" id="0"/>
                                     <get-val-57-1 comment="false" id="1" x="0" y="0"/>
                                     <int id="2" val="400"/>
                                     <int id="3" val="0"/>
                                 </create-actor3>
-                                <set-game-val-11 comment="false" x="48" y="395">
+                                <set-game-val-11 comment="false" x="48" y="420">
                                     <plus comment="false" id="0" x="0" y="0">
                                         <get-game-val-11 comment="false" id="0" x="0" y="0"/>
                                         <int id="1" val="1"/>
@@ -141,14 +141,11 @@
                                 </set-game-val-11>
                             </group>
                             <eq comment="false" id="0" x="0" y="0">
-                                <randint comment="false" id="0" x="0" y="0">
-                                    <int id="0" val="1"/>
-                                    <int id="1" val="3"/>
-                                </randint>
+                                <get-val-57-2 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="3"/>
                             </eq>
                         </else-if>
-                        <set-val-57-1 comment="false" x="37" y="437">
+                        <set-val-57-1 comment="false" x="37" y="462">
                             <plus comment="false" id="0" x="0" y="0">
                                 <get-val-57-1 comment="false" id="0" x="0" y="0"/>
                                 <int id="1" val="100"/>

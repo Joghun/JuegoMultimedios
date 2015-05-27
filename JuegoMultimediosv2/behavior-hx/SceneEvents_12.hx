@@ -90,12 +90,13 @@ addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>
 {
 if(wrapper.enabled)
 {
+        g.setFont(getFont(120));
         g.drawString("" + "Puntos de escena: ", 500, 180);
-        g.drawString("" + Engine.engine.getGameAttribute("PuntajeEscena"), 700, 180);
+        g.drawString("" + Engine.engine.getGameAttribute("PuntajeEscena"), 830, 180);
         g.drawString("" + "Puntos extra:", 500, 230);
-        g.drawString("" + Engine.engine.getGameAttribute("puntosExtra"), 700, 230);
+        g.drawString("" + Engine.engine.getGameAttribute("puntosExtra"), 750, 230);
         g.drawString("" + "Puntaje total:", 500, 280);
-        g.drawString("" + Engine.engine.getGameAttribute("PuntageGlobal"), 700, 280);
+        g.drawString("" + Engine.engine.getGameAttribute("PuntageGlobal"), 750, 280);
 }
 });
 

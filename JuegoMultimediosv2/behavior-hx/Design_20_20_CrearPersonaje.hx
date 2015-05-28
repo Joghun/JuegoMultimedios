@@ -69,7 +69,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_9 extends SceneScript
+class Design_20_20_CrearPersonaje extends SceneScript
 {
 	
  
@@ -83,8 +83,18 @@ class SceneEvents_9 extends SceneScript
 	{
 		    
 /* ======================== When Creating ========================= */
-        engine.moveCamera((getSceneWidth()), (getSceneHeight()));
-        loopSoundOnChannel(getSound(134), Std.int(0));
+        if((Engine.engine.getGameAttribute("Personaje") == 0))
+{
+            createRecycledActor(getActorType(10), 100, ((getSceneHeight()) - 350), Script.FRONT);
+            Engine.engine.setGameAttribute("posicionjugador", 1);
+}
+
+        else if((Engine.engine.getGameAttribute("Personaje") == 1))
+{
+            createRecycledActor(getActorType(35), 100, ((getSceneHeight()) - 350), Script.FRONT);
+            Engine.engine.setGameAttribute("posicionjugador", 1);
+}
+
 
 	}	      	
 	

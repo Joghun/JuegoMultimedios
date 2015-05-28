@@ -6,6 +6,17 @@
                 <set-game-val-2 comment="false" x="26" y="40">
                     <int id="0" val="0"/>
                 </set-game-val-2>
+                <set-game-val-12 comment="false" x="26" y="60">
+                    <int id="0" val="100"/>
+                </set-game-val-12>
+                <set-game-val-13 comment="false" x="26" y="80">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <scene-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </scene-wh>
+                        <int id="1" val="360"/>
+                    </minus>
+                </set-game-val-13>
             </group>
         </init>
     </group>

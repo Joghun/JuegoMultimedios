@@ -74,12 +74,20 @@ class Design_52_52_PausarJuego extends SceneScript
 	
 public var _Pusado:Float;
 
+public var _PantallaOscuraX:Float;
+
+public var _PantallaOscuraY:Float;
+
  
  	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
 		nameMap.set("Pusado", "_Pusado");
 _Pusado = 0.0;
+nameMap.set("PantallaOscuraX", "_PantallaOscuraX");
+_PantallaOscuraX = 0;
+nameMap.set("PantallaOscuraY", "_PantallaOscuraY");
+_PantallaOscuraY = 0;
 
 	}
 	
@@ -91,11 +99,14 @@ addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Vo
 {
 if(wrapper.enabled)
 {
+        /* Por el momento no esta creando el boton de la pausa */
         if(isKeyPressed("Pausa"))
 {
             if((Engine.engine.getGameAttribute("Pausado") == false))
 {
                 Engine.engine.setGameAttribute("Pausado", true);
+                /* "La idea es que se cree un boton cuando el jugador pausa el juego para que se devuelva al menu principal" */
+                createRecycledActor(getActorType(131), ((getScreenWidth() / 2) - 50), ((getScreenHeight() / 2) - 25), Script.BACK);
                 stopSoundOnChannel(Std.int(0));
                 engine.pause();
 }
@@ -103,6 +114,8 @@ if(wrapper.enabled)
             else if((Engine.engine.getGameAttribute("Pausado") == true))
 {
                 Engine.engine.setGameAttribute("Pausado", false);
+                /* "una vez de pausada la pantalla eliminar el ultimo actor" */
+                recycleActor(getLastCreatedActor());
                 engine.unpause();
                 if((getCurrentSceneName() == "PantallaDesierto"))
 {
@@ -114,8 +127,36 @@ if(wrapper.enabled)
                     loopSoundOnChannel(getSound(22), Std.int(0));
 }
 
+                if((getCurrentSceneName() == "pantallaAire"))
+{
+                    loopSoundOnChannel(getSound(134), Std.int(0));
 }
 
+                if((getCurrentSceneName() == "PantallaBosque"))
+{
+                    loopSoundOnChannel(getSound(133), Std.int(0));
+}
+
+}
+
+}
+
+}
+});
+    
+/* ========================= When Drawing ========================= */
+addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled)
+{
+        if(engine.isPaused())
+{
+            g.translateToScreen();
+            g.fillColor = Utils.getColorRGB(0,0,0);
+            g.alpha = (50/100);
+            g.fillRect(0, 0, (getSceneWidth()), (getSceneHeight()));
+            g.setFont(getFont(85));
+            g.drawString("" + "Pausado", ((getScreenWidth() / 2) - 50), ((getScreenHeight() / 2) - 100));
 }
 
 }

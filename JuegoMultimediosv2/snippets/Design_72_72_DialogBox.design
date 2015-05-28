@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-thickness comment="false" x="26" y="40">
+                    <get-val-72-3 comment="false" id="0" x="0" y="0"/>
+                </set-thickness>
+                <set-color comment="false" x="26" y="65">
+                    <get-val-72-4 comment="false" id="0" x="0" y="0"/>
+                </set-color>
+                <drawfill-roundrect comment="false" x="26" y="97">
+                    <int id="0" val="1"/>
+                    <get-val-72-5 comment="false" id="1" x="0" y="0"/>
+                    <get-val-72-6 comment="false" id="2" x="0" y="0"/>
+                    <get-val-72-10 comment="false" id="3" x="0" y="0"/>
+                    <get-val-72-11 comment="false" id="4" x="0" y="0"/>
+                    <get-val-72-7 comment="false" id="5" x="0" y="0"/>
+                </drawfill-roundrect>
+                <set-stroke-color comment="false" x="26" y="129">
+                    <get-val-72-1 comment="false" id="0" x="0" y="0"/>
+                </set-stroke-color>
+                <drawfill-roundrect comment="false" x="26" y="161">
+                    <int id="0" val="0"/>
+                    <get-val-72-5 comment="false" id="1" x="0" y="0"/>
+                    <get-val-72-6 comment="false" id="2" x="0" y="0"/>
+                    <get-val-72-10 comment="false" id="3" x="0" y="0"/>
+                    <get-val-72-11 comment="false" id="4" x="0" y="0"/>
+                    <get-val-72-7 comment="false" id="5" x="0" y="0"/>
+                </drawfill-roundrect>
+                <comment-long comment="false" x="26" y="193">
+                    <int id="0" val="Cuando el cuadro se termina de dibujar el cuadro se escribe el texto"/>
+                </comment-long>
+                <if comment="false" x="26" y="273">
+                    <group eventID="1" id="-1">
+                        <set-font-new comment="false" x="37" y="298">
+                            <FONT eid="130" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="37" y="325">
+                            <get-item comment="false" id="0" x="0" y="0">
+                                <get-val-72-13 comment="false" id="0" x="0" y="0"/>
+                                <get-game-val-14 comment="false" id="1" x="0" y="0"/>
+                            </get-item>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-val-72-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="50"/>
+                            </plus>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-val-72-6 comment="false" id="0" x="0" y="0"/>
+                                <plus comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="4"/>
+                                    <get-font-height comment="false" id="1" x="0" y="0"/>
+                                </plus>
+                            </plus>
+                        </draw-text>
+                    </group>
+                    <get-val-72-14 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <incdec comment="false" x="26" y="40">
+                    <int id="0" val="10"/>
+                    <int id="1" val="0"/>
+                    <div comment="false" id="2" x="0" y="0">
+                        <minus comment="false" id="0" x="0" y="0">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </screen-wh>
+                            <times comment="false" id="1" x="0" y="0">
+                                <get-val-72-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </times>
+                        </minus>
+                        <int id="1" val="60"/>
+                    </div>
+                </incdec>
+                <incdec comment="false" x="26" y="90">
+                    <int id="0" val="11"/>
+                    <int id="1" val="0"/>
+                    <div comment="false" id="2" x="0" y="0">
+                        <minus comment="false" id="0" x="0" y="0">
+                            <get-val-72-8 comment="false" id="0" x="0" y="0"/>
+                            <get-val-72-9 comment="false" id="1" x="0" y="0"/>
+                        </minus>
+                        <int id="1" val="60"/>
+                    </div>
+                </incdec>
+                <if comment="false" x="26" y="132">
+                    <group eventID="2" id="-1">
+                        <set-val-72-10 comment="false" x="37" y="175">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                </screen-wh>
+                                <times comment="false" id="1" x="0" y="0">
+                                    <get-val-72-5 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="2"/>
+                                </times>
+                            </minus>
+                        </set-val-72-10>
+                        <set-val-72-11 comment="false" x="37" y="213">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-val-72-8 comment="false" id="0" x="0" y="0"/>
+                                <get-val-72-9 comment="false" id="1" x="0" y="0"/>
+                            </minus>
+                        </set-val-72-11>
+                        <set-val-72-12 comment="false" x="37" y="243">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-72-12>
+                        <set-val-72-14 comment="false" x="37" y="268">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-72-14>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-val-72-10 comment="false" id="0" x="0" y="0"/>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </screen-wh>
+                            <times comment="false" id="1" x="0" y="0">
+                                <get-val-72-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </times>
+                        </minus>
+                    </moreeq>
+                </if>
+                <else comment="false" x="26" y="305">
+                    <group eventID="2" id="-1">
+                        <dolater comment="false" x="37" y="325">
+                            <group eventID="2" id="-1">
+                                <say-this comment="false" x="48" y="352">
+                                    <int id="0" val="OpenDialogBox"/>
+                                </say-this>
+                            </group>
+                            <int id="0" val="0.015"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                    </group>
+                </else>
+            </group>
+            <int id="0" val="OpenDialogBox"/>
+        </event-custom>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="3" id="-1">
+                        <set-val-72-14 comment="false" x="37" y="65">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-72-14>
+                    </group>
+                    <get-val-72-14 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <incdec comment="false" x="26" y="102">
+                    <int id="0" val="10"/>
+                    <int id="1" val="1"/>
+                    <div comment="false" id="2" x="0" y="0">
+                        <minus comment="false" id="0" x="0" y="0">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </screen-wh>
+                            <times comment="false" id="1" x="0" y="0">
+                                <get-val-72-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </times>
+                        </minus>
+                        <int id="1" val="60"/>
+                    </div>
+                </incdec>
+                <incdec comment="false" x="26" y="152">
+                    <int id="0" val="11"/>
+                    <int id="1" val="1"/>
+                    <div comment="false" id="2" x="0" y="0">
+                        <minus comment="false" id="0" x="0" y="0">
+                            <get-val-72-8 comment="false" id="0" x="0" y="0"/>
+                            <get-val-72-9 comment="false" id="1" x="0" y="0"/>
+                        </minus>
+                        <int id="1" val="60"/>
+                    </div>
+                </incdec>
+                <if comment="false" x="26" y="194">
+                    <group eventID="2" id="-1">
+                        <set-val-72-10 comment="false" x="37" y="224">
+                            <int id="0" val="0"/>
+                        </set-val-72-10>
+                        <set-val-72-11 comment="false" x="37" y="244">
+                            <int id="0" val="0"/>
+                        </set-val-72-11>
+                        <set-val-72-12 comment="false" x="37" y="264">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-72-12>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-val-72-10 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+                <else comment="false" x="26" y="301">
+                    <group eventID="2" id="-1">
+                        <dolater comment="false" x="37" y="321">
+                            <group eventID="2" id="-1">
+                                <say-this comment="false" x="48" y="348">
+                                    <int id="0" val="CloseDialogBox"/>
+                                </say-this>
+                            </group>
+                            <int id="0" val="0.015"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                    </group>
+                </else>
+            </group>
+            <int id="0" val="CloseDialogBox"/>
+        </event-custom>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="4" id="-1">
+                        <say-this comment="false" x="37" y="67">
+                            <int id="0" val="CloseDialogBox"/>
+                        </say-this>
+                        <dolater comment="false" x="37" y="87">
+                            <group eventID="4" id="-1">
+                                <if comment="false" x="48" y="114">
+                                    <group eventID="4" id="-1">
+                                        <say-this comment="false" x="59" y="154">
+                                            <int id="0" val="OpenDialogBox"/>
+                                        </say-this>
+                                        <set-game-val-14 comment="false" x="59" y="174">
+                                            <plus comment="false" id="0" x="0" y="0">
+                                                <get-game-val-14 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="1"/>
+                                            </plus>
+                                        </set-game-val-14>
+                                    </group>
+                                    <less comment="false" id="0" x="0" y="0">
+                                        <get-game-val-14 comment="false" id="0" x="0" y="0"/>
+                                        <minus comment="false" id="1" x="0" y="0">
+                                            <length-list comment="false" id="0" x="0" y="0">
+                                                <get-val-72-13 comment="false" id="0" x="0" y="0"/>
+                                            </length-list>
+                                            <int id="1" val="1"/>
+                                        </minus>
+                                    </less>
+                                </if>
+                            </group>
+                            <int id="0" val="0.7"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                    </group>
+                    <get-val-72-12 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <comment-short comment="false" x="26" y="240">
+                    <int id="0" val="Aqui es donde iba el if de inicio"/>
+                </comment-short>
+                <comment-short comment="false" x="26" y="260">
+                    <int id="0" val="Este if se debe copiar en la colicion del jugador pero se debe cambiar el comportamiento del trigger"/>
+                </comment-short>
+                <if comment="false" x="26" y="280">
+                    <group eventID="4" id="-1">
+                        <if comment="false" x="37" y="305">
+                            <group eventID="4" id="-1">
+                                <say-this comment="false" x="48" y="345">
+                                    <int id="0" val="OpenDialogBox"/>
+                                </say-this>
+                                <set-game-val-15 comment="false" x="48" y="365">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-game-val-15>
+                                <set-game-val-14 comment="false" x="48" y="390">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-game-val-14 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </plus>
+                                </set-game-val-14>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <get-game-val-14 comment="false" id="0" x="0" y="0"/>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <length-list comment="false" id="0" x="0" y="0">
+                                        <get-val-72-13 comment="false" id="0" x="0" y="0"/>
+                                    </length-list>
+                                    <int id="1" val="1"/>
+                                </minus>
+                            </less>
+                        </if>
+                    </group>
+                    <get-game-val-15 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <CONTROL eid="6" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="4" id="-1"/>
+</groups>

@@ -3,8 +3,8 @@
     <exts>
         <e enabled="false" id="test-native"/>
         <e enabled="false" id="test"/>
-        <e enabled="false" id="label"/>
         <e enabled="false" id="test-flash"/>
+        <e enabled="false" id="label"/>
         <e enabled="false" id="tileapi"/>
     </exts>
     <scales>
@@ -66,9 +66,11 @@
         <group desc="" id="15" name="Recolector"/>
         <group desc="" id="17" name="PuntoControl"/>
         <group desc="" id="16" name="Basura"/>
+        <group desc="" id="18" name="Mensajes"/>
     </groups>
     <cgroups>
-        <cgroup g1="0" g2="17"/>
+        <cgroup g1="0" g2="18"/>
+        <cgroup g1="3" g2="18"/>
         <cgroup g1="12" g2="16"/>
         <cgroup g1="14" g2="16"/>
         <cgroup g1="13" g2="16"/>
@@ -77,6 +79,7 @@
         <cgroup g1="1" g2="4"/>
         <cgroup g1="1" g2="3"/>
         <cgroup g1="1" g2="7"/>
+        <cgroup g1="0" g2="17"/>
         <cgroup g1="0" g2="11"/>
         <cgroup g1="0" g2="1"/>
         <cgroup g1="0" g2="6"/>
@@ -108,16 +111,18 @@
     </attcats>
     <props/>
     <attributes>
-        <number cid="-1" id="10" name="numeroEscena" save="true" value="1.0"/>
-        <number cid="-1" id="12" name="xDevolver" save="true" value="100"/>
+        <number cid="-1" id="12" name="xDevolver" save="true" value="100.0"/>
         <number cid="-1" id="1" name="posicionjugador" save="true" value="0.0"/>
         <number cid="-1" id="2" name="disparo" save="true" value="0.0"/>
-        <bool cid="-1" id="5" name="Pausado" save="true" value="false"/>
+        <bool cid="-1" id="15" name="PrimerMensaje" save="true" value="true"/>
         <number cid="-1" id="3" name="PuntageGlobal" save="true" value="0.0"/>
-        <number cid="-1" id="4" name="PuntajeEscena" save="true" value="0.0"/>
         <number cid="-1" id="9" name="puntosExtra" save="true" value="0.0"/>
-        <number cid="-1" id="13" name="yDevolver" save="true" value="200.0"/>
+        <number cid="-1" id="13" name="yDevolver" save="true" value="360.0"/>
         <number cid="-1" id="0" name="Personaje" save="true" value="0.0"/>
+        <number cid="-1" id="10" name="numeroEscena" save="true" value="1.0"/>
+        <number cid="-1" id="14" name="InicioContadorLista" save="true" value="-1"/>
+        <bool cid="-1" id="5" name="Pausado" save="true" value="false"/>
+        <number cid="-1" id="4" name="PuntajeEscena" save="true" value="0.0"/>
         <number cid="-1" id="11" name="xClasificar" save="true" value="0.0"/>
     </attributes>
     <collisions>
@@ -148,7 +153,7 @@
         <poly id="24" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,3,5,7,9,10,17,16,19,21,23,22,24,26,29,28,31,35,32,33,39,37,43,41,51,50,49,48,54,52,58,56,62,60,69,70,71,65,77,79,73,75,85,84,87,81,83,93,92,90,103,100,101,98,99,111,107,105,118,116,114,112,127,125,120," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,3,5,7,9,10,17,16,19,21,23,22,24,26,29,28,31,35,32,33,39,37,43,41,51,50,49,48,54,52,58,56,62,60,69,70,71,65,77,79,73,75,85,84,87,81,83,93,92,90,103,100,101,98,99,111,107,105,118,116,114,112,127,125,120,128,131,130,133,134," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

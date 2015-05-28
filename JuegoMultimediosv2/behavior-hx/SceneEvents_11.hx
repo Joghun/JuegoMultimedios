@@ -83,7 +83,7 @@ public var _Random:Float;
 		nameMap.set("posicionXBasura", "_posicionBasura");
 _posicionBasura = 300.0;
 nameMap.set("Random", "_Random");
-_Random = 0;
+_Random = 0.0;
 
 	}
 	

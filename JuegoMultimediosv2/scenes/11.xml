@@ -9,9 +9,9 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="14" id="103" name="RecolectorBlanco 1" sx="1.0" sy="1.0" x="461" y="183" z="3"/>
-        <actor a="0.0" aid="2" c="false" group="13" id="107" name="RecolectorGris 2" sx="1.0" sy="1.0" x="626" y="180" z="3"/>
-        <actor a="0.0" aid="3" c="false" group="12" id="105" name="RecolectorAzul 3" sx="1.0" sy="1.0" x="792" y="179" z="3"/>
+        <actor a="0.0" aid="1" c="false" group="14" id="103" name="RecolectorBlanco 1" sx="1.0" sy="1.0" x="444" y="183" z="3"/>
+        <actor a="0.0" aid="2" c="false" group="13" id="107" name="RecolectorGris 2" sx="1.0" sy="1.0" x="632" y="184" z="3"/>
+        <actor a="0.0" aid="3" c="false" group="12" id="105" name="RecolectorAzul 3" sx="1.0" sy="1.0" x="803" y="180" z="3"/>
     </actors>
     <snippets/>
     <terrain/>

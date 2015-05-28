@@ -69,7 +69,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_9 extends SceneScript
+class Design_35_35_InicioEscena extends SceneScript
 {
 	
  
@@ -83,8 +83,9 @@ class SceneEvents_9 extends SceneScript
 	{
 		    
 /* ======================== When Creating ========================= */
-        engine.moveCamera((getSceneWidth()), (getSceneHeight()));
-        loopSoundOnChannel(getSound(134), Std.int(0));
+        Engine.engine.setGameAttribute("disparo", 0);
+        Engine.engine.setGameAttribute("xDevolver", 100);
+        Engine.engine.setGameAttribute("yDevolver", ((getSceneHeight()) - 360));
 
 	}	      	
 	

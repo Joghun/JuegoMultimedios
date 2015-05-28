@@ -71,11 +71,15 @@ import com.stencyl.graphics.shaders.BloomShader;
 class Design_13_13_AccionesActor extends ActorScript
 {          	
 	
+public var _ListaTexto1:Array<Dynamic>;
+
  
  	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Actor", "actor");
+		nameMap.set("ListaTexto1", "_ListaTexto1");
+_ListaTexto1 = [];
+nameMap.set("Actor", "actor");
 
 	}
 	

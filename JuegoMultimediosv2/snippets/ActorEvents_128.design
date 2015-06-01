@@ -32,4 +32,31 @@
         </event-mouse-enter-exit-actor>
     </group>
     <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <event-collide-actortogroup comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-game-val-14 comment="false" x="26" y="47">
+                    <int id="0" val="0"/>
+                </set-game-val-14>
+                <set-game-val-15 comment="false" x="26" y="67">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-game-val-15>
+                <scene-shout comment="false" x="26" y="92">
+                    <int id="0" val="OpenDialogBox"/>
+                </scene-shout>
+                <die comment="false" x="26" y="112">
+                    <ACTOR eid="this" id="0"/>
+                </die>
+                <set-game-val-16 comment="false" x="26" y="139">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-game-val-16 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </plus>
+                </set-game-val-16>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <GROUP eid="0" id="1"/>
+        </event-collide-actortogroup>
+    </group>
+    <group eventID="5" id="-1"/>
 </groups>

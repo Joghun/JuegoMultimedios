@@ -17,6 +17,9 @@
                         <int id="1" val="360"/>
                     </minus>
                 </set-game-val-13>
+                <set-game-val-16 comment="false" x="26" y="118">
+                    <int id="0" val="0"/>
+                </set-game-val-16>
             </group>
         </init>
     </group>

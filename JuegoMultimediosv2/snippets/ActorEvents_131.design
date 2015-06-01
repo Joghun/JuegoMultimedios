@@ -9,15 +9,27 @@
                             <int id="0" val="0"/>
                             <int id="1" val="0"/>
                         </control-sound-channel>
-                        <scene-change-color comment="false" x="37" y="100">
-                            <SCENE eid="0" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="0.5"/>
-                            <color b="0" g="0" id="3" r="0"/>
-                            <int id="4" val="0"/>
-                            <int id="5" val="0.5"/>
-                            <color b="0" g="0" id="6" r="0"/>
-                        </scene-change-color>
+                        <set-game-val-5 comment="false" x="37" y="100">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-5>
+                        <pause-unpause comment="false" x="37" y="125">
+                            <int id="0" val="1"/>
+                        </pause-unpause>
+                        <dolater comment="false" x="37" y="152">
+                            <group eventID="1" id="-1">
+                                <scene-change-color comment="false" x="48" y="179">
+                                    <SCENE eid="0" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0.5"/>
+                                    <color b="0" g="0" id="3" r="0"/>
+                                    <int id="4" val="2"/>
+                                    <int id="5" val="0.5"/>
+                                    <color b="0" g="0" id="6" r="0"/>
+                                </scene-change-color>
+                            </group>
+                            <int id="0" val="0.5"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
                     </group>
                     <amousestate comment="false" id="0" x="0" y="0">
                         <ACTOR eid="this" id="0"/>
@@ -35,15 +47,27 @@
                     <int id="0" val="0"/>
                     <int id="1" val="0"/>
                 </control-sound-channel>
-                <scene-change-color comment="false" x="26" y="69">
-                    <SCENE eid="0" id="0"/>
-                    <int id="1" val="0"/>
-                    <int id="2" val="0.5"/>
-                    <color b="0" g="0" id="3" r="0"/>
-                    <int id="4" val="0"/>
-                    <int id="5" val="0.5"/>
-                    <color b="0" g="0" id="6" r="0"/>
-                </scene-change-color>
+                <set-game-val-5 comment="false" x="26" y="69">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-game-val-5>
+                <pause-unpause comment="false" x="26" y="94">
+                    <int id="0" val="1"/>
+                </pause-unpause>
+                <dolater comment="false" x="26" y="121">
+                    <group eventID="2" id="-1">
+                        <scene-change-color comment="false" x="37" y="148">
+                            <SCENE eid="0" id="0"/>
+                            <int id="1" val="2"/>
+                            <int id="2" val="0.5"/>
+                            <color b="0" g="0" id="3" r="0"/>
+                            <int id="4" val="2"/>
+                            <int id="5" val="0.5"/>
+                            <color b="0" g="0" id="6" r="0"/>
+                        </scene-change-color>
+                    </group>
+                    <int id="0" val="0.5"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
             </group>
             <ACTOR eid="this" id="0"/>
             <int id="1" val="2"/>

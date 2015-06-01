@@ -19,30 +19,24 @@
                                 <create-actor3 comment="false" x="48" y="228">
                                     <ACTORTYPE eid="131" id="0"/>
                                     <minus comment="false" id="1" x="0" y="0">
-                                        <div comment="false" id="0" x="0" y="0">
-                                            <screen-wh comment="false" id="0" x="0" y="0">
-                                                <int id="0" val="0"/>
-                                            </screen-wh>
-                                            <int id="1" val="2"/>
-                                        </div>
+                                        <screen-xy comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="2"/>
+                                        </screen-xy>
                                         <int id="1" val="50"/>
                                     </minus>
                                     <minus comment="false" id="2" x="0" y="0">
-                                        <div comment="false" id="0" x="0" y="0">
-                                            <screen-wh comment="false" id="0" x="0" y="0">
-                                                <int id="0" val="1"/>
-                                            </screen-wh>
-                                            <int id="1" val="2"/>
-                                        </div>
+                                        <screen-xy comment="false" id="0" x="0" y="0">
+                                            <int id="0" val="3"/>
+                                        </screen-xy>
                                         <int id="1" val="25"/>
                                     </minus>
                                     <int id="3" val="2"/>
                                 </create-actor3>
-                                <control-sound-channel comment="false" x="48" y="278">
+                                <control-sound-channel comment="false" x="48" y="273">
                                     <int id="0" val="0"/>
                                     <int id="1" val="0"/>
                                 </control-sound-channel>
-                                <pause-unpause comment="false" x="48" y="305">
+                                <pause-unpause comment="false" x="48" y="300">
                                     <int id="0" val="0"/>
                                 </pause-unpause>
                             </group>
@@ -51,23 +45,23 @@
                                 <false comment="false" id="1" x="0" y="0"/>
                             </eq>
                         </if>
-                        <else-if comment="false" x="37" y="344">
+                        <else-if comment="false" x="37" y="339">
                             <group eventID="2" id="-1">
-                                <set-game-val-5 comment="false" x="48" y="374">
+                                <set-game-val-5 comment="false" x="48" y="369">
                                     <false comment="false" id="0" x="0" y="0"/>
                                 </set-game-val-5>
-                                <comment-short comment="false" x="48" y="399">
+                                <comment-short comment="false" x="48" y="394">
                                     <int id="0" val="una vez de pausada la pantalla eliminar el ultimo actor"/>
                                 </comment-short>
-                                <die comment="false" x="48" y="419">
+                                <die comment="false" x="48" y="414">
                                     <ACTOR eid="lastcreated" id="0"/>
                                 </die>
-                                <pause-unpause comment="false" x="48" y="446">
+                                <pause-unpause comment="false" x="48" y="441">
                                     <int id="0" val="1"/>
                                 </pause-unpause>
-                                <if comment="false" x="48" y="473">
+                                <if comment="false" x="48" y="468">
                                     <group eventID="2" id="-1">
-                                        <play-sound-channel comment="false" x="59" y="503">
+                                        <play-sound-channel comment="false" x="59" y="498">
                                             <int id="0" val="1"/>
                                             <SOUND eid="31" id="1"/>
                                             <int id="2" val="0"/>
@@ -78,9 +72,9 @@
                                         <int id="1" val="PantallaDesierto"/>
                                     </eq>
                                 </if>
-                                <if comment="false" x="48" y="542">
+                                <if comment="false" x="48" y="537">
                                     <group eventID="2" id="-1">
-                                        <play-sound-channel comment="false" x="59" y="572">
+                                        <play-sound-channel comment="false" x="59" y="567">
                                             <int id="0" val="1"/>
                                             <SOUND eid="22" id="1"/>
                                             <int id="2" val="0"/>
@@ -91,9 +85,9 @@
                                         <int id="1" val="PantallaEscuela"/>
                                     </eq>
                                 </if>
-                                <if comment="false" x="48" y="611">
+                                <if comment="false" x="48" y="606">
                                     <group eventID="2" id="-1">
-                                        <play-sound-channel comment="false" x="59" y="641">
+                                        <play-sound-channel comment="false" x="59" y="636">
                                             <int id="0" val="1"/>
                                             <SOUND eid="134" id="1"/>
                                             <int id="2" val="0"/>
@@ -104,9 +98,9 @@
                                         <int id="1" val="pantallaAire"/>
                                     </eq>
                                 </if>
-                                <if comment="false" x="48" y="680">
+                                <if comment="false" x="48" y="675">
                                     <group eventID="2" id="-1">
-                                        <play-sound-channel comment="false" x="59" y="710">
+                                        <play-sound-channel comment="false" x="59" y="705">
                                             <int id="0" val="1"/>
                                             <SOUND eid="133" id="1"/>
                                             <int id="2" val="0"/>

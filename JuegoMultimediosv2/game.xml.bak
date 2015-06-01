@@ -3,8 +3,8 @@
     <exts>
         <e enabled="false" id="test-native"/>
         <e enabled="false" id="test"/>
-        <e enabled="false" id="test-flash"/>
         <e enabled="false" id="label"/>
+        <e enabled="false" id="test-flash"/>
         <e enabled="false" id="tileapi"/>
     </exts>
     <scales>
@@ -69,29 +69,28 @@
         <group desc="" id="18" name="Mensajes"/>
     </groups>
     <cgroups>
-        <cgroup g1="0" g2="18"/>
-        <cgroup g1="3" g2="18"/>
         <cgroup g1="12" g2="16"/>
         <cgroup g1="14" g2="16"/>
         <cgroup g1="13" g2="16"/>
+        <cgroup g1="0" g2="18"/>
+        <cgroup g1="0" g2="17"/>
+        <cgroup g1="0" g2="11"/>
+        <cgroup g1="0" g2="1"/>
         <cgroup g1="1" g2="6"/>
         <cgroup g1="1" g2="5"/>
         <cgroup g1="1" g2="4"/>
         <cgroup g1="1" g2="3"/>
         <cgroup g1="1" g2="7"/>
-        <cgroup g1="0" g2="17"/>
-        <cgroup g1="0" g2="11"/>
-        <cgroup g1="0" g2="1"/>
         <cgroup g1="0" g2="6"/>
         <cgroup g1="0" g2="4"/>
         <cgroup g1="0" g2="10"/>
         <cgroup g1="0" g2="8"/>
         <cgroup g1="0" g2="7"/>
-        <cgroup g1="5" g2="8"/>
         <cgroup g1="4" g2="5"/>
+        <cgroup g1="5" g2="8"/>
+        <cgroup g1="3" g2="4"/>
         <cgroup g1="4" g2="9"/>
         <cgroup g1="4" g2="7"/>
-        <cgroup g1="3" g2="4"/>
         <cgroup g1="3" g2="3"/>
         <cgroup g1="9" g2="9"/>
     </cgroups>
@@ -121,6 +120,7 @@
         <number cid="-1" id="0" name="Personaje" save="true" value="0.0"/>
         <number cid="-1" id="10" name="numeroEscena" save="true" value="1.0"/>
         <number cid="-1" id="14" name="InicioContadorLista" save="true" value="-1.0"/>
+        <number cid="-1" id="16" name="SeCreoUnaVez" save="true" value="0"/>
         <bool cid="-1" id="5" name="Pausado" save="true" value="false"/>
         <number cid="-1" id="4" name="PuntajeEscena" save="true" value="0.0"/>
         <number cid="-1" id="11" name="xClasificar" save="true" value="0.0"/>

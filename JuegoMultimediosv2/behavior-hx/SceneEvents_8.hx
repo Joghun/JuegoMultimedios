@@ -87,15 +87,15 @@ _texto = "";
 	{
 		    
 /* ======================== When Creating ========================= */
-        playSoundOnChannel(getSound(87), Std.int(0));
+        playSoundOnChannel(getSound(135), Std.int(0));
         createRecycledActor(getActorType(43), 115, 10, Script.FRONT);
-        runLater(1000 * 3.5, function(timeTask:TimedTask):Void {
+        runLater(1000 * 5, function(timeTask:TimedTask):Void {
                     createRecycledActor(getActorType(77), 680, 10, Script.FRONT);
                     createRecycledActor(getActorType(75), 775, 10, Script.FRONT);
                     createRecycledActor(getActorType(79), 825, 10, Script.FRONT);
                     createRecycledActor(getActorType(81), 925, 10, Script.FRONT);
 }, null);
-        runLater(1000 * 15, function(timeTask:TimedTask):Void {
+        runLater(1000 * 16, function(timeTask:TimedTask):Void {
                     createRecycledActor(getActorType(71), 500, 10, Script.FRONT);
                     createRecycledActor(getActorType(73), 400, 10, Script.FRONT);
 }, null);
@@ -115,33 +115,33 @@ runLater(1000 * 0, function(timeTask:TimedTask):Void
 {
 if(wrapper.enabled)
 {
-        _texto = "Se dice que una vez el planeta estuvo limpio y resplandeciente";
+        _texto = "Se dice que una vez el planeta estaba limpio y resplandeciente";
 propertyChanged("_texto", _texto);
-        runLater(1000 * 3, function(timeTask:TimedTask):Void {
+        runLater(1000 * 5, function(timeTask:TimedTask):Void {
                     _texto = "Pero llegaron basurota y sus secuaces a contaminarlo";
 propertyChanged("_texto", _texto);
 }, null);
-        runLater(1000 * 6, function(timeTask:TimedTask):Void {
+        runLater(1000 * 8, function(timeTask:TimedTask):Void {
                     _texto = "Por medio de bolsas plasticas, botellas y otros desechos";
 propertyChanged("_texto", _texto);
 }, null);
-        runLater(1000 * 12, function(timeTask:TimedTask):Void {
+        runLater(1000 * 13, function(timeTask:TimedTask):Void {
                     _texto = "Lo que provocho que el planeta estuviera triste";
 propertyChanged("_texto", _texto);
 }, null);
-        runLater(1000 * 15, function(timeTask:TimedTask):Void {
+        runLater(1000 * 16, function(timeTask:TimedTask):Void {
                     _texto = "Pero es ahi donde llega Nino y Nina al rescate";
 propertyChanged("_texto", _texto);
 }, null);
-        runLater(1000 * 18, function(timeTask:TimedTask):Void {
-                    _texto = "Por medio de las siguientes actividades que con su ayuda";
+        runLater(1000 * 20, function(timeTask:TimedTask):Void {
+                    _texto = "Que necesitaran tu ayuda para realizar las siguientes actividades";
 propertyChanged("_texto", _texto);
 }, null);
-        runLater(1000 * 23, function(timeTask:TimedTask):Void {
-                    _texto = "Haremos para evitar que el planeta siga contaminandose";
+        runLater(1000 * 24.5, function(timeTask:TimedTask):Void {
+                    _texto = " para salvar el planeta y evitar que se siga contaminando.";
 propertyChanged("_texto", _texto);
 }, null);
-        runLater(1000 * 27, function(timeTask:TimedTask):Void {
+        runLater(1000 * 30, function(timeTask:TimedTask):Void {
                     switchScene(GameModel.get().scenes.get(0).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
 }, null);
 }

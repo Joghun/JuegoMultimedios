@@ -115,6 +115,7 @@ runLater(1000 * 0, function(timeTask:TimedTask):Void
 {
 if(wrapper.enabled)
 {
+        Engine.engine.setGameAttribute("VerlaHistoria", 2);
         _texto = "Se dice que una vez el planeta estaba limpio y resplandeciente";
 propertyChanged("_texto", _texto);
         runLater(1000 * 5, function(timeTask:TimedTask):Void {

@@ -39,7 +39,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -69,13 +68,13 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_9 extends SceneScript
-{
+class ActorEvents_128 extends ActorScript
+{          	
 	
  
- 	public function new(dummy:Int, dummy2:Engine)
+ 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
+		super(actor);
 		
 	}
 	
@@ -83,8 +82,21 @@ class SceneEvents_9 extends SceneScript
 	{
 		    
 /* ======================== When Creating ========================= */
-        engine.moveCamera((getSceneWidth()), (getSceneHeight()));
-        loopSoundOnChannel(getSound(134), Std.int(0));
+        Engine.engine.setGameAttribute("InicioContadorLista", -(1));
+        Engine.engine.setGameAttribute("PrimerMensaje", true);
+    
+/* ======================= Member of Group ======================== */
+addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled && sameAsAny(getActorGroup(0),event.otherActor.getType(),event.otherActor.getGroup()))
+{
+        Engine.engine.setGameAttribute("InicioContadorLista", 0);
+        Engine.engine.setGameAttribute("PrimerMensaje", true);
+        shoutToScene("_customEvent_" + "OpenDialogBox");
+        recycleActor(actor);
+        Engine.engine.setGameAttribute("SeCreoUnaVez", (Engine.engine.getGameAttribute("SeCreoUnaVez") + 1));
+}
+});
 
 	}	      	
 	

@@ -84,66 +84,69 @@
     <group eventID="3" id="0">
         <event-delay comment="false" x="15" y="15">
             <group eventID="3" id="-1">
-                <set-val-50-1 comment="false" x="26" y="42">
+                <set-game-val-17 comment="false" x="26" y="42">
+                    <int id="0" val="2"/>
+                </set-game-val-17>
+                <set-val-50-1 comment="false" x="26" y="62">
                     <int id="0" val="Se dice que una vez el planeta estaba limpio y resplandeciente"/>
                 </set-val-50-1>
-                <dolater comment="false" x="26" y="62">
+                <dolater comment="false" x="26" y="82">
                     <group eventID="3" id="-1">
-                        <set-val-50-1 comment="false" x="37" y="89">
+                        <set-val-50-1 comment="false" x="37" y="109">
                             <int id="0" val="Pero llegaron basurota y sus secuaces a contaminarlo"/>
                         </set-val-50-1>
                     </group>
                     <int id="0" val="5"/>
                     <ACTOR eid="lastcreated" id="2"/>
                 </dolater>
-                <dolater comment="false" x="26" y="121">
+                <dolater comment="false" x="26" y="141">
                     <group eventID="3" id="-1">
-                        <set-val-50-1 comment="false" x="37" y="148">
+                        <set-val-50-1 comment="false" x="37" y="168">
                             <int id="0" val="Por medio de bolsas plasticas, botellas y otros desechos"/>
                         </set-val-50-1>
                     </group>
                     <int id="0" val="8"/>
                     <ACTOR eid="lastcreated" id="2"/>
                 </dolater>
-                <dolater comment="false" x="26" y="180">
+                <dolater comment="false" x="26" y="200">
                     <group eventID="3" id="-1">
-                        <set-val-50-1 comment="false" x="37" y="207">
+                        <set-val-50-1 comment="false" x="37" y="227">
                             <int id="0" val="Lo que provocho que el planeta estuviera triste"/>
                         </set-val-50-1>
                     </group>
                     <int id="0" val="13"/>
                     <ACTOR eid="lastcreated" id="2"/>
                 </dolater>
-                <dolater comment="false" x="26" y="239">
+                <dolater comment="false" x="26" y="259">
                     <group eventID="3" id="-1">
-                        <set-val-50-1 comment="false" x="37" y="266">
+                        <set-val-50-1 comment="false" x="37" y="286">
                             <int id="0" val="Pero es ahi donde llega Nino y Nina al rescate"/>
                         </set-val-50-1>
                     </group>
                     <int id="0" val="16"/>
                     <ACTOR eid="lastcreated" id="2"/>
                 </dolater>
-                <dolater comment="false" x="26" y="298">
+                <dolater comment="false" x="26" y="318">
                     <group eventID="3" id="-1">
-                        <set-val-50-1 comment="false" x="37" y="325">
+                        <set-val-50-1 comment="false" x="37" y="345">
                             <int id="0" val="Que necesitaran tu ayuda para realizar las siguientes actividades"/>
                         </set-val-50-1>
                     </group>
                     <int id="0" val="20"/>
                     <ACTOR eid="lastcreated" id="2"/>
                 </dolater>
-                <dolater comment="false" x="26" y="357">
+                <dolater comment="false" x="26" y="377">
                     <group eventID="3" id="-1">
-                        <set-val-50-1 comment="false" x="37" y="384">
+                        <set-val-50-1 comment="false" x="37" y="404">
                             <int id="0" val=" para salvar el planeta y evitar que se siga contaminando."/>
                         </set-val-50-1>
                     </group>
                     <int id="0" val="24.5"/>
                     <ACTOR eid="lastcreated" id="2"/>
                 </dolater>
-                <dolater comment="false" x="26" y="416">
+                <dolater comment="false" x="26" y="436">
                     <group eventID="3" id="-1">
-                        <scene-change-color comment="false" x="37" y="443">
+                        <scene-change-color comment="false" x="37" y="463">
                             <SCENE eid="0" id="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="0.5"/>

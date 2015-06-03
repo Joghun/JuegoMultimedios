@@ -97,10 +97,20 @@ if(wrapper.enabled)
             Engine.engine.setGameAttribute("numeroEscena", (Engine.engine.getGameAttribute("numeroEscena") + 1));
             if((Engine.engine.getGameAttribute("numeroEscena") == 2))
 {
-                switchScene(GameModel.get().scenes.get(10).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
+                switchScene(GameModel.get().scenes.get(5).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
 }
 
             if((Engine.engine.getGameAttribute("numeroEscena") == 3))
+{
+                switchScene(GameModel.get().scenes.get(7).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
+}
+
+            if((Engine.engine.getGameAttribute("numeroEscena") == 4))
+{
+                switchScene(GameModel.get().scenes.get(10).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
+}
+
+            if((Engine.engine.getGameAttribute("numeroEscena") == 5))
 {
                 switchScene(GameModel.get().scenes.get(9).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
 }

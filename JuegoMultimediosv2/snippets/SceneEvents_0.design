@@ -7,8 +7,76 @@
                     <int id="0" val="1"/>
                     <SOUND eid="9" id="1"/>
                 </play-sound4>
+                <set-game-val-3 comment="false" x="26" y="67">
+                    <int id="0" val="0"/>
+                </set-game-val-3>
             </group>
         </init>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <set-thickness comment="false" x="37" y="70">
+                            <int id="0" val="5"/>
+                        </set-thickness>
+                        <set-color comment="false" x="37" y="90">
+                            <color b="0" g="0" id="0" r="0"/>
+                        </set-color>
+                        <drawfill-roundrect comment="false" x="37" y="117">
+                            <int id="0" val="0"/>
+                            <int id="1" val="635"/>
+                            <int id="2" val="355"/>
+                            <int id="3" val="380"/>
+                            <int id="4" val="100"/>
+                            <int id="5" val="10"/>
+                        </drawfill-roundrect>
+                        <set-color comment="false" x="37" y="144">
+                            <color b="204" g="255" id="0" r="153"/>
+                        </set-color>
+                        <drawfill-roundrect comment="false" x="37" y="171">
+                            <int id="0" val="1"/>
+                            <int id="1" val="635"/>
+                            <int id="2" val="355"/>
+                            <int id="3" val="380"/>
+                            <int id="4" val="100"/>
+                            <int id="5" val="10"/>
+                        </drawfill-roundrect>
+                        <draw-text comment="false" x="37" y="198">
+                            <int id="0" val="Para poder jugar,"/>
+                            <int id="1" val="640"/>
+                            <int id="2" val="365"/>
+                        </draw-text>
+                        <draw-text comment="false" x="37" y="218">
+                            <int id="0" val="primero debes ver la historia"/>
+                            <int id="1" val="640"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <int id="0" val="365"/>
+                                <plus comment="false" id="1" x="0" y="0">
+                                    <get-font-height comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="5"/>
+                                </plus>
+                            </plus>
+                        </draw-text>
+                        <dolater comment="false" x="37" y="253">
+                            <group eventID="2" id="-1">
+                                <set-game-val-17 comment="false" x="48" y="280">
+                                    <int id="0" val="0"/>
+                                </set-game-val-17>
+                            </group>
+                            <int id="0" val="5"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-17 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="2" id="-1"/>
 </groups>

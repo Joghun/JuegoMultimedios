@@ -88,8 +88,17 @@ if(wrapper.enabled)
 {
         if(actor.isMousePressed())
 {
-            stopAllSounds();
-            switchScene(GameModel.get().scenes.get(2).getID(), createFadeOut(1, Utils.getColorRGB(0,0,0)), createFadeIn(1, Utils.getColorRGB(0,0,0)));
+            if((Engine.engine.getGameAttribute("VerlaHistoria") <= 1))
+{
+                Engine.engine.setGameAttribute("VerlaHistoria", 1);
+}
+
+            else
+{
+                stopAllSounds();
+                switchScene(GameModel.get().scenes.get(2).getID(), createFadeOut(1, Utils.getColorRGB(0,0,0)), createFadeIn(1, Utils.getColorRGB(0,0,0)));
+}
+
 }
 
 }

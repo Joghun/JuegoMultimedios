@@ -101,18 +101,21 @@ propertyChanged("_Random", _Random);
             if((_Random == 1))
 {
                 createRecycledActor(getActorType(112), _posicionBasura, 400, Script.FRONT);
+                getLastCreatedActor().setAnimation("" + ("" + randomInt(Math.floor(1), Math.floor(3))));
                 Engine.engine.setGameAttribute("xClasificar", (Engine.engine.getGameAttribute("xClasificar") + 1));
 }
 
             else if((_Random == 2))
 {
                 createRecycledActor(getActorType(116), _posicionBasura, 400, Script.FRONT);
+                getLastCreatedActor().setAnimation("" + ("" + randomInt(Math.floor(1), Math.floor(3))));
                 Engine.engine.setGameAttribute("xClasificar", (Engine.engine.getGameAttribute("xClasificar") + 1));
 }
 
             else if((_Random == 3))
 {
                 createRecycledActor(getActorType(114), _posicionBasura, 400, Script.FRONT);
+                getLastCreatedActor().setAnimation("" + ("" + randomInt(Math.floor(1), Math.floor(6))));
                 Engine.engine.setGameAttribute("xClasificar", (Engine.engine.getGameAttribute("xClasificar") + 1));
 }
 

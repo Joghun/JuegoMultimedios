@@ -83,7 +83,7 @@ class SceneEvents_5 extends SceneScript
 	{
 		    
 /* ======================== When Creating ========================= */
-        playSound(getSound(22));
+        loopSoundOnChannel(getSound(31), Std.int(0));
 
 	}	      	
 	

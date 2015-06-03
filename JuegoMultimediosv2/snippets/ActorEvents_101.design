@@ -1,54 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
-    <group eventID="2" id="0">
-        <event-collide-actortogroup comment="false" x="15" y="15">
-            <group eventID="2" id="-1">
-                <set-game-val-10 comment="false" x="26" y="47">
-                    <plus comment="false" id="0" x="0" y="0">
-                        <get-game-val-10 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="1"/>
-                    </plus>
-                </set-game-val-10>
-                <if comment="false" x="26" y="77">
-                    <group eventID="2" id="-1">
-                        <scene-change-color comment="false" x="37" y="107">
-                            <SCENE eid="10" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="0.5"/>
-                            <color b="0" g="0" id="3" r="0"/>
-                            <int id="4" val="0"/>
-                            <int id="5" val="0.5"/>
-                            <color b="0" g="0" id="6" r="0"/>
-                        </scene-change-color>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-game-val-10 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="2"/>
-                    </eq>
-                </if>
-                <if comment="false" x="26" y="146">
-                    <group eventID="2" id="-1">
-                        <scene-change-color comment="false" x="37" y="176">
-                            <SCENE eid="9" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="0.5"/>
-                            <color b="0" g="0" id="3" r="0"/>
-                            <int id="4" val="0"/>
-                            <int id="5" val="0.5"/>
-                            <color b="0" g="0" id="6" r="0"/>
-                        </scene-change-color>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-game-val-10 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="3"/>
-                    </eq>
-                </if>
-            </group>
-            <ACTOR eid="this" id="0"/>
-            <GROUP eid="0" id="1"/>
-        </event-collide-actortogroup>
-    </group>
-    <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
         <event-collide-actortogroup comment="false" x="15" y="15">
             <group eventID="3" id="-1">

@@ -39,7 +39,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -69,22 +68,32 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_10 extends SceneScript
-{
+class ActorEvents_131 extends ActorScript
+{          	
 	
  
- 	public function new(dummy:Int, dummy2:Engine)
+ 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
+		super(actor);
 		
 	}
 	
 	override public function init()
 	{
 		    
-/* ======================== When Creating ========================= */
-        engine.moveCamera(0, (getSceneHeight()));
-        loopSoundOnChannel(getSound(127), Std.int(0));
+/* =========================== On Actor =========================== */
+addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled && 3 == mouseState)
+{
+        stopSoundOnChannel(Std.int(0));
+        Engine.engine.setGameAttribute("Pausado", false);
+        engine.unpause();
+        runLater(1000 * 0.5, function(timeTask:TimedTask):Void {
+                    switchScene(GameModel.get().scenes.get(0).getID(), createBubblesOut(0.5, Utils.getColorRGB(0,0,0)), createBubblesIn(0.5, Utils.getColorRGB(0,0,0)));
+}, actor);
+}
+});
 
 	}	      	
 	

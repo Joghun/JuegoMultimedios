@@ -455,9 +455,9 @@
             <poly data="4,10,0,90,0,90,149,10,149" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="500" id="102" name="BotonCambiarEscena" shared="false" width="880">
-        <anim across="1" down="1" durations="100" height="500" id="0" loop="true" name="Animation 0" numframes="1" originx="440" originy="250" sync="false" version="2" width="880">
-            <poly data="4,308,291,408,291,408,441,308,441" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="500" id="102" name="BotonCambiarEscena" shared="false" width="581">
+        <anim across="1" down="1" durations="100" height="500" id="0" loop="true" name="Animation 0" numframes="1" originx="440" originy="250" sync="false" version="2" width="581">
+            <poly data="4,325,260,445,260,445,440,325,440" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="115" id="119" name="BotonContinuar" shared="false" width="150">
@@ -1248,9 +1248,6 @@
                 <prop id="62" list="0" val="0.2"/>
                 <prop id="60" list="0" val="true"/>
             </s>
-            <s enabled="true" id="58">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="9">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="4" list="0" val="0.0"/>
@@ -1259,8 +1256,11 @@
                 <prop id="9" list="0" val="0.0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
+            <s enabled="true" id="58">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="13">
-                <prop id="1" list="0" val=""/>
+                <prop id="1" list="1" val=""/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -1319,15 +1319,15 @@
                 <prop id="62" list="0" val="0.2"/>
                 <prop id="60" list="0" val="true"/>
             </s>
-            <s enabled="true" id="58">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="9">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="4" list="0" val="0.0"/>
                 <prop id="6" list="0" val="0.0"/>
                 <prop id="8" list="0" val="0.0"/>
                 <prop id="9" list="0" val="0.0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="58">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="13">

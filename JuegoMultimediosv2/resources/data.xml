@@ -184,11 +184,7 @@
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="39" fixedrot="true" fric="0.2" gid="7" id="60" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Bolsa" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="61" static="false">
-        <snippets>
-            <s enabled="true" id="41">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-        </snippets>
+        <snippets/>
     </actor>
     <music atlasID="0" desc="" id="133" loop="true" name="BosqueSong" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <tileset across="12" atlasID="0" desc="" down="18" id="48" name="bosqueTile" oid="-1" shared="false" th="32" tw="32">
@@ -1260,7 +1256,7 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="13">
-                <prop id="1" list="1" val=""/>
+                <prop id="1" list="0" val=""/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -1492,6 +1488,23 @@
     </actor>
     <music atlasID="0" desc="" id="21" loop="true" name="Salto" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="134" loop="true" name="SkySong" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <sprite atlasID="0" default="1" defaultAnimation="1" desc="" height="39" id="139" name="Sonido" shared="false" width="40">
+        <anim across="1" down="1" durations="100" height="39" id="1" loop="true" name="sonidon" numframes="1" originx="20" originy="19" sync="false" version="2" width="40">
+            <poly data="4,0,0,40,0,40,39,0,39" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="49" id="2" loop="true" name="sonidog" numframes="1" originx="25" originy="24" sync="false" version="2" width="50">
+            <poly data="4,0,0,50,0,50,49,0,49" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="39" id="3" loop="true" name="sinsonidon" numframes="1" originx="20" originy="19" sync="false" version="2" width="40">
+            <poly data="4,0,0,40,0,40,39,0,39" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="49" id="4" loop="true" name="sinsonidog" numframes="1" originx="25" originy="24" sync="false" version="2" width="50">
+            <poly data="4,0,0,50,0,50,49,0,49" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 4" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="75" fixedrot="true" fric="0.2" gid="3" id="138" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Sonido" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="139" static="true">
+        <snippets/>
+    </actor>
     <tileset across="32" atlasID="0" desc="" down="32" id="99" name="Title3" oid="-1" shared="false" th="32" tw="32">
         <tile collision="1" data="" durations="100" frames="0" id="0" order="-1"/>
         <tile collision="1" data="" durations="100" frames="1" id="1" order="-1"/>

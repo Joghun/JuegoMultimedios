@@ -69,7 +69,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_0 extends SceneScript
+class SceneEvents_10 extends SceneScript
 {
 	
  
@@ -83,30 +83,8 @@ class SceneEvents_0 extends SceneScript
 	{
 		    
 /* ======================== When Creating ========================= */
-        loopSound(getSound(9));
-        Engine.engine.setGameAttribute("PuntageGlobal", 0);
-    
-/* ========================= When Drawing ========================= */
-addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
-{
-if(wrapper.enabled)
-{
-        if((Engine.engine.getGameAttribute("VerlaHistoria") == 1))
-{
-            g.strokeSize = Std.int(5);
-            g.fillColor = Utils.getColorRGB(0,0,0);
-            g.drawRoundRect(635, 355, 380, 100, 10);
-            g.fillColor = Utils.getColorRGB(153,255,204);
-            g.fillRoundRect(635, 355, 380, 100, 10);
-            g.drawString("" + "Para poder jugar,", 640, 365);
-            g.drawString("" + "primero debes ver la historia", 640, (365 + (g.font.getHeight()/Engine.SCALE + 5)));
-            runLater(1000 * 5, function(timeTask:TimedTask):Void {
-                        Engine.engine.setGameAttribute("VerlaHistoria", 0);
-}, null);
-}
-
-}
-});
+        engine.moveCamera(0, (getSceneHeight()));
+        loopSoundOnChannel(getSound(127), Std.int(0));
 
 	}	      	
 	

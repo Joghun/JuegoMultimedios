@@ -227,6 +227,7 @@
         <blocks/>
         <events>
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_7" classname="scripts.SceneEvents_7" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="32" name="SceneEvents_7" oid="-1" package="scripts." sceneid="7" scenespecific="true" shared="false" type="scene">
@@ -249,7 +250,9 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_60" classname="scripts.ActorEvents_60" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="39" name="ActorEvents_60" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName=" Actor - Group" enabled="true" id="1" name="event-collide-actortogroup" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_54" classname="scripts.ActorEvents_54" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="36" name="ActorEvents_54" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
@@ -503,6 +506,15 @@
         <events>
             <event displayName="Updated" enabled="false" id="1" name="step" order="1" repeats="true"/>
             <event displayName="On Actor" enabled="true" id="2" name="event-mouse-enter-exit-actor" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_138" classname="scripts.ActorEvents_138" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="75" name="ActorEvents_138" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <boolean default="true" defaultValue="true" desc="" dropdown="" fullname="sonido" hidden="false" id="1" name="_sonido" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="3" name="step" order="3" repeats="true"/>
         </events>
     </snippet>
 </pack>

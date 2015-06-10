@@ -41,4 +41,129 @@
         </init>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <draw comment="false" x="23" y="27">
+            <group eventID="4" id="-1">
+                <if comment="false" x="34" y="52">
+                    <group eventID="3" id="-1">
+                        <set-thickness comment="false" x="45" y="77">
+                            <int id="0" val="5"/>
+                        </set-thickness>
+                        <set-stroke-color comment="false" x="45" y="97">
+                            <color b="0" g="0" id="0" r="0"/>
+                        </set-stroke-color>
+                        <drawfill-roundrect comment="false" x="45" y="124">
+                            <int id="0" val="0"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <div comment="false" id="0" x="0" y="0">
+                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </screen-wh>
+                                    <int id="1" val="2"/>
+                                </div>
+                                <int id="1" val="200"/>
+                            </minus>
+                            <div comment="false" id="2" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </screen-wh>
+                                <int id="1" val="2"/>
+                            </div>
+                            <int id="3" val="350"/>
+                            <int id="4" val="100"/>
+                            <int id="5" val="10"/>
+                        </drawfill-roundrect>
+                        <set-color comment="false" x="45" y="174">
+                            <color b="51" g="255" id="0" r="153"/>
+                        </set-color>
+                        <drawfill-roundrect comment="false" x="45" y="201">
+                            <int id="0" val="1"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <div comment="false" id="0" x="0" y="0">
+                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </screen-wh>
+                                    <int id="1" val="2"/>
+                                </div>
+                                <int id="1" val="200"/>
+                            </minus>
+                            <div comment="false" id="2" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </screen-wh>
+                                <int id="1" val="2"/>
+                            </div>
+                            <int id="3" val="350"/>
+                            <int id="4" val="100"/>
+                            <int id="5" val="10"/>
+                        </drawfill-roundrect>
+                        <set-font-new comment="false" x="45" y="251">
+                            <FONT eid="130" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="45" y="278">
+                            <int id="0" val="Solo puedes avanzar si tienes "/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <div comment="false" id="0" x="0" y="0">
+                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </screen-wh>
+                                    <int id="1" val="2"/>
+                                </div>
+                                <int id="1" val="180"/>
+                            </minus>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <div comment="false" id="0" x="0" y="0">
+                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                    </screen-wh>
+                                    <int id="1" val="2"/>
+                                </div>
+                                <int id="1" val="10"/>
+                            </plus>
+                        </draw-text>
+                        <draw-text comment="false" x="45" y="321">
+                            <int id="0" val="un minimo de 50 puntos"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <div comment="false" id="0" x="0" y="0">
+                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </screen-wh>
+                                    <int id="1" val="2"/>
+                                </div>
+                                <int id="1" val="180"/>
+                            </minus>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <div comment="false" id="0" x="0" y="0">
+                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                    </screen-wh>
+                                    <int id="1" val="2"/>
+                                </div>
+                                <plus comment="false" id="1" x="0" y="0">
+                                    <int id="0" val="15"/>
+                                    <get-font-height comment="false" id="1" x="0" y="0"/>
+                                </plus>
+                            </plus>
+                        </draw-text>
+                        <dolater comment="false" x="45" y="364">
+                            <group eventID="3" id="-1">
+                                <set-game-val-18 comment="false" x="56" y="391">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-game-val-18>
+                            </group>
+                            <int id="0" val="6"/>
+                            <ACTOR eid="lastcreated" id="2"/>
+                        </dolater>
+                    </group>
+                    <get-game-val-18 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="3" id="5">
+        <screen-wh comment="false" x="549" y="455">
+            <int id="0" val="0"/>
+        </screen-wh>
+    </group>
+    <group eventID="3" id="-1"/>
 </groups>

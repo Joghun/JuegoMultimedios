@@ -68,7 +68,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_107 extends ActorScript
+class ActorEvents_60 extends ActorScript
 {          	
 	
  
@@ -80,7 +80,17 @@ class ActorEvents_107 extends ActorScript
 	
 	override public function init()
 	{
-		
+		    
+/* ======================= Member of Group ======================== */
+addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled && sameAsAny(getActorGroup(0),event.otherActor.getType(),event.otherActor.getGroup()))
+{
+        Engine.engine.setGameAttribute("PuntajeEscena", (Engine.engine.getGameAttribute("PuntajeEscena") + 50));
+        recycleActor(actor);
+}
+});
+
 	}	      	
 	
 	override public function forwardMessage(msg:String)

@@ -68,14 +68,18 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_26 extends ActorScript
+class ActorEvents_138 extends ActorScript
 {          	
 	
+public var _sonido:Bool;
+
  
  	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		
+		nameMap.set("sonido", "_sonido");
+_sonido = true;
+
 	}
 	
 	override public function init()
@@ -88,10 +92,92 @@ if(wrapper.enabled)
 {
         if(actor.isMousePressed())
 {
-            Engine.engine.setGameAttribute("Personaje", 1);
-            switchScene(GameModel.get().scenes.get(1).getID(), createFadeOut(0.25, Utils.getColorRGB(0,0,0)), createFadeIn(0.25, Utils.getColorRGB(0,0,0)));
+            if((_sonido == true))
+{
+                stopSoundOnChannel(Std.int(0));
+                _sonido = false;
+propertyChanged("_sonido", _sonido);
 }
 
+            else
+{
+                _sonido = true;
+propertyChanged("_sonido", _sonido);
+                if((getCurrentSceneName() == "PantallaDesierto"))
+{
+                    loopSoundOnChannel(getSound(31), Std.int(0));
+}
+
+                if((getCurrentSceneName() == "PantallaEscuela"))
+{
+                    loopSoundOnChannel(getSound(22), Std.int(0));
+}
+
+                if((getCurrentSceneName() == "pantallaAire"))
+{
+                    loopSoundOnChannel(getSound(134), Std.int(0));
+}
+
+                if((getCurrentSceneName() == "PantallaBosque"))
+{
+                    loopSoundOnChannel(getSound(133), Std.int(0));
+}
+
+                if((getCurrentSceneName() == "Pantalla2Esena2"))
+{
+                    loopSoundOnChannel(getSound(31), Std.int(0));
+}
+
+}
+
+}
+
+}
+});
+    
+/* ======================== When Updating ========================= */
+addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled)
+{
+        if((_sonido == true))
+{
+            if(actor.isMouseOver())
+{
+                actor.setAnimation("" + "sonidog");
+}
+
+            else
+{
+                actor.setAnimation("" + "sonidon");
+}
+
+}
+
+        else
+{
+            if(actor.isMouseOver())
+{
+                actor.setAnimation("" + "sinsonidog");
+}
+
+            else
+{
+                actor.setAnimation("" + "sinsonidon");
+}
+
+}
+
+}
+});
+    
+/* ======================== When Updating ========================= */
+addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled)
+{
+        actor.setX((getScreenXCenter() + 460));
+        actor.setY((getScreenYCenter() - 300));
 }
 });
 

@@ -17,7 +17,7 @@
                     </eq>
                 </if>
             </group>
-            <CONTROL eid="0" id="0"/>
+            <CONTROL eid="7" id="0"/>
             <int id="1" val="0"/>
         </event-key-press-release>
     </group>
@@ -106,7 +106,7 @@
                             <and comment="false" id="0" x="0" y="0">
                                 <keystate comment="false" id="0" x="0" y="0">
                                     <int id="0" val="1"/>
-                                    <CONTROL eid="7" id="1"/>
+                                    <CONTROL eid="9" id="1"/>
                                 </keystate>
                                 <eq comment="false" id="1" x="0" y="0">
                                     <get-game-val-1 comment="false" id="0" x="0" y="0"/>
@@ -149,7 +149,7 @@
                             <and comment="false" id="0" x="0" y="0">
                                 <keystate comment="false" id="0" x="0" y="0">
                                     <int id="0" val="1"/>
-                                    <CONTROL eid="7" id="1"/>
+                                    <CONTROL eid="9" id="1"/>
                                 </keystate>
                                 <eq comment="false" id="1" x="0" y="0">
                                     <get-game-val-1 comment="false" id="0" x="0" y="0"/>

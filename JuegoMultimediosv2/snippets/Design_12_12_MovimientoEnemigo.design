@@ -8,7 +8,7 @@
                         <set-dxy comment="false" x="59" y="103">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
-                            <int id="2" val="10"/>
+                            <int id="2" val="5"/>
                         </set-dxy>
                     </group>
                     <less comment="false" id="0" x="0" y="0">
@@ -27,7 +27,7 @@
                         <set-dxy comment="false" x="59" y="180">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
-                            <int id="2" val="-10"/>
+                            <int id="2" val="-5"/>
                         </set-dxy>
                     </group>
                     <more comment="false" id="0" x="0" y="0">
@@ -62,7 +62,7 @@
                         <set-dxy comment="false" x="37" y="130">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
-                            <int id="2" val="-10"/>
+                            <int id="2" val="-5"/>
                         </set-dxy>
                     </group>
                     <less comment="false" id="0" x="0" y="0">
@@ -75,7 +75,7 @@
                         <set-dxy comment="false" x="37" y="189">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
-                            <int id="2" val="10"/>
+                            <int id="2" val="5"/>
                         </set-dxy>
                     </group>
                 </else>

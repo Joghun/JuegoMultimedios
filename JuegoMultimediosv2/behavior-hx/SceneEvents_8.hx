@@ -139,7 +139,7 @@ propertyChanged("_texto", _texto);
 propertyChanged("_texto", _texto);
 }, null);
         runLater(1000 * 22.5, function(timeTask:TimedTask):Void {
-                    _texto = " para salvar el planeta y evitar que  siga contamin~x00e1ndose.";
+                    _texto = " para salvar el planeta y evitar que  siga contaminandose.";
 propertyChanged("_texto", _texto);
 }, null);
         runLater(1000 * 27, function(timeTask:TimedTask):Void {

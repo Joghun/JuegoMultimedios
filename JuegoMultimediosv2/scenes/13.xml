@@ -2,7 +2,7 @@
 <scene depth="1" desc="" eventsnippetid="77" extheight="672" extwidth="1088" extx="-32" exty="-32" format="3.3.0" gravx="-0.0" gravy="30.0" height="608" id="13" name="Final" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="1024">
     <layers>
         <color-bg blue="255" green="255" red="255"/>
-        <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="fondoLimpio" opacity="100" order="1" rid="142" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="fondoHistoria" opacity="100" order="1" rid="155" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
         <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
     </layers>
     <joints/>
@@ -10,6 +10,10 @@
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="1" c="false" group="3" id="33" name="BotonVolver 1" sx="0.58666664" sy="0.57894737" x="884" y="496" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="77" name="IntroLatoso 2" sx="1.0" sy="1.0" x="703" y="326" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="75" name="IntroBasurota 3" sx="1.0" sy="1.0" x="766" y="284" z="0"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="79" name="IntroBotellon 4" sx="1.0" sy="1.0" x="869" y="306" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="81" name="introCaja 5" sx="1.0" sy="1.0" x="939" y="326" z="0"/>
     </actors>
     <snippets/>
     <terrain>

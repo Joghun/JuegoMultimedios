@@ -138,7 +138,7 @@
                 <dolater comment="false" x="26" y="377">
                     <group eventID="3" id="-1">
                         <set-val-50-1 comment="false" x="37" y="404">
-                            <int id="0" val=" para salvar el planeta y evitar que  siga contaminándose."/>
+                            <int id="0" val=" para salvar el planeta y evitar que  siga contaminandose."/>
                         </set-val-50-1>
                     </group>
                     <int id="0" val="22.5"/>

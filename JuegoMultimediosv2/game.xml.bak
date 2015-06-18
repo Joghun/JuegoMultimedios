@@ -3,8 +3,8 @@
     <exts>
         <e enabled="false" id="test-native"/>
         <e enabled="false" id="test"/>
-        <e enabled="false" id="test-flash"/>
         <e enabled="false" id="label"/>
+        <e enabled="false" id="test-flash"/>
         <e enabled="false" id="tileapi"/>
     </exts>
     <scales>
@@ -124,9 +124,10 @@
         <number cid="-1" id="17" name="VerlaHistoria" save="true" value="0.0"/>
         <number cid="-1" id="10" name="numeroEscena" save="true" value="1.0"/>
         <number cid="-1" id="14" name="InicioContadorLista" save="true" value="-1.0"/>
-        <bool cid="-1" id="5" name="Pausado" save="true" value="false"/>
         <number cid="-1" id="16" name="SeCreoUnaVez" save="true" value="0.0"/>
+        <bool cid="-1" id="5" name="Pausado" save="true" value="false"/>
         <number cid="-1" id="4" name="PuntajeEscena" save="true" value="0.0"/>
+        <bool cid="-1" id="20" name="finalMovimiento" save="true" value="false"/>
         <number cid="-1" id="11" name="xClasificar" save="true" value="0.0"/>
     </attributes>
     <collisions>
@@ -157,7 +158,7 @@
         <poly id="24" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,3,5,7,9,10,17,16,19,21,23,22,24,26,29,28,31,35,32,33,39,37,43,41,51,50,49,48,54,52,58,56,62,60,69,71,65,77,79,73,75,85,84,81,83,93,92,90,103,100,101,98,99,111,107,105,118,116,114,112,127,125,120,138,140,142,128,131,130,133,134,153,154,144,146,147,149,151," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,3,5,7,9,10,17,16,19,21,23,22,24,26,29,28,31,35,32,33,39,37,43,41,51,50,49,48,54,52,58,56,62,60,69,71,65,77,79,73,75,85,84,81,83,93,92,90,103,100,101,98,99,111,107,105,118,116,114,112,127,125,120,138,140,128,131,130,133,134,153,154,155,144,146,147,149,151," name="Main Atlas" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" target="0"/>
         <atlas allScenes="true" desc="" dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" target="0"/>

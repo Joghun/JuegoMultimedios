@@ -8,7 +8,7 @@
                     <int id="1" val="feliz"/>
                 </setanim>
             </group>
-            <int id="0" val="10"/>
+            <int id="0" val="7.5"/>
             <ACTOR eid="this" id="2"/>
         </event-delay>
     </group>

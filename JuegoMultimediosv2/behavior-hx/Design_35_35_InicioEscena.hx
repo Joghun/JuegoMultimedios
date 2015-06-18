@@ -94,6 +94,8 @@ _Avanzar = false;
     
 /* ======================== When Creating ========================= */
         createRecycledActor(getActorType(138), getScreenX(), getScreenY(), Script.FRONT);
+        createRecycledActor(getActorType(147), getScreenX(), getScreenY(), Script.FRONT);
+        createRecycledActor(getActorType(151), getScreenX(), getScreenY(), Script.FRONT);
     
 /* ========================= When Drawing ========================= */
 addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
@@ -113,6 +115,25 @@ if(wrapper.enabled)
             runLater(1000 * 6, function(timeTask:TimedTask):Void {
                         Engine.engine.setGameAttribute("AvanzarClafixicador", false);
 }, null);
+}
+
+}
+});
+    
+/* ========================= When Drawing ========================= */
+addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
+{
+if(wrapper.enabled)
+{
+        if(Engine.engine.getGameAttribute("ShowIntruccion"))
+{
+            g.strokeSize = Std.int(5);
+            g.strokeColor = Utils.getColorRGB(0,0,0);
+            g.drawRoundRect(((getScreenWidth() / 2) - 200), (getScreenHeight() - 50), 400, 50, 10);
+            g.fillColor = Utils.getColorRGB(153,255,51);
+            g.fillRoundRect(((getScreenWidth() / 2) - 200), (getScreenHeight() - 50), 400, 50, 10);
+            g.setFont(getFont(130));
+            g.drawString("" + "Dale click sobre la imagen para continuar ", ((getScreenWidth() / 2) - 180), ((getScreenHeight() - 50) + 10));
 }
 
 }

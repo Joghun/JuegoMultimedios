@@ -188,7 +188,7 @@
                             </minus>
                         </draw-text>
                     </group>
-                    <is-paused comment="false" id="0" x="0" y="0"/>
+                    <get-game-val-5 comment="false" id="0" x="0" y="0"/>
                 </if>
             </group>
         </draw>

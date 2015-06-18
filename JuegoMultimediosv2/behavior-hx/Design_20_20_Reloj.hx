@@ -85,28 +85,7 @@ _Tiempo = 0.0;
 	
 	override public function init()
 	{
-		    
-/* ========================= When Drawing ========================= */
-addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
-{
-if(wrapper.enabled)
-{
-        g.setFont(getFont(120));
-        g.drawString("" + "Tiempo: ", 10, 5);
-        g.drawString("" + _Tiempo, 160, 5);
-}
-});
-    
-/* ======================= Every N seconds ======================== */
-runPeriodically(1000 * 1, function(timeTask:TimedTask):Void
-{
-if(wrapper.enabled)
-{
-        _Tiempo = asNumber((_Tiempo + 1));
-propertyChanged("_Tiempo", _Tiempo);
-}
-}, null);
-
+		
 	}	      	
 	
 	override public function forwardMessage(msg:String)

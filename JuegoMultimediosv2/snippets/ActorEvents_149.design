@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-xy comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <screen-xy comment="false" id="0" x="0" y="0">
+                            <int id="0" val="2"/>
+                        </screen-xy>
+                        <int id="1" val="300"/>
+                    </minus>
+                </set-xy>
+                <set-xy comment="false" x="26" y="85">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <screen-xy comment="false" id="0" x="0" y="0">
+                            <int id="0" val="3"/>
+                        </screen-xy>
+                        <int id="1" val="250"/>
+                    </minus>
+                </set-xy>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <incdec comment="false" x="37" y="73">
+                            <int id="0" val="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                        <if comment="false" x="37" y="100">
+                            <group eventID="2" id="-1">
+                                <setanim comment="false" x="48" y="130">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                </setanim>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-79-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </eq>
+                        </if>
+                        <if comment="false" x="37" y="169">
+                            <group eventID="2" id="-1">
+                                <setanim comment="false" x="48" y="199">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="2"/>
+                                </setanim>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-79-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="2"/>
+                            </eq>
+                        </if>
+                        <if comment="false" x="37" y="238">
+                            <group eventID="2" id="-1">
+                                <setanim comment="false" x="48" y="268">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="3"/>
+                                </setanim>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-79-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="3"/>
+                            </eq>
+                        </if>
+                        <if comment="false" x="37" y="307">
+                            <group eventID="2" id="-1">
+                                <set-game-val-19 comment="false" x="48" y="337">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-game-val-19>
+                                <set-val-79-1 comment="false" x="48" y="362">
+                                    <int id="0" val="0"/>
+                                </set-val-79-1>
+                                <pause-unpause comment="false" x="48" y="382">
+                                    <int id="0" val="1"/>
+                                </pause-unpause>
+                                <die comment="false" x="48" y="409">
+                                    <ACTOR eid="this" id="0"/>
+                                </die>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-79-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="4"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <amousestate comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </amousestate>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

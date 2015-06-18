@@ -528,6 +528,23 @@
             <poly data="4,0,0,200,0,200,153,0,153" density="0.1" fric="0.2" gid="-1000" id="0" name="grande" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <sprite atlasID="0" default="1" defaultAnimation="1" desc="" height="40" id="152" name="Botonpausa" shared="false" width="40">
+        <anim across="1" down="1" durations="100" height="50" id="0" loop="true" name="pa0" numframes="1" originx="25" originy="25" sync="false" version="2" width="50">
+            <poly data="4,0,0,50,0,50,50,0,50" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="40" id="1" loop="true" name="pa1" numframes="1" originx="20" originy="20" sync="false" version="2" width="40">
+            <poly data="4,0,0,40,0,40,40,0,40" density="0.1" fric="0.2" gid="-1000" id="0" name="pa1" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="50" id="2" loop="true" name="pl0" numframes="1" originx="25" originy="25" sync="false" version="2" width="50">
+            <poly data="4,0,0,50,0,50,50,0,50" density="0.1" fric="0.2" gid="-1000" id="0" name="pl0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="40" id="3" loop="true" name="pl1" numframes="1" originx="20" originy="20" sync="false" version="2" width="40">
+            <poly data="4,0,0,40,0,40,40,0,40" density="0.1" fric="0.2" gid="-1000" id="0" name="pl1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="80" fixedrot="false" fric="0.2" gid="3" id="151" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Botonpausa" oid="-1" pausable="false" physicsMode="0" rest="0.0" shared="false" sprite="152" static="true">
+        <snippets/>
+    </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="115" id="2" name="BotonVideo" shared="false" width="150">
         <anim across="1" down="1" durations="100" height="115" id="0" loop="true" name="normal" numframes="1" originx="75" originy="57" sync="false" version="2" width="150">
             <poly data="4,0,0,150,0,150,115,0,115" density="0.1" fric="0.2" gid="-1000" id="0" name="normal" rest="0.0" sensor="false"/>
@@ -750,6 +767,8 @@
         <tile collision="1" data="" durations="100" frames="160" id="160" order="-1"/>
         <tile collision="1" data="" durations="100" frames="161" id="161" order="-1"/>
     </tileset>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="153" name="credi" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
+    <music atlasID="0" desc="" id="154" loop="true" name="creditosong" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <music atlasID="0" desc="" id="146" loop="true" name="finalHistoria" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="76" fixedrot="true" fric="0.2" gid="3" id="144" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="finalPlanet" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="145" static="false">
         <snippets/>
@@ -783,6 +802,23 @@
         <tile collision="-1" data="" durations="100" frames="8" id="8" order="-1"/>
         <tile collision="-1" data="" durations="100" frames="9" id="9" order="-1"/>
     </tileset>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="79" fixedrot="false" fric="0.2" gid="3" id="149" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="ImageneIntro" oid="-1" pausable="false" physicsMode="0" rest="0.0" shared="false" sprite="150" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="500" id="150" name="ImageneIntro" shared="false" width="700">
+        <anim across="1" down="1" durations="100" height="500" id="0" loop="true" name="0" numframes="1" originx="350" originy="250" sync="false" version="2" width="700">
+            <poly data="4,0,0,700,0,700,500,0,500" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="500" id="1" loop="true" name="1" numframes="1" originx="350" originy="250" sync="false" version="2" width="700">
+            <poly data="4,0,0,700,0,700,500,0,500" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="500" id="2" loop="true" name="2" numframes="1" originx="350" originy="250" sync="false" version="2" width="700">
+            <poly data="4,0,0,700,0,700,500,0,500" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="500" id="3" loop="true" name="3" numframes="1" originx="350" originy="250" sync="false" version="2" width="700">
+            <poly data="4,0,0,700,0,700,500,0,500" density="0.1" fric="0.2" gid="-1000" id="0" name="3" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="50" id="129" name="IniciaContador" shared="false" width="50">
         <anim across="1" down="1" durations="100" height="50" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="50">
             <poly data="4,0,0,48,0,48,48,0,48" density="0.1" fric="0.2" gid="-1000" id="0" name="default" rest="0.0" sensor="false"/>
@@ -791,6 +827,21 @@
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="1" continuous="true" desc="" eventsnippetid="73" fixedrot="true" fric="0.2" gid="18" id="128" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="IniciaContador" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="129" static="false">
         <snippets/>
     </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="78" fixedrot="false" fric="0.2" gid="3" id="147" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Instrucciones" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="148" static="true">
+        <snippets>
+            <s enabled="true" id="0">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="40" id="148" name="Instrucciones" shared="false" width="40">
+        <anim across="1" down="1" durations="100" height="40" id="0" loop="true" name="normal" numframes="1" originx="20" originy="20" sync="false" version="2" width="40">
+            <poly data="4,0,0,40,0,40,40,0,40" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="50" id="1" loop="true" name="grande" numframes="1" originx="25" originy="25" sync="false" version="2" width="50">
+            <poly data="4,0,0,50,0,50,50,0,50" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="94" id="76" name="IntroBasurota" shared="false" width="100">
         <anim across="1" down="1" durations="100" height="94" id="0" loop="true" name="Animation 0" numframes="1" originx="50" originy="47" sync="false" version="2" width="100">
             <poly data="4,0,0,100,0,100,94,0,94" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
@@ -1256,15 +1307,15 @@
                 <prop id="62" list="0" val="0.2"/>
                 <prop id="60" list="0" val="true"/>
             </s>
-            <s enabled="true" id="58">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="9">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="4" list="0" val="0.0"/>
                 <prop id="6" list="0" val="0.0"/>
                 <prop id="8" list="0" val="0.0"/>
                 <prop id="9" list="0" val="0.0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="58">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="13">
@@ -1327,15 +1378,15 @@
                 <prop id="62" list="0" val="0.2"/>
                 <prop id="60" list="0" val="true"/>
             </s>
-            <s enabled="true" id="58">
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
             <s enabled="true" id="9">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="4" list="0" val="0.0"/>
                 <prop id="6" list="0" val="0.0"/>
                 <prop id="8" list="0" val="0.0"/>
                 <prop id="9" list="0" val="0.0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="58">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="13">

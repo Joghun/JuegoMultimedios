@@ -154,7 +154,7 @@ addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>
 {
 if(wrapper.enabled)
 {
-        if(engine.isPaused())
+        if(Engine.engine.getGameAttribute("Pausado"))
 {
             g.translateToScreen();
             g.fillColor = Utils.getColorRGB(0,0,0);

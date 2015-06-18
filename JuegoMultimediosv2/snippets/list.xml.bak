@@ -15,7 +15,9 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_3" classname="scripts.ActorEvents_3" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="2" name="ActorEvents_3" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="On Actor" enabled="true" id="1" name="event-mouse-enter-exit-actor" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_5" classname="scripts.ActorEvents_5" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="3" name="ActorEvents_5" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
@@ -168,8 +170,8 @@
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Tiempo" hidden="false" id="1" name="_Tiempo" order="0"/>
         <blocks/>
         <events>
-            <event displayName="Tiempo" enabled="true" id="1" name="draw" order="1" repeats="true"/>
-            <event displayName="Every N secs" enabled="true" id="2" name="event-periodic" order="2" repeats="true"/>
+            <event displayName="Tiempo" enabled="false" id="1" name="draw" order="1" repeats="true"/>
+            <event displayName="Every N secs" enabled="false" id="2" name="event-periodic" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_33" classname="scripts.ActorEvents_33" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="23" name="ActorEvents_33" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
@@ -230,6 +232,7 @@
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
             <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
             <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="4" name="draw" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_7" classname="scripts.SceneEvents_7" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="32" name="SceneEvents_7" oid="-1" package="scripts." sceneid="7" scenespecific="true" shared="false" type="scene">
@@ -485,6 +488,22 @@
             <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_147" classname="scripts.ActorEvents_147" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="78" name="ActorEvents_147" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="contador" hidden="false" id="1" name="_contador" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="On Actor" enabled="true" id="2" name="event-mouse-enter-exit-actor" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_149" classname="scripts.ActorEvents_149" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="79" name="ActorEvents_149" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="contador" hidden="false" id="1" name="_contador" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
+        </events>
+    </snippet>
     <snippet attachedevent="false" class="scripts.Design_72_72_DialogBox" classname="scripts.Design_72_72_DialogBox" desc="Dibuja un cuadro para colocar una lista de texto" description="Dibuja un cuadro para colocar una lista de texto" design="true" drawOrder="0" id="72" name="DialogBox" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
         <color default="" defaultValue="" desc="" dropdown="" fullname="ColorStroke" hidden="false" id="1" name="_BoxText" order="0"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="AnchoStroke" hidden="false" id="3" name="_AnchoStroke" order="1"/>
@@ -530,6 +549,23 @@
             <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
             <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
             <event displayName="Updated" enabled="true" id="3" name="step" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_14" classname="scripts.SceneEvents_14" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="81" name="SceneEvents_14" oid="-1" package="scripts." sceneid="14" scenespecific="true" shared="false" type="scene">
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="false" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Created" enabled="true" id="2" name="init" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_151" classname="scripts.ActorEvents_151" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="80" name="ActorEvents_151" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <boolean default="true" defaultValue="true" desc="" dropdown="" fullname="sonido" hidden="false" id="1" name="_sonido" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="false" id="3" name="step" order="3" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="4" name="step" order="4" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="5" name="step" order="5" repeats="true"/>
         </events>
     </snippet>
 </pack>

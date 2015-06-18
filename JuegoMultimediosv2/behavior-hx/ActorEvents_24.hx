@@ -89,7 +89,7 @@ if(wrapper.enabled)
         if(actor.isMousePressed())
 {
             Engine.engine.setGameAttribute("Personaje", 0);
-            switchScene(GameModel.get().scenes.get(1).getID(), createFadeOut(1, Utils.getColorRGB(0,0,0)), createFadeIn(1, Utils.getColorRGB(0,0,0)));
+            switchScene(GameModel.get().scenes.get(5).getID(), createFadeOut(1, Utils.getColorRGB(0,0,0)), createFadeIn(1, Utils.getColorRGB(0,0,0)));
 }
 
 }

@@ -91,7 +91,7 @@ addKeyStateListener("espacio", function(pressed:Bool, released:Bool, list:Array<
 {
 if(wrapper.enabled && pressed)
 {
-        if((Engine.engine.getGameAttribute("Pausado") == false))
+        if(!(engine.isPaused()))
 {
             playSoundOnChannel(getSound(21), Std.int(1));
 }

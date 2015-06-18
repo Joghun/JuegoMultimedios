@@ -82,7 +82,7 @@ class ActorEvents_43 extends ActorScript
 	{
 		    
 /* ======================= After N seconds ======================== */
-runLater(1000 * 13, function(timeTask:TimedTask):Void
+runLater(1000 * 12, function(timeTask:TimedTask):Void
 {
 if(wrapper.enabled)
 {

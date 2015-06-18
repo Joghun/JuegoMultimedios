@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-delay comment="false" x="16" y="14">
+            <group eventID="1" id="-1">
+                <setanim comment="false" x="27" y="41">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="feliz"/>
+                </setanim>
+            </group>
+            <int id="0" val="10"/>
+            <ACTOR eid="this" id="2"/>
+        </event-delay>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

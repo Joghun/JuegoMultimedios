@@ -2,7 +2,7 @@
 <scene depth="1" desc="" eventsnippetid="50" extheight="672" extwidth="1088" extx="-32" exty="-32" format="3.3.0" gravx="-0.0" gravy="30.0" height="608" id="8" name="Introduccion" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="1024">
     <layers>
         <color-bg blue="255" green="255" red="255"/>
-        <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="FondoIintroduccion" opacity="100" order="1" rid="70" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="fondoLimpio" opacity="100" order="1" rid="142" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
         <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
     </layers>
     <joints/>

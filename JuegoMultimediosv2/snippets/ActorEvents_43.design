@@ -8,7 +8,7 @@
                     <int id="1" val="triste"/>
                 </setanim>
             </group>
-            <int id="0" val="13"/>
+            <int id="0" val="12"/>
             <ACTOR eid="this" id="2"/>
         </event-delay>
     </group>

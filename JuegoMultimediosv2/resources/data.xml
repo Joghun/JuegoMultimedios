@@ -750,13 +750,25 @@
         <tile collision="1" data="" durations="100" frames="160" id="160" order="-1"/>
         <tile collision="1" data="" durations="100" frames="161" id="161" order="-1"/>
     </tileset>
+    <music atlasID="0" desc="" id="146" loop="true" name="finalHistoria" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="76" fixedrot="true" fric="0.2" gid="3" id="144" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="finalPlanet" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="145" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="159" id="145" name="finalPlanet" shared="false" width="150">
+        <anim across="1" down="1" durations="100" height="159" id="0" loop="true" name="triste" numframes="1" originx="75" originy="79" sync="false" version="2" width="150">
+            <poly data="4,0,0,150,0,150,159,0,159" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="156" id="1" loop="true" name="feliz" numframes="1" originx="75" originy="78" sync="false" version="2" width="150">
+            <poly data="4,0,0,150,0,150,156,0,156" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="650" id="69" name="fondo1" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1040" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="700" id="65" name="fondobosque" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="51" name="FondoCiudad" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="92" name="FondoDesierto" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="29" name="FondoElegirPersonaje" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="70" name="FondoIintroduccion" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="32" name="FondoInstrucciones" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="142" name="fondoLimpio" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="640" id="84" name="fondonubes" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="600" id="111" name="FondoPuntaje" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1024" xpf="1.0" ypf="1.0"/>
     <tileset across="5" atlasID="0" desc="" down="2" id="50" name="fondotitle" oid="-1" shared="false" th="32" tw="32">
@@ -803,7 +815,7 @@
             <poly data="4,0,0,50,0,50,50,0,50" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <music atlasID="0" desc="" id="135" loop="true" name="IntroHistoria" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="140" loop="true" name="introdHistoria" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="47" fixedrot="true" fric="0.2" gid="3" id="77" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="IntroLatoso" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="78" static="false">
         <snippets/>
     </actor>
@@ -1256,7 +1268,7 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="13">
-                <prop id="1" list="1" val=""/>
+                <prop id="1" list="0" val=""/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>
@@ -1327,7 +1339,7 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="13">
-                <prop id="1" list="1" val=""/>
+                <prop id="1" list="0" val=""/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
         </snippets>

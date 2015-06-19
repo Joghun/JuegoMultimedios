@@ -39,7 +39,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -69,45 +68,19 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_0 extends SceneScript
-{
+class ActorEvents_81 extends ActorScript
+{          	
 	
  
- 	public function new(dummy:Int, dummy2:Engine)
+ 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
+		super(actor);
 		
 	}
 	
 	override public function init()
 	{
-		    
-/* ======================== When Creating ========================= */
-        loopSound(getSound(9));
-        Engine.engine.setGameAttribute("PuntageGlobal", 0);
-    
-/* ========================= When Drawing ========================= */
-addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
-{
-if(wrapper.enabled)
-{
-        if((Engine.engine.getGameAttribute("VerlaHistoria") == 1))
-{
-            g.strokeSize = Std.int(5);
-            g.fillColor = Utils.getColorRGB(0,0,0);
-            g.drawRoundRect(635, 355, 380, 100, 10);
-            g.fillColor = Utils.getColorRGB(153,255,204);
-            g.fillRoundRect(635, 355, 380, 100, 10);
-            g.drawString("" + "Para poder jugar,", 640, 365);
-            g.drawString("" + "primero debes ver la historia", 640, (365 + (g.font.getHeight()/Engine.SCALE + 5)));
-            runLater(1000 * 5, function(timeTask:TimedTask):Void {
-                        Engine.engine.setGameAttribute("VerlaHistoria", 0);
-}, null);
-}
-
-}
-});
-
+		
 	}	      	
 	
 	override public function forwardMessage(msg:String)

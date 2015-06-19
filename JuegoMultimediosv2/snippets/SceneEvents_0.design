@@ -10,6 +10,9 @@
                 <set-game-val-3 comment="false" x="26" y="67">
                     <int id="0" val="0"/>
                 </set-game-val-3>
+                <set-game-val-10 comment="false" x="26" y="87">
+                    <int id="0" val="1"/>
+                </set-game-val-10>
             </group>
         </init>
     </group>

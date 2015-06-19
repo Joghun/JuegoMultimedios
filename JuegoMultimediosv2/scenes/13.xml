@@ -10,10 +10,42 @@
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="1" c="false" group="3" id="33" name="BotonVolver 1" sx="0.58666664" sy="0.57894737" x="884" y="496" z="0"/>
-        <actor a="0.0" aid="2" c="false" group="3" id="77" name="IntroLatoso 2" sx="1.0" sy="1.0" x="703" y="326" z="0"/>
-        <actor a="0.0" aid="3" c="false" group="3" id="75" name="IntroBasurota 3" sx="1.0" sy="1.0" x="766" y="284" z="0"/>
-        <actor a="0.0" aid="4" c="false" group="3" id="79" name="IntroBotellon 4" sx="1.0" sy="1.0" x="869" y="306" z="0"/>
-        <actor a="0.0" aid="5" c="false" group="3" id="81" name="introCaja 5" sx="1.0" sy="1.0" x="939" y="326" z="0"/>
+        <actor a="0.0" aid="3" c="true" group="3" id="75" name="IntroBasurota 3" sx="1.0" sy="1.0" x="766" y="284" z="0">
+            <snippets>
+                <s enabled="true" id="82">
+                    <prop id="1" list="0" val="true"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="46"/>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="4" c="true" group="3" id="79" name="IntroBotellon 4" sx="1.0" sy="1.0" x="869" y="306" z="0">
+            <snippets>
+                <s enabled="true" id="48"/>
+                <s enabled="true" id="82">
+                    <prop id="1" list="0" val="true"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="5" c="true" group="3" id="81" name="introCaja 5" sx="1.0" sy="1.0" x="939" y="326" z="0">
+            <snippets>
+                <s enabled="true" id="49"/>
+                <s enabled="true" id="82">
+                    <prop id="1" list="0" val="true"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="6" c="true" group="3" id="77" name="IntroLatoso 6" sx="1.0" sy="1.0" x="704" y="326" z="0">
+            <snippets>
+                <s enabled="true" id="82">
+                    <prop id="1" list="0" val="true"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="47"/>
+            </snippets>
+        </actor>
     </actors>
     <snippets/>
     <terrain>

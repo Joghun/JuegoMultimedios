@@ -13,4 +13,5 @@
     <scene desc="" format="3.3.0" id="12" name="PuntajePorEscena"/>
     <scene desc="" format="3.3.0" id="13" name="Final"/>
     <scene desc="" format="3.3.0" id="14" name="creditos"/>
+    <scene desc="" format="3.3.0" id="15" name="PuntajeFinal"/>
 </scenes>

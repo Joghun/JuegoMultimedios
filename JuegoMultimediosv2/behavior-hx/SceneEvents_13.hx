@@ -39,6 +39,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import motion.Actuate;
 import motion.easing.Back;
@@ -68,62 +69,67 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_118 extends ActorScript
-{          	
+class SceneEvents_13 extends SceneScript
+{
 	
-public var _accion:Float;
+public var _texto:String;
 
  
- 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
+ 	public function new(dummy:Int, dummy2:Engine)
 	{
-		super(actor);
-		nameMap.set("accion", "_accion");
-_accion = 0.0;
+		super();
+		nameMap.set("texto", "_texto");
+_texto = "";
 
 	}
 	
 	override public function init()
 	{
 		    
-/* ======================== When Updating ========================= */
-addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+/* ======================== When Creating ========================= */
+        playSoundOnChannel(getSound(146), Std.int(0));
+        createRecycledActor(getActorType(144), 115, 260, Script.FRONT);
+        createRecycledActor(getActorType(71), 500, 250, Script.FRONT);
+        createRecycledActor(getActorType(73), 400, 260, Script.FRONT);
+        runLater(1000 * 3.5, function(timeTask:TimedTask):Void {
+                    Engine.engine.setGameAttribute("finalMovimiento", true);
+}, null);
+    
+/* ========================= When Drawing ========================= */
+addWhenDrawingListener(null, function(g:G, x:Float, y:Float, list:Array<Dynamic>):Void
 {
 if(wrapper.enabled)
 {
-        if(actor.isMousePressed())
-{
-            Engine.engine.setGameAttribute("PuntajeEscena", 0);
-            Engine.engine.setGameAttribute("puntosExtra", 0);
-            Engine.engine.setGameAttribute("numeroEscena", (Engine.engine.getGameAttribute("numeroEscena") + 1));
-            if((Engine.engine.getGameAttribute("numeroEscena") == 2))
-{
-                switchScene(GameModel.get().scenes.get(10).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
-}
-
-            if((Engine.engine.getGameAttribute("numeroEscena") == 3))
-{
-                switchScene(GameModel.get().scenes.get(1).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
-}
-
-            if((Engine.engine.getGameAttribute("numeroEscena") == 4))
-{
-                switchScene(GameModel.get().scenes.get(7).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
-}
-
-            if((Engine.engine.getGameAttribute("numeroEscena") == 5))
-{
-                switchScene(GameModel.get().scenes.get(9).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
-}
-
-            if((Engine.engine.getGameAttribute("numeroEscena") == 6))
-{
-                switchScene(GameModel.get().scenes.get(13).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
-}
-
-}
-
+        g.setFont(getFont(85));
+        g.drawString("" + _texto, 50, 450);
 }
 });
+    
+/* ======================= After N seconds ======================== */
+runLater(1000 * 0, function(timeTask:TimedTask):Void
+{
+if(wrapper.enabled)
+{
+        Engine.engine.setGameAttribute("VerlaHistoria", 2);
+        _texto = "Gracias a su ayuda y a la de Nino y Nina";
+propertyChanged("_texto", _texto);
+        runLater(1000 * 3, function(timeTask:TimedTask):Void {
+                    _texto = "las acciones de limpieza y de reciclaje";
+propertyChanged("_texto", _texto);
+}, null);
+        runLater(1000 * 5, function(timeTask:TimedTask):Void {
+                    _texto = "en contra de Basurota y sus secuaces";
+propertyChanged("_texto", _texto);
+}, null);
+        runLater(1000 * 7.5, function(timeTask:TimedTask):Void {
+                    _texto = "lograron hacer feliz y limpio de nuevo al planeta.";
+propertyChanged("_texto", _texto);
+}, null);
+        runLater(1000 * 13, function(timeTask:TimedTask):Void {
+                    switchScene(GameModel.get().scenes.get(15).getID(), createFadeOut(0.5, Utils.getColorRGB(0,0,0)), createFadeIn(0.5, Utils.getColorRGB(0,0,0)));
+}, null);
+}
+}, null);
 
 	}	      	
 	

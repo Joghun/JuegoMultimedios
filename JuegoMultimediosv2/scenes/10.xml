@@ -18,12 +18,14 @@
         <actor a="0.0" aid="8" c="false" group="11" id="101" name="CambiarAClasificar 8" sx="1.0" sy="1.0" x="4162" y="557" z="0"/>
         <actor a="0.0" aid="9" c="false" group="4" id="39" name="BasurotaEnemigo 9" sx="1.0" sy="1.0" x="3715" y="899" z="0"/>
         <actor a="0.0" aid="10" c="false" group="4" id="41" name="LatosoEnemigo 10" sx="1.0" sy="1.0" x="2640" y="942" z="0"/>
-        <actor a="0.0" aid="11" c="false" group="17" id="125" name="PuntoControl 11" sx="1.0" sy="1.0" x="1722" y="885" z="0"/>
+        <actor a="0.0" aid="11" c="false" group="17" id="125" name="PuntoControl 11" sx="1.0" sy="1.0" x="1734" y="892" z="0"/>
         <actor a="0.0" aid="12" c="false" group="17" id="125" name="PuntoControl 12" sx="1.0" sy="1.0" x="2555" y="436" z="0"/>
     </actors>
     <snippets>
-        <s enabled="true" id="35"/>
         <s enabled="true" id="16"/>
+        <s enabled="true" id="35">
+            <prop id="1" list="0" val="false"/>
+        </s>
         <s enabled="true" id="20">
             <prop id="1" list="0" val="0.0"/>
         </s>

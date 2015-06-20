@@ -127,7 +127,7 @@ propertyChanged("_texto", _texto);
 propertyChanged("_texto", _texto);
 }, null);
         runLater(1000 * 12, function(timeTask:TimedTask):Void {
-                    _texto = "Lo que provocho que el planeta estuviera triste";
+                    _texto = "Lo que provoco que el planeta estuviera triste";
 propertyChanged("_texto", _texto);
 }, null);
         runLater(1000 * 14, function(timeTask:TimedTask):Void {

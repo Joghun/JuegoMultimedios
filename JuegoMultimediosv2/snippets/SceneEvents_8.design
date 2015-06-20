@@ -111,7 +111,7 @@
                 <dolater comment="false" x="26" y="200">
                     <group eventID="3" id="-1">
                         <set-val-50-1 comment="false" x="37" y="227">
-                            <int id="0" val="Lo que provocho que el planeta estuviera triste"/>
+                            <int id="0" val="Lo que provoco que el planeta estuviera triste"/>
                         </set-val-50-1>
                     </group>
                     <int id="0" val="12"/>

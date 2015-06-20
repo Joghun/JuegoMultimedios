@@ -1330,15 +1330,15 @@
                 <prop id="62" list="0" val="0.2"/>
                 <prop id="60" list="0" val="true"/>
             </s>
+            <s enabled="true" id="58">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="9">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="4" list="0" val="0.0"/>
                 <prop id="6" list="0" val="0.0"/>
                 <prop id="8" list="0" val="0.0"/>
                 <prop id="9" list="0" val="0.0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="58">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="13">
@@ -1401,15 +1401,15 @@
                 <prop id="62" list="0" val="0.2"/>
                 <prop id="60" list="0" val="true"/>
             </s>
+            <s enabled="true" id="58">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
             <s enabled="true" id="9">
                 <prop id="1" list="0" val="0.0"/>
                 <prop id="4" list="0" val="0.0"/>
                 <prop id="6" list="0" val="0.0"/>
                 <prop id="8" list="0" val="0.0"/>
                 <prop id="9" list="0" val="0.0"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="58">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="13">

@@ -554,6 +554,13 @@
             <event displayName="Updated" enabled="true" id="3" name="step" order="3" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="false" class="scripts.Design_84_84_CannotExitScreen2" classname="scripts.Design_84_84_CannotExitScreen2" desc="Prevents the actor from going beyond the screen's bounds." description="Prevents the actor from going beyond the screen's bounds." design="true" drawOrder="0" id="84" name="Cannot Exit Screen 2" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
+        </events>
+    </snippet>
     <snippet attachedevent="true" class="scripts.SceneEvents_14" classname="scripts.SceneEvents_14" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="81" name="SceneEvents_14" oid="-1" package="scripts." sceneid="14" scenespecific="true" shared="false" type="scene">
         <blocks/>
         <events>
